@@ -1,8 +1,3 @@
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
 @font-face {
   font-family: 'montserratbold';
   src: url("ressources/font/montbold/montserrat-bold-webfont.eot");
@@ -18,24 +13,4 @@
   font-weight: normal;
   font-style: normal;
 }
-
-h1.text_index {
-  font-family: 'montserratbold';
-  font-size: 50px;
-  letter-spacing: -0.05em;
-}
-
-#oh {
-  letter-spacing: -0.10em;
-}
-
-h2.text_index {
-  font-family: 'montserratmedium';
-  font-size: 30px;
-}
-
-h3.text_index {
-  font-family: 'montserratmedium';
-  font-size: 20px;
-}
-/*# sourceMappingURL=p3.css.map */
+/*# sourceMappingURL=base.css.map */
