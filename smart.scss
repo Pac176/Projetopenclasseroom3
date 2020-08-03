@@ -16,8 +16,8 @@
   
   @font-face {
     font-family: 'cantata_oneregular';
-    src: url("ressources/font/Cantat_One/cantataone-regular-webfont.eot");
-    src: url("ressources/font/Cantat_One/cantataone-regular-webfont.eot?#iefix") format("embedded-opentype"), url("ressources/font/Cantat_One/cantataone-regular-webfont.woff2") format("woff2"), url("ressources/font/Cantat_One/cantataone-regular-webfont.woff") format("woff"), url("ressources/font/Cantat_One/cantataone-regular-webfont.ttf") format("truetype"), url("ressources/font/Cantat_One/cantataone-regular-webfont.svg#cantata_oneregular") format("svg");
+    src: url("ressources/font/Cantata_One/cantataone-regular-webfont.eot");
+    src: url("ressources/font/Cantata_One/cantataone-regular-webfont.eot?#iefix") format("embedded-opentype"), url("ressources/font/Cantata_One/cantataone-regular-webfont.woff2") format("woff2"), url("ressources/font/Cantata_One/cantataone-regular-webfont.woff") format("woff"), url("ressources/font/Cantata_One/cantataone-regular-webfont.ttf") format("truetype"), url("ressources/font/Cantata_One/cantataone-regular-webfont.svg#cantata_oneregular") format("svg");
     font-weight: normal;
     font-style: normal;
   }
@@ -81,73 +81,159 @@ html {
 
 
 /*liserets */
-
+#oh {
+  letter-spacing: -0.10em;
+}
 
 @mixin text_index { 
   display: flex;
   align-items: center;
   background-color: #579c87;
   font-family: 'montserratbold';
-  font-size: 50px;
+  font-size: 3rem;
   color:#fdcb46;
   width:100%;
   position: fixed;
 }
 
-
-#oh {
-  letter-spacing: -0.10em;
-}
-
-h1.text_index {
+.text_index {
+  &--titre {
   @include text_index
   flex-direction: row;
   justify-content: center;
   height: 5.4rem;
   top:0;
-}
-
-h3.text_index {
-  font-size: 20px;
+    &::first-letter {
+      letter-spacing: -0.10em;
+    }}
+  &--bas {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    } 
+  & a {
+    color: #fdcb46;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  }
 }
 
 footer {
   @include text_index
-  justify-content: space-between;
+  justify-content: space-around;
   height: 3rem;
   bottom:0;
+
 }
 
 
 
 /*menus*/
 
-section#menu1 {
-  margin-top: 7rem;}
+
 
   @mixin menu {
-    height: 500px;
+    height: 9rem;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-right: 2rem;
     margin-left: 2rem;
-    margin-bottom: 2rem;
-  }
+    margin-bottom: 1rem;
+    box-shadow: 0 0 20px #bbba;
+    border-radius: 1rem 1rem;
+      p {padding-top: 1rem;
+        font-size:1.7rem;
+    }
+      h2 {font-size:1.9rem;
+    }
+      a {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+        justify-content: center;
+    }
+    }
 
 
-  .menu {
+#lechfr_font {
+  font-size:1.4rem;
+}
+
+.menu {
 @include menu
-border:1px black solid;
 
-
+  &-lanoen {
+    margin-top: 7rem;
+    background-color: #fcdfdb;
+    font-family: "devonshireregular";
+    h2 {
+      color:#4e252a;
+    }
+    p{
+      font-family:'Segoe Print';
+      color:#4e252a;
+    }}
+  &-lechfr {
+    font-family: 'croissant_oneregular';
+    background-color: #fff5fe;
+    h2{
+    background: -webkit-linear-gradient(left, #d8852e, #905bfd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    p{
+      font-family:'cantata_oneregular';
+      font-weight: bold;
+      color:#c77412;
+      }}
+  &-ledepa {
+    font-family: 'dancing_scriptregular';
+    background-color: #f9f9f9;
+    h2 {
+      background: -webkit-linear-gradient(left, #0431df, #0887fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    p{font-family:'Segoe Print';
+      color:#0887fb;
+    }}
+  &-lapago {
+    font-family: 'kaushan_scriptregular';
+    background-color: #fdfffd;
+    h2 {
+      background: -webkit-linear-gradient(left, #3d9339, #bfff7e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    p{font-family:'Segoe Print';
+      color:#72bf56;
+    }}
 }
 
 
+.footer_bloc_page {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  &--pro {
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    width: 15rem;
+    background-color: #579c87;
+    color: #fdcb46;
+    border-radius: 0.3rem;
+    align-items: center;
+}}
 
 
-
-.lanoen {
-  font-family: "devonshireregular";
-}

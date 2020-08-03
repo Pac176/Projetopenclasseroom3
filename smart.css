@@ -16,8 +16,8 @@
 
 @font-face {
   font-family: 'cantata_oneregular';
-  src: url("ressources/font/Cantat_One/cantataone-regular-webfont.eot");
-  src: url("ressources/font/Cantat_One/cantataone-regular-webfont.eot?#iefix") format("embedded-opentype"), url("ressources/font/Cantat_One/cantataone-regular-webfont.woff2") format("woff2"), url("ressources/font/Cantat_One/cantataone-regular-webfont.woff") format("woff"), url("ressources/font/Cantat_One/cantataone-regular-webfont.ttf") format("truetype"), url("ressources/font/Cantat_One/cantataone-regular-webfont.svg#cantata_oneregular") format("svg");
+  src: url("ressources/font/Cantata_One/cantataone-regular-webfont.eot");
+  src: url("ressources/font/Cantata_One/cantataone-regular-webfont.eot?#iefix") format("embedded-opentype"), url("ressources/font/Cantata_One/cantataone-regular-webfont.woff2") format("woff2"), url("ressources/font/Cantata_One/cantataone-regular-webfont.woff") format("woff"), url("ressources/font/Cantata_One/cantataone-regular-webfont.ttf") format("truetype"), url("ressources/font/Cantata_One/cantataone-regular-webfont.svg#cantata_oneregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -83,7 +83,7 @@ html {
   letter-spacing: -0.10em;
 }
 
-h1.text_index {
+.text_index--titre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,7 +92,7 @@ h1.text_index {
           align-items: center;
   background-color: #579c87;
   font-family: 'montserratbold';
-  font-size: 50px;
+  font-size: 3rem;
   color: #fdcb46;
   width: 100%;
   position: fixed;
@@ -107,8 +107,39 @@ h1.text_index {
   top: 0;
 }
 
-h3.text_index {
-  font-size: 20px;
+.text_index--titre::first-letter {
+  letter-spacing: -0.10em;
+}
+
+.text_index--bas {
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text_index a {
+  color: #fdcb46;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 footer {
@@ -120,24 +151,23 @@ footer {
           align-items: center;
   background-color: #579c87;
   font-family: 'montserratbold';
-  font-size: 50px;
+  font-size: 3rem;
   color: #fdcb46;
   width: 100%;
   position: fixed;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   height: 3rem;
   bottom: 0;
 }
 
 /*menus*/
-section#menu1 {
-  margin-top: 7rem;
+#lechfr_font {
+  font-size: 1.4rem;
 }
 
 .menu {
-  height: 500px;
+  height: 9rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,11 +183,125 @@ section#menu1 {
           align-items: center;
   margin-right: 2rem;
   margin-left: 2rem;
-  margin-bottom: 2rem;
-  border: 1px black solid;
+  margin-bottom: 1rem;
+  -webkit-box-shadow: 0 0 20px #bbba;
+          box-shadow: 0 0 20px #bbba;
+  border-radius: 1rem 1rem;
 }
 
-.lanoen {
+.menu p {
+  padding-top: 1rem;
+  font-size: 1.7rem;
+}
+
+.menu h2 {
+  font-size: 1.9rem;
+}
+
+.menu a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu-lanoen {
+  margin-top: 7rem;
+  background-color: #fcdfdb;
   font-family: "devonshireregular";
+}
+
+.menu-lanoen h2 {
+  color: #4e252a;
+}
+
+.menu-lanoen p {
+  font-family: 'Segoe Print';
+  color: #4e252a;
+}
+
+.menu-lechfr {
+  font-family: 'croissant_oneregular';
+  background-color: #fff5fe;
+}
+
+.menu-lechfr h2 {
+  background: -webkit-linear-gradient(left, #d8852e, #905bfd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu-lechfr p {
+  font-family: 'cantata_oneregular';
+  font-weight: bold;
+  color: #c77412;
+}
+
+.menu-ledepa {
+  font-family: 'dancing_scriptregular';
+  background-color: #f9f9f9;
+}
+
+.menu-ledepa h2 {
+  background: -webkit-linear-gradient(left, #0431df, #0887fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu-ledepa p {
+  font-family: 'Segoe Print';
+  color: #0887fb;
+}
+
+.menu-lapago {
+  font-family: 'kaushan_scriptregular';
+  background-color: #fdfffd;
+}
+
+.menu-lapago h2 {
+  background: -webkit-linear-gradient(left, #3d9339, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu-lapago p {
+  font-family: 'Segoe Print';
+  color: #72bf56;
+}
+
+.footer_bloc_page {
+  margin-bottom: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer_bloc_page--pro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 3rem;
+  width: 15rem;
+  background-color: #579c87;
+  color: #fdcb46;
+  border-radius: 0.3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=smart.css.map */
