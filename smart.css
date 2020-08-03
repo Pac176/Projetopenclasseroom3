@@ -220,6 +220,19 @@ footer {
   font-family: "devonshireregular";
 }
 
+.menu-lanoen .fas {
+  font-size: 1.6rem;
+  background: -webkit-linear-gradient(left, #f15861, #f78f6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .menu-lanoen h2 {
   color: #4e252a;
 }
@@ -235,7 +248,7 @@ footer {
 }
 
 .menu-lechfr h2 {
-  background: -webkit-linear-gradient(left, #d8852e, #905bfd);
+  background: -webkit-linear-gradient(-75deg, #d8852e, #905bfd 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -252,7 +265,7 @@ footer {
 }
 
 .menu-ledepa h2 {
-  background: -webkit-linear-gradient(left, #0431df, #0887fb);
+  background: -webkit-linear-gradient(-75deg, #0431df, #0887fb 60%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -268,7 +281,7 @@ footer {
 }
 
 .menu-lapago h2 {
-  background: -webkit-linear-gradient(left, #3d9339, #bfff7e);
+  background: -webkit-linear-gradient(-75deg, #3d9339, #bfff7e 75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
