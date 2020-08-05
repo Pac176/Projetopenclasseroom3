@@ -249,46 +249,63 @@ footer {
 
 /*menu lanoen*/
 
-.lanoen_main {
-  display: flex;
-    flex-direction: column;
-    height: 100%; 
-}
-
-
 
 .lanoen{
+  .enplde, h3{
+    padding-bottom: 0.6rem;
+    padding-top: 1rem;
+  }
+  font-family:$font-size-menu;
   margin-bottom: 3rem;
   padding: 1rem 1rem 1rem 1rem;
   background-color: #fcdfdb;
   display: flex;
   flex-direction: column;
-  height: 100%; 
-  justify-content: space-around;
-  
-  h1,h2{
+ 
+  h1,h2 {
     font-family: $font-size-lanoen;
+    color:$color-lanoen;
   }
-.fas{
- font-size:1rem;
+
+  .fas{
+ font-size:3rem;
  background: -webkit-linear-gradient(left, #f15861, #f78f6a );
  -webkit-background-clip: text;
  -webkit-text-fill-color: transparent;
  width: fit-content;
- align-self: center;}
-
-li {
-display:flex;
-flex-direction: row;
-justify-content: space-between;
-font-size: 0.7rem;
-line-height: 1.5rem;
+ align-self: center;
+ padding-right: 1rem;
+}
+  h3{
+    color:$color-lanoen;
+  }
+  li {
+    display:flex;
+    flex-direction: row;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    justify-content: space-between;
+  .plat {
+    color: $color-lanoen;
+    text-align: justify;
+    max-width: 85%;
+}
+  .prix {
+    align-self: center;
+  }
 }
 ul{
   margin-bottom: 2.8rem;
 }
-
-
-
  
 }
+.main_bas {
+  display: flex;
+  justify-content: center;
+  .fas{
+    font-size:2rem;
+  }
+}
+
+/* le chic a la francaise*/
+

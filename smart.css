@@ -297,18 +297,8 @@ footer a {
 }
 
 /*menu lanoen*/
-.lanoen_main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
-}
-
 .lanoen {
+  font-family: "Segoe Print";
   margin-bottom: 3rem;
   padding: 1rem 1rem 1rem 1rem;
   background-color: #fcdfdb;
@@ -319,17 +309,20 @@ footer a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+}
+
+.lanoen .enplde, .lanoen h3 {
+  padding-bottom: 0.6rem;
+  padding-top: 1rem;
 }
 
 .lanoen h1, .lanoen h2 {
   font-family: "devonshireregular";
+  color: #4e252a;
 }
 
 .lanoen .fas {
-  font-size: 1rem;
+  font-size: 3rem;
   background: -webkit-linear-gradient(left, #f15861, #f78f6a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -339,6 +332,11 @@ footer a {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  padding-right: 1rem;
+}
+
+.lanoen h3 {
+  color: #4e252a;
 }
 
 .lanoen li {
@@ -349,14 +347,41 @@ footer a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 0.7rem;
-  line-height: 1.5rem;
+}
+
+.lanoen li .plat {
+  color: #4e252a;
+  text-align: justify;
+  max-width: 85%;
+}
+
+.lanoen li .prix {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .lanoen ul {
   margin-bottom: 2.8rem;
 }
+
+.main_bas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main_bas .fas {
+  font-size: 2rem;
+}
+
+/* le chic a la francaise*/
 /*# sourceMappingURL=smart.css.map */
