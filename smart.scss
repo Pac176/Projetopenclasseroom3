@@ -63,6 +63,14 @@
     font-display: swap;
   }
   
+html{
+  height: 100%;
+}
+body{
+  height:100%;
+}
+
+
   * {
     margin: 0px;
     padding: 0px;
@@ -70,14 +78,16 @@
     /*border: 1px black solid;*/
   }
   
+$primary-bg-color:#579c87;
+$primary-color:#fdcb46;
+$color-lanoen:#4e252a;
+$bg-color-lanoen:#fcdfdb;
+$primary-size:1rem;
+$font-size-lanoen:"devonshireregular";
+$font-size-menu:"Segoe Print";
 
-  body {
-    height:100%;
-  }
-  
-html {
-  height: 100%;
-}
+
+
 
 
 /*liserets */
@@ -85,50 +95,44 @@ html {
   letter-spacing: -0.10em;
 }
 
-@mixin text_index { 
+@mixin text_index ($color:$primary-color,$bg-color:$primary-bg-color,$size:primary-size) { 
   display: flex;
   align-items: center;
-  background-color: #579c87;
+  background-color: $bg-color;
   font-family: 'montserratbold';
-  font-size: 3rem;
-  color:#fdcb46;
+  font-size: $size;
+  color:$color;
   width:100%;
-  position: fixed;
+  justify-content: center;
 }
+
+@mixin a ($color:$primary-color,$bg-color:$primary-bg-color){
+  color: $primary-color;
+  text-decoration:none;
+}
+
 
 .text_index {
   &--titre {
-  @include text_index
-  flex-direction: row;
-  justify-content: center;
+  @include text_index;   
+  font-size:3rem;
   height: 5.4rem;
-  top:0;
-    &::first-letter {
-      letter-spacing: -0.10em;
-    }}
-  &--bas {
-  font-size: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-    } 
   & a {
-    color: #fdcb46;
-  text-decoration: none;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  @include a;
   }
-}
+       
+  }}
+  
 
 footer {
-  @include text_index
+  @include text_index;
   justify-content: space-around;
-  height: 3rem;
   bottom:0;
+  position: fixed;
+  height: 3rem;
+  & a {
+  @include a;
+  }
 
 }
 
@@ -138,7 +142,7 @@ footer {
 
 
 
-  @mixin menu {
+  @mixin menu  {
     height: 9rem;
     display:flex;
     flex-direction: column;
@@ -173,9 +177,9 @@ footer {
 @include menu
 
   &-lanoen {
-    margin-top: 7rem;
+    margin-top: 1rem;
     background-color: #fcdfdb;
-    font-family: "devonshireregular";
+    font-family: $font-size-lanoen;
     .fas {
       font-size:1.6rem;
       background: -webkit-linear-gradient(left, #f15861, #f78f6a );
@@ -189,7 +193,7 @@ footer {
       color:#4e252a;
     }
     p{
-      font-family:'Segoe Print';
+      font-family:$font-size-menu;
       color:#4e252a;
     }}
   &-lechfr {
@@ -213,7 +217,7 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     }
-    p{font-family:'Segoe Print';
+    p{font-family:$font-size-menu;
       color:#0887fb;
     }}
   &-lapago {
@@ -224,7 +228,7 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     }
-    p{font-family:'Segoe Print';
+    p{font-family:$font-size-menu;
       color:#72bf56;
     }}
 }
@@ -234,15 +238,57 @@ footer {
   margin-bottom: 4rem;
   display: flex;
   justify-content: center;
-  &--pro {
-    display: flex;
-    justify-content: center;
+  &--pro a {
+    @include text_index;
+    @include a;
     height: 3rem;
     width: 15rem;
-    background-color: #579c87;
-    color: #fdcb46;
     border-radius: 0.3rem;
-    align-items: center;
+    
 }}
 
+/*menu lanoen*/
 
+.lanoen_main {
+  display: flex;
+    flex-direction: column;
+    height: 100%; 
+}
+
+
+
+.lanoen{
+  margin-bottom: 3rem;
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: #fcdfdb;
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+  justify-content: space-around;
+  
+  h1,h2{
+    font-family: $font-size-lanoen;
+  }
+.fas{
+ font-size:1rem;
+ background: -webkit-linear-gradient(left, #f15861, #f78f6a );
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ width: fit-content;
+ align-self: center;}
+
+li {
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+font-size: 0.7rem;
+line-height: 1.5rem;
+}
+ul{
+  margin-bottom: 2.8rem;
+}
+
+
+
+ 
+}
