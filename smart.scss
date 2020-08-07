@@ -93,29 +93,54 @@ $bg-color-lanoen:#fcdfdb;
 $primary-size:1rem;
 $font-family-lanoen:"devonshireregular";
 $font-family-menu:"Segoe Print";
+
 // Small devices
 @mixin sm {
   @media (min-width: #{$screen-sm-min}) {
-      margin:4rem;
-      height:100%;
-  
-   
-  
-  }
+    min-width: 51%;
+    height: 25rem;
+    }
 }
+@mixin sm_bloc_page_menu {
+  @media (min-width: #{$screen-sm-min}){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+}
+}
+
+
+
+
 // Medium devices
-@mixin md {
+@mixin md_menu {
   @media (min-width: #{$screen-md-min}) {
-    color:red;
+    min-width: 33%;
+    height: 31rem;
+    margin: 2rem;
+
+    }
   }
-}
+
+ 
 // Large devices
-@mixin lg {
+@mixin lg_menu {
   @media (min-width: #{$screen-lg-min}) {
-    color:green;
-      
+    min-width: 33%;
+    height: 31rem;
+    margin: 2rem;
   }
 }
+
+@mixin lg_bloc_page {
+  @media (min-width: #{$screen-lg-min}){
+    max-width: 1000px;
+    margin: auto;
+}}
+
+
 // Extra large devices
 @mixin xl {
   @media (min-width: #{$screen-xl-min}) {
@@ -155,9 +180,9 @@ $font-family-menu:"Segoe Print";
   box-shadow: $shadow;
   border-radius: 1rem 1rem;
     p {padding-top: 1rem;
-      font-size:1.7rem;
+      font-size:1.5rem;
   }
-    h2 {font-size:1.9rem;
+    h2 {font-size:1.7rem;
   }
     a {
       text-decoration: none;
@@ -186,6 +211,7 @@ $font-family-menu:"Segoe Print";
   @include text_index;   
   font-size:3rem;
   height: 5.4rem;
+  margin-bottom: 1rem;
   & a {
   @include a;
   }
@@ -194,6 +220,7 @@ $font-family-menu:"Segoe Print";
  
 
 footer {
+  @include lg_bloc_page
   @include text_index;
   justify-content: space-around;
   bottom:0;
@@ -207,13 +234,24 @@ footer {
 
 /*menus de la page index*/
 
+.bloc_page{
+  box-shadow: $shadow ;
+  margin: auto;
+  @include lg_bloc_page
+}
  
+.bloc_page_menu {
+   @include sm_bloc_page_menu;
+   
+ }
 
 .menu {
-@include menu
+  @include menu
+  @include sm
+  @include md_menu
+  @include lg_menu
     /*la note enchantee*/
   &-lanoen {
-      margin-top: 1rem;
       background-color: #fcdfdb;
       font-family: $font-family-lanoen;
     .fas {
@@ -249,8 +287,8 @@ footer {
       color:#c77412;
    } 
   }
- #lechfr_font {
-  font-size:1.4rem;
+  #lechfr_font {
+  font-size:1.2rem;
   }
     /*le delice des papilles*/
   &-ledepa {
@@ -274,11 +312,11 @@ footer {
       background: -webkit-linear-gradient(-75deg, #3d9339, #bfff7e 75%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    }
+      }
     p{font-family:$font-family-menu;
       color:#72bf56;
-    }}
-
+      }
+    }
   }
 
   /*prochainement */
@@ -321,7 +359,6 @@ footer {
   }
 
   .fas{
-    
     background: -webkit-linear-gradient(left, #f15861, #f78f6a );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -331,7 +368,8 @@ footer {
     &_haut{
     padding-top:2.5rem;
     font-size:3rem;
-  }}
+    }
+  }
   h3{
     color:$color-lanoen;
     }
@@ -353,11 +391,9 @@ footer {
     
     &_dessert{
       margin-right: 0;
+      }
+    }
   }
-  }
-  }
-  
- 
 }
 .main_bas {
   display: flex;
@@ -365,16 +401,10 @@ footer {
   padding-top: 3rem;
   .fas{
     font-size:2rem;
-    
   }
 }
 
 /* le chic a la francaise*/
-
-
-
-
-
 
 h3
 {
