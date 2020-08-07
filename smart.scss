@@ -85,7 +85,7 @@ $screen-lg-min: 992px;
 // Large tablets and desktops
 $screen-xl-min: 1200px;
 
-$shadow: 0 0 20px #bbba;
+$shadow: 1px 5px 9px 1px rgba(36, 31, 31, 0.667);
 $primary-bg-color:#579c87;
 $primary-color:#fdcb46;
 $color-lanoen:#4e252a;
@@ -99,10 +99,7 @@ $font-family-menu:"Segoe Print";
       margin:4rem;
       height:100%;
   
-   body{
-    width: 1200px;
-    margin: auto;
-}  
+   
   
   }
 }
@@ -147,13 +144,13 @@ $font-family-menu:"Segoe Print";
 
 @mixin menu  {
   
-  height: 15rem;
+  height: 12rem;
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 2rem;
-  margin-left: 2rem;
+  margin-right: 1.2rem;
+  margin-left: 1.2rem;
   margin-bottom: 1rem;
   box-shadow: $shadow;
   border-radius: 1rem 1rem;
@@ -172,7 +169,7 @@ $font-family-menu:"Segoe Print";
       transition: transform scale(1), opacity (1);
       transition-duration: 1s;
         &:hover {
-        transform:scale(1.5);
+        transform:scale(1.2);
         opacity:(0.3);
       }
   }
@@ -375,27 +372,9 @@ footer {
 /* le chic a la francaise*/
 
 
-#lne {
-  @include sm
-  @include md
-  @include lg
-  @include xl
-}
 
 
-h1  {
- 
-  transition:transform (2s);
-  transition-delay: 0;
-  transition-timing-function:ease-in-out ;
-  &:hover {
-    transform:translateX(-40rem);
-    
-   
-    
-  }
 
-}
 
 h3
 {

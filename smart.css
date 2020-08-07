@@ -131,7 +131,7 @@ footer a {
 
 /*menus de la page index*/
 .menu {
-  height: 15rem;
+  height: 12rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,11 +145,11 @@ footer a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 2rem;
-  margin-left: 2rem;
+  margin-right: 1.2rem;
+  margin-left: 1.2rem;
   margin-bottom: 1rem;
-  -webkit-box-shadow: 0 0 20px #bbba;
-          box-shadow: 0 0 20px #bbba;
+  -webkit-box-shadow: 1px 5px 9px 1px rgba(36, 31, 31, 0.667);
+          box-shadow: 1px 5px 9px 1px rgba(36, 31, 31, 0.667);
   border-radius: 1rem 1rem;
   /*la note enchantee*/
   /*le chic a la francaise*/
@@ -189,8 +189,8 @@ footer a {
 }
 
 .menu a:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   opacity: 0.3;
 }
 
@@ -329,10 +329,6 @@ footer a {
     margin: 4rem;
     height: 100%;
   }
-  .lanoen body {
-    width: 1200px;
-    margin: auto;
-  }
 }
 
 .lanoen .enplde, .lanoen h3 {
@@ -418,51 +414,6 @@ footer a {
 }
 
 /* le chic a la francaise*/
-@media (min-width: 576px) {
-  #lne {
-    margin: 4rem;
-    height: 100%;
-  }
-  #lne body {
-    width: 1200px;
-    margin: auto;
-  }
-}
-
-@media (min-width: 768px) {
-  #lne {
-    color: red;
-  }
-}
-
-@media (min-width: 992px) {
-  #lne {
-    color: green;
-  }
-}
-
-@media (min-width: 1200px) {
-  #lne {
-    color: yellow;
-  }
-}
-
-h1 {
-  -webkit-transition: -webkit-transform 2s;
-  transition: -webkit-transform 2s;
-  transition: transform 2s;
-  transition: transform 2s, -webkit-transform 2s;
-  -webkit-transition-delay: 0;
-          transition-delay: 0;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
-}
-
-h1:hover {
-  -webkit-transform: translateX(-40rem);
-          transform: translateX(-40rem);
-}
-
 h3 {
   position: relative;
 }
