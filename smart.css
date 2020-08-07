@@ -72,6 +72,10 @@
 
 /*variables ou map*/
 /*liserets ohmyfood  mentions contact*/
+html, body {
+  height: 100%;
+}
+
 #oh {
   letter-spacing: -0.10em;
 }
@@ -93,13 +97,16 @@
           justify-content: center;
   font-size: 3rem;
   height: 5.4rem;
-  margin-bottom: 1rem;
 }
 
 .text_index--titre a {
   color: #fdcb46;
   text-decoration: none;
   background-color: #579c87;
+}
+
+.index {
+  margin-bottom: 1rem;
 }
 
 footer {
@@ -117,8 +124,9 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   bottom: 0;
   position: fixed;
   height: 3rem;
@@ -135,6 +143,10 @@ footer a {
   color: #fdcb46;
   text-decoration: none;
   background-color: #579c87;
+}
+
+footer h3 {
+  padding: 1rem;
 }
 
 /*menus de la page index*/
@@ -373,6 +385,19 @@ footer a {
 }
 
 /*menu page lanoen*/
+main.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .lanoen {
   font-family: "Segoe Print";
   padding: 1rem 1rem 1rem 1rem;
@@ -389,8 +414,10 @@ footer a {
 
 @media (min-width: 576px) {
   .lanoen {
-    min-width: 51%;
-    height: 25rem;
+    margin: 5rem;
+    -webkit-box-shadow: 1px 5px 9px 1px rgba(36, 31, 31, 0.667);
+            box-shadow: 1px 5px 9px 1px rgba(36, 31, 31, 0.667);
+    max-height: 200rem;
   }
 }
 
@@ -462,18 +489,12 @@ footer a {
   margin-right: 0;
 }
 
-.main_bas {
+.menu_part {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 3rem;
-}
-
-.main_bas .fas {
-  font-size: 2rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 /* le chic a la francaise*/
