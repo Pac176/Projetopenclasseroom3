@@ -392,6 +392,7 @@ main.main {
   }
   h3{
     color:$color-lanoen;
+    font-size: 1.4rem;
     }
   li {
     display:flex;
@@ -418,13 +419,21 @@ main.main {
 
 .menu_part {
   display:flex;
-  justify-content: space-around;
+  justify-content: space-between;
        
   }
 
-  
+.menu_part_trait {
+    width: 12.5rem;
+    height: 0.6rem;
+    position: relative;
+    top: 3.1rem;
+}
    
-
+.main_bas {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;}
 
 
 /* le chic a la francaise*/
@@ -435,15 +444,17 @@ h3
 }
 
 h3:before {
-  content: "before";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0.8rem;
-  left: 0;
-  background-color: $color-lanoen;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0.3rem;
+    bottom: 1rem;
+    left: 0;
+    background-color: #4e252a;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;;
 }
 
 h3:hover:before {

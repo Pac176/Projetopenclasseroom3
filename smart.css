@@ -454,6 +454,7 @@ main.main {
 
 .lanoen h3 {
   color: #4e252a;
+  font-size: 1.4rem;
 }
 
 .lanoen li {
@@ -493,8 +494,26 @@ main.main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu_part_trait {
+  width: 12.5rem;
+  height: 0.6rem;
+  position: relative;
+  top: 3.1rem;
+}
+
+.main_bas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3rem;
 }
 
 /* le chic a la francaise*/
@@ -503,16 +522,17 @@ h3 {
 }
 
 h3:before {
-  content: "before";
+  content: "";
   position: absolute;
   width: 0;
-  height: 2px;
-  bottom: 0.8rem;
+  height: 0.3rem;
+  bottom: 1rem;
   left: 0;
   background-color: #4e252a;
   visibility: hidden;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  border-radius: 50%;
 }
 
 h3:hover:before {
