@@ -63,32 +63,6 @@
   font-display: swap;
 }
 
-html {
-  height: 100%;
-}
-
-body {
-  height: 100%;
-}
-
-@media (min-width: 0px) {
-  body {
-    background-color: red;
-  }
-}
-
-@media (min-width: 768px) {
-  body {
-    background-color: blue;
-  }
-}
-
-@media (min-width: 992px) {
-  body {
-    background-color: green;
-  }
-}
-
 * {
   margin: 0px;
   padding: 0px;
@@ -96,7 +70,8 @@ body {
   /*border: 1px black solid;*/
 }
 
-/*liserets */
+/*variables ou map*/
+/*liserets ohmyfood  mentions contact*/
 #oh {
   letter-spacing: -0.10em;
 }
@@ -123,6 +98,7 @@ body {
 .text_index--titre a {
   color: #fdcb46;
   text-decoration: none;
+  background-color: #579c87;
 }
 
 footer {
@@ -150,13 +126,10 @@ footer {
 footer a {
   color: #fdcb46;
   text-decoration: none;
+  background-color: #579c87;
 }
 
-/*menus*/
-#lechfr_font {
-  font-size: 1.4rem;
-}
-
+/*menus de la page index*/
 .menu {
   height: 15rem;
   display: -webkit-box;
@@ -178,6 +151,10 @@ footer a {
   -webkit-box-shadow: 0 0 20px #bbba;
           box-shadow: 0 0 20px #bbba;
   border-radius: 1rem 1rem;
+  /*la note enchantee*/
+  /*le chic a la francaise*/
+  /*le delice des papilles*/
+  /*la palette du gout*/
 }
 
 .menu p {
@@ -203,6 +180,18 @@ footer a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: opacity 1, -webkit-transform scale(1);
+  transition: opacity 1, -webkit-transform scale(1);
+  transition: transform scale(1), opacity 1;
+  transition: transform scale(1), opacity 1, -webkit-transform scale(1);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.menu a:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  opacity: 0.3;
 }
 
 .menu-lanoen {
@@ -250,6 +239,10 @@ footer a {
   color: #c77412;
 }
 
+.menu #lechfr_font {
+  font-size: 1.4rem;
+}
+
 .menu-ledepa {
   font-family: 'dancing_scriptregular';
   background-color: #f9f9f9;
@@ -282,6 +275,7 @@ footer a {
   color: #72bf56;
 }
 
+/*prochainement */
 .footer_bloc_page {
   margin-bottom: 4rem;
   display: -webkit-box;
@@ -309,15 +303,15 @@ footer a {
           justify-content: center;
   color: #fdcb46;
   text-decoration: none;
+  background-color: #579c87;
   height: 3rem;
   width: 15rem;
   border-radius: 0.3rem;
 }
 
-/*menu lanoen*/
+/*menu page lanoen*/
 .lanoen {
   font-family: "Segoe Print";
-  margin-bottom: 3rem;
   padding: 1rem 1rem 1rem 1rem;
   background-color: #fcdfdb;
   display: -webkit-box;
@@ -327,12 +321,26 @@ footer a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: -webkit-fill-available;
+  height: 1100px;
+}
+
+@media (min-width: 576px) {
+  .lanoen {
+    margin: 4rem;
+    height: 100%;
+  }
+  .lanoen body {
+    width: 1200px;
+    margin: auto;
+  }
 }
 
 .lanoen .enplde, .lanoen h3 {
-  padding-bottom: 0.6rem;
-  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  /*text-decoration-line: underline;
+    text-underline-position: under;
+    text-decoration-color: red;*/
 }
 
 .lanoen h1, .lanoen h2 {
@@ -341,7 +349,6 @@ footer a {
 }
 
 .lanoen .fas {
-  font-size: 3rem;
   background: -webkit-linear-gradient(left, #f15861, #f78f6a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -352,6 +359,11 @@ footer a {
       -ms-grid-row-align: center;
       align-self: center;
   padding-right: 1rem;
+}
+
+.lanoen .fas_haut {
+  padding-top: 2.5rem;
+  font-size: 3rem;
 }
 
 .lanoen h3 {
@@ -366,27 +378,29 @@ footer a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.5rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 0.8rem;
 }
 
 .lanoen li .plat {
   color: #4e252a;
   text-align: justify;
-  max-width: 85%;
+  margin-right: 2rem;
 }
 
 .lanoen li .prix {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  font-weight: bolder;
 }
 
-.lanoen ul {
-  margin-bottom: 2.8rem;
+.lanoen li .prix_dessert {
+  margin-right: 0;
 }
 
 .main_bas {
@@ -396,6 +410,7 @@ footer a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 3rem;
 }
 
 .main_bas .fas {
@@ -403,4 +418,71 @@ footer a {
 }
 
 /* le chic a la francaise*/
+@media (min-width: 576px) {
+  #lne {
+    margin: 4rem;
+    height: 100%;
+  }
+  #lne body {
+    width: 1200px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  #lne {
+    color: red;
+  }
+}
+
+@media (min-width: 992px) {
+  #lne {
+    color: green;
+  }
+}
+
+@media (min-width: 1200px) {
+  #lne {
+    color: yellow;
+  }
+}
+
+h1 {
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+h1:hover {
+  -webkit-transform: translateX(-40rem);
+          transform: translateX(-40rem);
+}
+
+h3 {
+  position: relative;
+}
+
+h3:before {
+  content: "before";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0.8rem;
+  left: 0;
+  background-color: #4e252a;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+h3:hover:before {
+  visibility: visible;
+  width: 100%;
+  margin: auto;
+}
 /*# sourceMappingURL=smart.css.map */
