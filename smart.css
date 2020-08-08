@@ -429,7 +429,7 @@ main.main {
     text-decoration-color: red;*/
 }
 
-.lanoen h1, .lanoen h2 {
+.lanoen h2 {
   font-family: "devonshireregular";
   color: #4e252a;
 }
@@ -506,6 +506,7 @@ main.main {
   top: 3.1rem;
 }
 
+/*que lanoen*/
 .main_bas {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -524,19 +525,17 @@ h3 {
 h3:before {
   content: "";
   position: absolute;
-  width: 0;
+  width: 0%;
   height: 0.3rem;
   bottom: 1rem;
   left: 0;
   background-color: #4e252a;
-  visibility: hidden;
+  border-radius: 50%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  border-radius: 50%;
 }
 
 h3:hover:before {
-  visibility: visible;
   width: 100%;
   margin: auto;
 }

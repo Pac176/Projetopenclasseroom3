@@ -373,7 +373,7 @@ main.main {
     flex-direction: column;
     height:1100px;
  
-  h1, h2 {
+  h2 {
     font-family: $font-family-lanoen;
     color:$color-lanoen;
   }
@@ -429,7 +429,7 @@ main.main {
     position: relative;
     top: 3.1rem;
 }
-   
+  /*que lanoen*/ 
 .main_bas {
   display: flex;
   justify-content: center;
@@ -441,24 +441,23 @@ main.main {
 h3
 {
     position: relative;
+    
 }
 
 h3:before {
     content: "";
     position: absolute;
-    width: 0;
+    width: 0%;
     height: 0.3rem;
     bottom: 1rem;
     left: 0;
     background-color: #4e252a;
-    visibility: hidden;
-    -webkit-transition: all 0.3s ease-in-out;
+    border-radius: 50%;
     transition: all 0.3s ease-in-out;
-    border-radius: 50%;;
+   
 }
 
 h3:hover:before {
-  visibility: visible;
   width: 100%;
   margin:auto;
 }
