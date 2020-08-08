@@ -97,6 +97,7 @@ html, body {
           justify-content: center;
   font-size: 3rem;
   height: 5.4rem;
+  margin-bottom: 2rem;
 }
 
 .text_index--titre a {
@@ -320,7 +321,7 @@ footer h3 {
 
 .menu-ledepa {
   font-family: 'dancing_scriptregular';
-  background-color: #f9f9f9;
+  background-color: #edefef;
 }
 
 .menu-ledepa h2 {
@@ -385,7 +386,7 @@ footer h3 {
 }
 
 /*menu page lanoen*/
-main.main {
+.main_page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -399,11 +400,10 @@ main.main {
 }
 
 .lanoen {
+  color: #4e252a;
+  background: #fcdfdb;
   font-family: "devonshireregular";
   padding: 1rem 1rem 1rem 1rem;
-  background: #4e252a;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -420,17 +420,9 @@ main.main {
     margin-top: 3rem;}*/
 }
 
-.lanoen .enplde, .lanoen h3 {
-  padding-bottom: 1rem;
-  padding-top: 2rem;
-  /*text-decoration-line: underline;
-    text-underline-position: under;
-    text-decoration-color: red;*/
-}
-
 .lanoen h2 {
-  font-family: "devonshireregular";
-  color: #4e252a;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
 }
 
 .lanoen .fas {
@@ -452,8 +444,7 @@ main.main {
 }
 
 .lanoen h3 {
-  color: #4e252a;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .lanoen li {
@@ -473,13 +464,11 @@ main.main {
 }
 
 .lanoen li .plat {
-  color: #4e252a;
   text-align: justify;
   margin-right: 2rem;
 }
 
 .lanoen li .prix {
-  color: #4e252a;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -497,12 +486,27 @@ main.main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0 1rem 0;
 }
 
 .lanoen .menu_part_trait {
-  width: 12.5rem;
-  height: 0.6rem;
+  width: 2rem;
+  height: 0.5rem;
   position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 576px) {
+  .lanoen .menu_part_trait {
+    width: 35%;
+    height: 0.6rem;
+    position: relative;
+  }
 }
 
 .lanoen h3 {
@@ -514,7 +518,7 @@ main.main {
   position: absolute;
   width: 0%;
   height: 0.3rem;
-  bottom: 1rem;
+  bottom: 0;
   left: 0;
   background-color: #4e252a;
   border-radius: 50%;
@@ -527,16 +531,11 @@ main.main {
   margin: auto;
 }
 
-.lanoen .menu_part_trait {
-  top: 3.1rem;
-}
-
 .lapago {
+  color: #72bf56;
+  background: #fdfffd;
   font-family: "kaushan_scriptregular";
   padding: 1rem 1rem 1rem 1rem;
-  background: #72bf56;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -553,17 +552,9 @@ main.main {
     margin-top: 3rem;}*/
 }
 
-.lapago .enplde, .lapago h3 {
-  padding-bottom: 1rem;
-  padding-top: 2rem;
-  /*text-decoration-line: underline;
-    text-underline-position: under;
-    text-decoration-color: red;*/
-}
-
 .lapago h2 {
-  font-family: "kaushan_scriptregular";
-  color: #72bf56;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
 }
 
 .lapago .fas {
@@ -585,8 +576,7 @@ main.main {
 }
 
 .lapago h3 {
-  color: #72bf56;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .lapago li {
@@ -606,13 +596,11 @@ main.main {
 }
 
 .lapago li .plat {
-  color: #72bf56;
   text-align: justify;
   margin-right: 2rem;
 }
 
 .lapago li .prix {
-  color: #72bf56;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -630,12 +618,27 @@ main.main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0 1rem 0;
 }
 
 .lapago .menu_part_trait {
-  width: 12.5rem;
-  height: 0.6rem;
+  width: 2rem;
+  height: 0.5rem;
   position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 576px) {
+  .lapago .menu_part_trait {
+    width: 35%;
+    height: 0.6rem;
+    position: relative;
+  }
 }
 
 .lapago h3 {
@@ -647,7 +650,7 @@ main.main {
   position: absolute;
   width: 0%;
   height: 0.3rem;
-  bottom: 1rem;
+  bottom: 0;
   left: 0;
   background-color: #72bf56;
   border-radius: 50%;
@@ -660,16 +663,20 @@ main.main {
   margin: auto;
 }
 
-.lapago .menu_part_trait {
-  top: 2.9rem;
+.lapago .lapago_section {
+  color: black;
+  font-family: "Segoe Print";
+}
+
+.lapago h2 {
+  font-size: 4rem;
 }
 
 .ledepa {
+  color: #0887fb;
+  background: #edefef;
   font-family: "dancing_scriptregular";
   padding: 1rem 1rem 1rem 1rem;
-  background: #0887fb;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -686,17 +693,9 @@ main.main {
     margin-top: 3rem;}*/
 }
 
-.ledepa .enplde, .ledepa h3 {
-  padding-bottom: 1rem;
-  padding-top: 2rem;
-  /*text-decoration-line: underline;
-    text-underline-position: under;
-    text-decoration-color: red;*/
-}
-
 .ledepa h2 {
-  font-family: "dancing_scriptregular";
-  color: #0887fb;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
 }
 
 .ledepa .fas {
@@ -718,8 +717,7 @@ main.main {
 }
 
 .ledepa h3 {
-  color: #0887fb;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .ledepa li {
@@ -739,13 +737,11 @@ main.main {
 }
 
 .ledepa li .plat {
-  color: #0887fb;
   text-align: justify;
   margin-right: 2rem;
 }
 
 .ledepa li .prix {
-  color: #0887fb;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -763,12 +759,27 @@ main.main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0 1rem 0;
 }
 
 .ledepa .menu_part_trait {
-  width: 12.5rem;
-  height: 0.6rem;
+  width: 2rem;
+  height: 0.5rem;
   position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 576px) {
+  .ledepa .menu_part_trait {
+    width: 35%;
+    height: 0.6rem;
+    position: relative;
+  }
 }
 
 .ledepa h3 {
@@ -780,7 +791,7 @@ main.main {
   position: absolute;
   width: 0%;
   height: 0.3rem;
-  bottom: 1rem;
+  bottom: 0;
   left: 0;
   background-color: #0887fb;
   border-radius: 50%;
@@ -793,16 +804,20 @@ main.main {
   margin: auto;
 }
 
-.ledepa .menu_part_trait {
-  top: 2.5rem;
+.ledepa .ledepa_section {
+  color: black;
+  font-family: "Segoe Print";
+}
+
+.ledepa h2 {
+  font-size: 2.5rem;
 }
 
 .lechfr {
+  color: #d8852e;
+  background: #fff5fe;
   font-family: "croissant_oneregular";
   padding: 1rem 1rem 1rem 1rem;
-  background: -webkit-linear-gradient(-227deg, #d8852e, #905bfd 80%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -819,17 +834,9 @@ main.main {
     margin-top: 3rem;}*/
 }
 
-.lechfr .enplde, .lechfr h3 {
-  padding-bottom: 1rem;
-  padding-top: 2rem;
-  /*text-decoration-line: underline;
-    text-underline-position: under;
-    text-decoration-color: red;*/
-}
-
 .lechfr h2 {
-  font-family: "croissant_oneregular";
-  color: -webkit-linear-gradient(-227deg, #d8852e, #905bfd 80%);
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
 }
 
 .lechfr .fas {
@@ -851,8 +858,7 @@ main.main {
 }
 
 .lechfr h3 {
-  color: -webkit-linear-gradient(-227deg, #d8852e, #905bfd 80%);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .lechfr li {
@@ -872,13 +878,11 @@ main.main {
 }
 
 .lechfr li .plat {
-  color: -webkit-linear-gradient(-227deg, #d8852e, #905bfd 80%);
   text-align: justify;
   margin-right: 2rem;
 }
 
 .lechfr li .prix {
-  color: -webkit-linear-gradient(-227deg, #d8852e, #905bfd 80%);
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -896,12 +900,27 @@ main.main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0 1rem 0;
 }
 
 .lechfr .menu_part_trait {
-  width: 12.5rem;
-  height: 0.6rem;
+  width: 2rem;
+  height: 0.5rem;
   position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 576px) {
+  .lechfr .menu_part_trait {
+    width: 35%;
+    height: 0.6rem;
+    position: relative;
+  }
 }
 
 .lechfr h3 {
@@ -913,9 +932,9 @@ main.main {
   position: absolute;
   width: 0%;
   height: 0.3rem;
-  bottom: 1rem;
+  bottom: 0;
   left: 0;
-  background-color: -webkit-linear-gradient(-227deg, #d8852e, #905bfd 80%);
+  background-color: #d8852e;
   border-radius: 50%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -926,121 +945,26 @@ main.main {
   margin: auto;
 }
 
+.lechfr .lechfr_section {
+  font-family: serif;
+}
+
+.lechfr h2 {
+  background: -webkit-linear-gradient(-75deg, #d8852e, #905bfd 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+}
+
+.lechfr .middle_menu {
+  color: #a56799;
+}
+
+.lechfr .end_menu {
+  color: #6e4ccc;
+}
+
 .lechfr .menu_part_trait {
-  top: 2.8rem;
+  width: 8rem;
 }
-
-.lechfr li {
-  background-color: -webkit-linear-gradient(-75deg, #d8852e, #905bfd 80%);
-}
-
-/*
-.lanoen{
- @include sm_lanoen
-  .enplde, h3{
-    padding-bottom: 1rem;
-    padding-top: 2rem;
-    /*text-decoration-line: underline;
-    text-underline-position: under;
-    text-decoration-color: red;
-    
-  }
-    font-family:$font-family-menu;
-    padding: 1rem 1rem 1rem 1rem;
-    background-color: #fcdfdb;
-    display: flex;
-    flex-direction: column;
-    height:1100px;
- 
-  h2 {
-    font-family: $font-family-lanoen;
-    color:$color-lanoen;
-  }
-
-  .fas{
-    background: -webkit-linear-gradient(left, #f15861, #f78f6a );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    width: fit-content;
-    align-self: center;
-    padding-right: 1rem;
-    &_haut{
-    padding-top:2.5rem;
-    font-size:3rem;
-    }
-  }
-  h3{
-    color:$color-lanoen;
-    font-size: 1.4rem;
-    }
-  li {
-    display:flex;
-    flex-direction: row;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    justify-content: space-between;
-    padding-top: 0.8rem;
-  .plat {
-    color: $color-lanoen;
-    text-align: justify;
-    margin-right: 2rem;
-  }
-  .prix {
-    align-self: center;
-    font-weight: bolder;
-    
-    &_dessert{
-      margin-right: 0;
-      }
-    }
-  }
-}
-
-.menu_part {
-  display:flex;
-  justify-content: space-between;
-       
-  }
-
-.menu_part_trait {
-    width: 12.5rem;
-    height: 0.6rem;
-    position: relative;
-    top: 3.1rem;
-}
-  /*que lanoen
-.main_bas {
-  display: flex;
-  justify-content: center;
-  margin-top: 3rem;}
-
-
-/* le chic a la francaise
-
-h3
-{
-    position: relative;
-    
-}
-
-h3:before {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 0.3rem;
-    bottom: 1rem;
-    left: 0;
-    background-color: #4e252a;
-    border-radius: 50%;
-    transition: all 0.3s ease-in-out;
-   
-}
-
-h3:hover:before {
-  width: 100%;
-  margin:auto;
-}
-
-
-*/
 /*# sourceMappingURL=smart.css.map */

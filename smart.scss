@@ -90,12 +90,12 @@ $primary-bg-color:#579c87;
 $primary-color:#fdcb46;
 $color-lanoen:#4e252a;
 $color-lapago:#72bf56;
-$color-lechfr:-webkit-linear-gradient(-227deg, #d8852e, #905bfd 80%);
+$color-lechfr:#d8852e;
 $color-ledepa:#0887fb;
 $bg-color-lanoen:#fcdfdb;
 $bg-color-lapago:#fdfffd;
 $bg-color-lechfr: #fff5fe;
-$bg-color-ledepa: #f9f9f9;
+$bg-color-ledepa: #edefef;
 $primary-size:1rem;
 $font-family-lapago:"kaushan_scriptregular";
 $font-family-lanoen:"devonshireregular";
@@ -126,6 +126,15 @@ $font-family-menu:"Segoe Print";
     box-shadow: $shadow;
     max-height: 200rem;
 }}
+
+
+@mixin sm_menu_trait{
+  @media (min-width: #{$screen-sm-min}){
+    width: 35%;
+    height: 0.6rem;
+    position: relative;
+ }
+}
 
 
 // Medium devices
@@ -230,6 +239,7 @@ html, body {
   @include text_index;   
   font-size:3rem;
   height: 5.4rem;
+  margin-bottom:2rem;
  
   & a {
   @include a;
@@ -309,13 +319,13 @@ footer {
       color:#c77412;
    } 
   }
-  #lechfr_font {
-  font-size:1.2rem;
+      #lechfr_font {
+      font-size:1.2rem;
   }
     /*le delice des papilles*/
   &-ledepa {
       font-family: 'dancing_scriptregular';
-      background-color: #f9f9f9;
+      background-color: #edefef;
     h2 {
       background: -webkit-linear-gradient(-75deg, #0431df, #0887fb 60%);
       -webkit-background-clip: text;
@@ -358,7 +368,7 @@ footer {
 
 /*menu page lanoen*/
 
-main.main {
+.main_page {
   display: flex;
   height: 100%;
   justify-content: center;
@@ -367,28 +377,20 @@ main.main {
 
 
 @mixin menu_misenpage ($color:$primary-color,$bg-color:$primary-bg-color,$font-family:$primary-font-family){
-  .enplde, h3{
-    padding-bottom: 1rem;
-    padding-top: 2rem;
-    /*text-decoration-line: underline;
-    text-underline-position: under;
-    text-decoration-color: red;*/
-    
-  }
-    font-family:$font-family;
-    padding: 1rem 1rem 1rem 1rem;
-    background: $color;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: flex;
-    flex-direction: column;
-    height:1100px;
- 
-  h2 {
-    font-family: $font-family;
-    color:$color;
+  color: $color;
+  background: $bg-color;
+  font-family:$font-family;
+  padding: 1rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  height:1100px;
+
+  h2{
+    margin-bottom: 3rem;
+    font-size:1.5rem;
   }
 
+      
   .fas{
     background: -webkit-linear-gradient(left, #f15861, #f78f6a );
     -webkit-background-clip: text;
@@ -402,8 +404,7 @@ main.main {
     }
   }
   h3{
-    color:$color;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     }
   li {
     display:flex;
@@ -412,13 +413,14 @@ main.main {
     line-height: 1.5rem;
     justify-content: space-between;
     padding-top: 0.8rem;
+    
   .plat {
-    color: $color;
+    
     text-align: justify;
     margin-right: 2rem;
   }
   .prix {
-    color: $color;
+    
     align-self: center;
     font-weight: bolder;
     
@@ -430,14 +432,17 @@ main.main {
   .menu_part {
     display:flex;
     justify-content: space-between;
-         
+    align-items: center;   
+    padding: 1rem 0 1rem 0;   
+    
     }
   
   .menu_part_trait {
-      width: 12.5rem;
-      height: 0.6rem;
+    @include sm_menu_trait
+      width:2rem;
+      height: 0.5rem;
       position: relative;
-      
+      justify-content: center;
   }
     /*que lanoen*/ /*
   .main_bas {
@@ -457,7 +462,7 @@ main.main {
       position: absolute;
       width: 0%;
       height: 0.3rem;
-      bottom: 1rem;
+      bottom: 0;
       left: 0;
       background-color: $color;
       border-radius: 50%;
@@ -475,149 +480,55 @@ main.main {
 
 .lanoen {
   @include menu_misenpage ($color-lanoen,$bg-color-lanoen,$font-family-lanoen)
-  .menu_part_trait {
-       top: 3.1rem;
-}
+  
 }
 
 .lapago {
   @include menu_misenpage($color-lapago,$bg-color-lapago,$font-family-lapago)
-  .menu_part_trait {
-    top: 2.9rem;
+  .lapago_section{
+    color:black;
+    font-family:$font-family-menu;
+  }
+  
+h2 {
+  font-size:4rem;
 }
+
 }
 
 .ledepa {
   @include menu_misenpage($color-ledepa,$bg-color-ledepa,$font-family-ledepa)
-  .menu_part_trait {
-    top: 2.5rem;
+  .ledepa_section {  
+  color:black;
+    font-family:$font-family-menu;}
+h2 {
+  font-size:2.5rem;
 }
 }
 
 .lechfr {
   @include menu_misenpage($color-lechfr,$bg-color-lechfr,$font-family-lechfr)
-  .menu_part_trait {
-    top: 2.8rem;
+  .lechfr_section{
+    font-family:serif;
   }
- li {
-    background-color:-webkit-linear-gradient(-75deg, #d8852e, #905bfd 80%);
-  }
-}
-
-
-
-
-
-
-
-
-
-/*
-.lanoen{
- @include sm_lanoen
-  .enplde, h3{
-    padding-bottom: 1rem;
-    padding-top: 2rem;
-    /*text-decoration-line: underline;
-    text-underline-position: under;
-    text-decoration-color: red;
-    
-  }
-    font-family:$font-family-menu;
-    padding: 1rem 1rem 1rem 1rem;
-    background-color: #fcdfdb;
-    display: flex;
-    flex-direction: column;
-    height:1100px;
- 
-  h2 {
-    font-family: $font-family-lanoen;
-    color:$color-lanoen;
-  }
-
-  .fas{
-    background: -webkit-linear-gradient(left, #f15861, #f78f6a );
+  
+   h2{
+    background: -webkit-linear-gradient(-75deg, #d8852e, #905bfd 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    width: fit-content;
-    align-self: center;
-    padding-right: 1rem;
-    &_haut{
-    padding-top:2.5rem;
-    font-size:3rem;
-    }
-  }
-  h3{
-    color:$color-lanoen;
-    font-size: 1.4rem;
-    }
-  li {
-    display:flex;
-    flex-direction: row;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    justify-content: space-between;
-    padding-top: 0.8rem;
-  .plat {
-    color: $color-lanoen;
-    text-align: justify;
-    margin-right: 2rem;
-  }
-  .prix {
-    align-self: center;
-    font-weight: bolder;
+    font-size:2rem;
+   }
+   .middle_menu {
+     color:#a56799;
     
-    &_dessert{
-      margin-right: 0;
-      }
-    }
-  }
-}
-
-.menu_part {
-  display:flex;
-  justify-content: space-between;
-       
-  }
-
-.menu_part_trait {
-    width: 12.5rem;
-    height: 0.6rem;
-    position: relative;
-    top: 3.1rem;
-}
-  /*que lanoen
-.main_bas {
-  display: flex;
-  justify-content: center;
-  margin-top: 3rem;}
-
-
-/* le chic a la francaise
-
-h3
-{
-    position: relative;
+   }
+   .end_menu {
+     color:#6e4ccc;
     
-}
-
-h3:before {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 0.3rem;
-    bottom: 1rem;
-    left: 0;
-    background-color: #4e252a;
-    border-radius: 50%;
-    transition: all 0.3s ease-in-out;
-   
-}
-
-h3:hover:before {
-  width: 100%;
-  margin:auto;
+   }
+   .menu_part_trait{
+    width:8rem;
+  }
 }
 
 
-*/
