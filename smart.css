@@ -399,9 +399,11 @@ main.main {
 }
 
 .lanoen {
-  font-family: "Segoe Print";
+  font-family: "devonshireregular";
   padding: 1rem 1rem 1rem 1rem;
-  background-color: #fcdfdb;
+  background: #4e252a;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -410,15 +412,12 @@ main.main {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 1100px;
-}
-
-@media (min-width: 576px) {
-  .lanoen {
-    margin: 5rem;
-    -webkit-box-shadow: 1px 5px 9px 1px rgba(36, 31, 31, 0.667);
-            box-shadow: 1px 5px 9px 1px rgba(36, 31, 31, 0.667);
-    max-height: 200rem;
-  }
+  /*que lanoen*/
+  /*
+  .main_bas {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;}*/
 }
 
 .lanoen .enplde, .lanoen h3 {
@@ -480,6 +479,7 @@ main.main {
 }
 
 .lanoen li .prix {
+  color: #4e252a;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -490,7 +490,7 @@ main.main {
   margin-right: 0;
 }
 
-.menu_part {
+.lanoen .menu_part {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -499,30 +499,17 @@ main.main {
           justify-content: space-between;
 }
 
-.menu_part_trait {
+.lanoen .menu_part_trait {
   width: 12.5rem;
   height: 0.6rem;
   position: relative;
-  top: 3.1rem;
 }
 
-/*que lanoen*/
-.main_bas {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 3rem;
-}
-
-/* le chic a la francaise*/
-h3 {
+.lanoen h3 {
   position: relative;
 }
 
-h3:before {
+.lanoen h3:before {
   content: "";
   position: absolute;
   width: 0%;
@@ -535,8 +522,525 @@ h3:before {
   transition: all 0.3s ease-in-out;
 }
 
-h3:hover:before {
+.lanoen h3:hover:before {
   width: 100%;
   margin: auto;
 }
+
+.lanoen .menu_part_trait {
+  top: 3.1rem;
+}
+
+.lapago {
+  font-family: "kaushan_scriptregular";
+  padding: 1rem 1rem 1rem 1rem;
+  background: #72bf56;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 1100px;
+  /*que lanoen*/
+  /*
+  .main_bas {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;}*/
+}
+
+.lapago .enplde, .lapago h3 {
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  /*text-decoration-line: underline;
+    text-underline-position: under;
+    text-decoration-color: red;*/
+}
+
+.lapago h2 {
+  font-family: "kaushan_scriptregular";
+  color: #72bf56;
+}
+
+.lapago .fas {
+  background: -webkit-linear-gradient(left, #f15861, #f78f6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-right: 1rem;
+}
+
+.lapago .fas_haut {
+  padding-top: 2.5rem;
+  font-size: 3rem;
+}
+
+.lapago h3 {
+  color: #72bf56;
+  font-size: 1.4rem;
+}
+
+.lapago li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 0.8rem;
+}
+
+.lapago li .plat {
+  color: #72bf56;
+  text-align: justify;
+  margin-right: 2rem;
+}
+
+.lapago li .prix {
+  color: #72bf56;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: bolder;
+}
+
+.lapago li .prix_dessert {
+  margin-right: 0;
+}
+
+.lapago .menu_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.lapago .menu_part_trait {
+  width: 12.5rem;
+  height: 0.6rem;
+  position: relative;
+}
+
+.lapago h3 {
+  position: relative;
+}
+
+.lapago h3:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 0.3rem;
+  bottom: 1rem;
+  left: 0;
+  background-color: #72bf56;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.lapago h3:hover:before {
+  width: 100%;
+  margin: auto;
+}
+
+.lapago .menu_part_trait {
+  top: 2.9rem;
+}
+
+.ledepa {
+  font-family: "dancing_scriptregular";
+  padding: 1rem 1rem 1rem 1rem;
+  background: #0887fb;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 1100px;
+  /*que lanoen*/
+  /*
+  .main_bas {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;}*/
+}
+
+.ledepa .enplde, .ledepa h3 {
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  /*text-decoration-line: underline;
+    text-underline-position: under;
+    text-decoration-color: red;*/
+}
+
+.ledepa h2 {
+  font-family: "dancing_scriptregular";
+  color: #0887fb;
+}
+
+.ledepa .fas {
+  background: -webkit-linear-gradient(left, #f15861, #f78f6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-right: 1rem;
+}
+
+.ledepa .fas_haut {
+  padding-top: 2.5rem;
+  font-size: 3rem;
+}
+
+.ledepa h3 {
+  color: #0887fb;
+  font-size: 1.4rem;
+}
+
+.ledepa li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 0.8rem;
+}
+
+.ledepa li .plat {
+  color: #0887fb;
+  text-align: justify;
+  margin-right: 2rem;
+}
+
+.ledepa li .prix {
+  color: #0887fb;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: bolder;
+}
+
+.ledepa li .prix_dessert {
+  margin-right: 0;
+}
+
+.ledepa .menu_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ledepa .menu_part_trait {
+  width: 12.5rem;
+  height: 0.6rem;
+  position: relative;
+}
+
+.ledepa h3 {
+  position: relative;
+}
+
+.ledepa h3:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 0.3rem;
+  bottom: 1rem;
+  left: 0;
+  background-color: #0887fb;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.ledepa h3:hover:before {
+  width: 100%;
+  margin: auto;
+}
+
+.ledepa .menu_part_trait {
+  top: 2.5rem;
+}
+
+.lechfr {
+  font-family: "croissant_oneregular";
+  padding: 1rem 1rem 1rem 1rem;
+  background: -webkit-linear-gradient(-227deg, #d8852e, #905bfd 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 1100px;
+  /*que lanoen*/
+  /*
+  .main_bas {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;}*/
+}
+
+.lechfr .enplde, .lechfr h3 {
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  /*text-decoration-line: underline;
+    text-underline-position: under;
+    text-decoration-color: red;*/
+}
+
+.lechfr h2 {
+  font-family: "croissant_oneregular";
+  color: -webkit-linear-gradient(-227deg, #d8852e, #905bfd 80%);
+}
+
+.lechfr .fas {
+  background: -webkit-linear-gradient(left, #f15861, #f78f6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-right: 1rem;
+}
+
+.lechfr .fas_haut {
+  padding-top: 2.5rem;
+  font-size: 3rem;
+}
+
+.lechfr h3 {
+  color: -webkit-linear-gradient(-227deg, #d8852e, #905bfd 80%);
+  font-size: 1.4rem;
+}
+
+.lechfr li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 0.8rem;
+}
+
+.lechfr li .plat {
+  color: -webkit-linear-gradient(-227deg, #d8852e, #905bfd 80%);
+  text-align: justify;
+  margin-right: 2rem;
+}
+
+.lechfr li .prix {
+  color: -webkit-linear-gradient(-227deg, #d8852e, #905bfd 80%);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: bolder;
+}
+
+.lechfr li .prix_dessert {
+  margin-right: 0;
+}
+
+.lechfr .menu_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.lechfr .menu_part_trait {
+  width: 12.5rem;
+  height: 0.6rem;
+  position: relative;
+}
+
+.lechfr h3 {
+  position: relative;
+}
+
+.lechfr h3:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 0.3rem;
+  bottom: 1rem;
+  left: 0;
+  background-color: -webkit-linear-gradient(-227deg, #d8852e, #905bfd 80%);
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.lechfr h3:hover:before {
+  width: 100%;
+  margin: auto;
+}
+
+.lechfr .menu_part_trait {
+  top: 2.8rem;
+}
+
+.lechfr li {
+  background-color: -webkit-linear-gradient(-75deg, #d8852e, #905bfd 80%);
+}
+
+/*
+.lanoen{
+ @include sm_lanoen
+  .enplde, h3{
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    /*text-decoration-line: underline;
+    text-underline-position: under;
+    text-decoration-color: red;
+    
+  }
+    font-family:$font-family-menu;
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: #fcdfdb;
+    display: flex;
+    flex-direction: column;
+    height:1100px;
+ 
+  h2 {
+    font-family: $font-family-lanoen;
+    color:$color-lanoen;
+  }
+
+  .fas{
+    background: -webkit-linear-gradient(left, #f15861, #f78f6a );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+    align-self: center;
+    padding-right: 1rem;
+    &_haut{
+    padding-top:2.5rem;
+    font-size:3rem;
+    }
+  }
+  h3{
+    color:$color-lanoen;
+    font-size: 1.4rem;
+    }
+  li {
+    display:flex;
+    flex-direction: row;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    justify-content: space-between;
+    padding-top: 0.8rem;
+  .plat {
+    color: $color-lanoen;
+    text-align: justify;
+    margin-right: 2rem;
+  }
+  .prix {
+    align-self: center;
+    font-weight: bolder;
+    
+    &_dessert{
+      margin-right: 0;
+      }
+    }
+  }
+}
+
+.menu_part {
+  display:flex;
+  justify-content: space-between;
+       
+  }
+
+.menu_part_trait {
+    width: 12.5rem;
+    height: 0.6rem;
+    position: relative;
+    top: 3.1rem;
+}
+  /*que lanoen
+.main_bas {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;}
+
+
+/* le chic a la francaise
+
+h3
+{
+    position: relative;
+    
+}
+
+h3:before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0.3rem;
+    bottom: 1rem;
+    left: 0;
+    background-color: #4e252a;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+   
+}
+
+h3:hover:before {
+  width: 100%;
+  margin:auto;
+}
+
+
+*/
 /*# sourceMappingURL=smart.css.map */

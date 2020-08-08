@@ -89,9 +89,18 @@ $shadow: 1px 5px 9px 1px rgba(36, 31, 31, 0.667);
 $primary-bg-color:#579c87;
 $primary-color:#fdcb46;
 $color-lanoen:#4e252a;
+$color-lapago:#72bf56;
+$color-lechfr:-webkit-linear-gradient(-227deg, #d8852e, #905bfd 80%);
+$color-ledepa:#0887fb;
 $bg-color-lanoen:#fcdfdb;
+$bg-color-lapago:#fdfffd;
+$bg-color-lechfr: #fff5fe;
+$bg-color-ledepa: #f9f9f9;
 $primary-size:1rem;
+$font-family-lapago:"kaushan_scriptregular";
 $font-family-lanoen:"devonshireregular";
+$font-family-lechfr: "croissant_oneregular";
+$font-family-ledepa:"dancing_scriptregular";
 $font-family-menu:"Segoe Print";
 
 // Small devices
@@ -356,6 +365,154 @@ main.main {
   height: fit-content;
 }
 
+
+@mixin menu_misenpage ($color:$primary-color,$bg-color:$primary-bg-color,$font-family:$primary-font-family){
+  .enplde, h3{
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    /*text-decoration-line: underline;
+    text-underline-position: under;
+    text-decoration-color: red;*/
+    
+  }
+    font-family:$font-family;
+    padding: 1rem 1rem 1rem 1rem;
+    background: $color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    flex-direction: column;
+    height:1100px;
+ 
+  h2 {
+    font-family: $font-family;
+    color:$color;
+  }
+
+  .fas{
+    background: -webkit-linear-gradient(left, #f15861, #f78f6a );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+    align-self: center;
+    padding-right: 1rem;
+    &_haut{
+    padding-top:2.5rem;
+    font-size:3rem;
+    }
+  }
+  h3{
+    color:$color;
+    font-size: 1.4rem;
+    }
+  li {
+    display:flex;
+    flex-direction: row;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    justify-content: space-between;
+    padding-top: 0.8rem;
+  .plat {
+    color: $color;
+    text-align: justify;
+    margin-right: 2rem;
+  }
+  .prix {
+    color: $color;
+    align-self: center;
+    font-weight: bolder;
+    
+    &_dessert{
+      margin-right: 0;
+      }
+    }
+  }
+  .menu_part {
+    display:flex;
+    justify-content: space-between;
+         
+    }
+  
+  .menu_part_trait {
+      width: 12.5rem;
+      height: 0.6rem;
+      position: relative;
+      
+  }
+    /*que lanoen*/ /*
+  .main_bas {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;}*/
+  
+  
+  h3
+  {
+      position: relative;
+      
+  }
+  
+  h3:before {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 0.3rem;
+      bottom: 1rem;
+      left: 0;
+      background-color: $color;
+      border-radius: 50%;
+      transition: all 0.3s ease-in-out;
+     
+  }
+  
+  h3:hover:before {
+    width: 100%;
+    margin:auto;
+  }
+  
+
+}
+
+.lanoen {
+  @include menu_misenpage ($color-lanoen,$bg-color-lanoen,$font-family-lanoen)
+  .menu_part_trait {
+       top: 3.1rem;
+}
+}
+
+.lapago {
+  @include menu_misenpage($color-lapago,$bg-color-lapago,$font-family-lapago)
+  .menu_part_trait {
+    top: 2.9rem;
+}
+}
+
+.ledepa {
+  @include menu_misenpage($color-ledepa,$bg-color-ledepa,$font-family-ledepa)
+  .menu_part_trait {
+    top: 2.5rem;
+}
+}
+
+.lechfr {
+  @include menu_misenpage($color-lechfr,$bg-color-lechfr,$font-family-lechfr)
+  .menu_part_trait {
+    top: 2.8rem;
+  }
+ li {
+    background-color:-webkit-linear-gradient(-75deg, #d8852e, #905bfd 80%);
+  }
+}
+
+
+
+
+
+
+
+
+
+/*
 .lanoen{
  @include sm_lanoen
   .enplde, h3{
@@ -363,7 +520,7 @@ main.main {
     padding-top: 2rem;
     /*text-decoration-line: underline;
     text-underline-position: under;
-    text-decoration-color: red;*/
+    text-decoration-color: red;
     
   }
     font-family:$font-family-menu;
@@ -429,14 +586,14 @@ main.main {
     position: relative;
     top: 3.1rem;
 }
-  /*que lanoen*/ 
+  /*que lanoen
 .main_bas {
   display: flex;
   justify-content: center;
   margin-top: 3rem;}
 
 
-/* le chic a la francaise*/
+/* le chic a la francaise
 
 h3
 {
@@ -463,3 +620,4 @@ h3:hover:before {
 }
 
 
+*/
