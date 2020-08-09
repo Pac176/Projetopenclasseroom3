@@ -106,8 +106,10 @@ $font-family-menu:"Segoe Print";
 // Small devices
 @mixin sm {
   @media (min-width: #{$screen-sm-min}) {
-    min-width: 51%;
-    height: 25rem;
+    width: 37%;
+    height: 36vh;
+    margin:1rem;
+
     }
 }
 @mixin sm_bloc_page_menu {
@@ -140,9 +142,9 @@ $font-family-menu:"Segoe Print";
 // Medium devices
 @mixin md_menu {
   @media (min-width: #{$screen-md-min}) {
-    min-width: 33%;
-    height: 31rem;
-    margin: 2rem;
+    width: 32%;
+    height: 40vh;
+    margin: 1.5rem;
 
     }
   }
@@ -151,20 +153,31 @@ $font-family-menu:"Segoe Print";
 // Large devices
 @mixin lg_menu {
   @media (min-width: #{$screen-lg-min}) {
-    min-width: 33%;
-    height: 31rem;
+    width: 30%;
+    height: 52vh;
     margin: 2rem;
   }
 }
 
-@mixin lg_bloc_page {
-  @media (min-width: #{$screen-lg-min}){
-    max-width: 1000px;
+/*@mixin lg_main_page {
+  @media (min-width: #{$screen-lg-min}) {
+    width: 1200px;
+    height: 1600px;
     margin: auto;
-}}
-
+  }
+}
+*/
 
 // Extra large devices
+@mixin xl_main_page {
+  @media (min-width: #{$screen-xl-min}) {
+    width: 1200px;
+    height: 1600px;
+    margin: auto;
+  }
+}
+
+
 @mixin xl {
   @media (min-width: #{$screen-xl-min}) {
     color:yellow;
@@ -192,13 +205,14 @@ $font-family-menu:"Segoe Print";
 
 @mixin menu  {
   
-  height: 12rem;
+  height: 17vh;
+  width:80%;
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 1.2rem;
-  margin-left: 1.2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
   margin-bottom: 1rem;
   box-shadow: $shadow;
   border-radius: 1rem 1rem;
@@ -250,7 +264,6 @@ html, body {
   margin-bottom: 1rem;}
 
 footer {
-  @include lg_bloc_page
   @include text_index;
   justify-content: space-between;
   bottom:0;
@@ -264,16 +277,19 @@ footer {
   }
 }
 
-/*menus de la page index*/
 
 .bloc_page{
-  box-shadow: $shadow ;
+ /* @include lg_main_page*/
   margin: auto;
-  @include lg_bloc_page
-}
+  height:fit-content;  
+  }
  
 .bloc_page_menu {
    @include sm_bloc_page_menu;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
    
  }
 
@@ -369,6 +385,7 @@ footer {
 /*menu page lanoen*/
 
 .main_page {
+  @include xl_main_page
   display: flex;
   height: 100%;
   justify-content: center;
@@ -387,7 +404,7 @@ footer {
 
   h2{
     margin-bottom: 3rem;
-    font-size:1.5rem;
+    
   }
 
       
@@ -480,25 +497,30 @@ footer {
 
 .lanoen {
   @include menu_misenpage ($color-lanoen,$bg-color-lanoen,$font-family-lanoen)
-  
+  &_section {
+    font-family:$font-family-menu;
+  }
+  h2 {
+    font-size:2.5rem;
+  }
 }
 
 .lapago {
   @include menu_misenpage($color-lapago,$bg-color-lapago,$font-family-lapago)
-  .lapago_section{
+  &_section{
     color:black;
     font-family:$font-family-menu;
   }
   
 h2 {
-  font-size:4rem;
+  font-size:3rem;
 }
 
 }
 
 .ledepa {
   @include menu_misenpage($color-ledepa,$bg-color-ledepa,$font-family-ledepa)
-  .ledepa_section {  
+  &_section {  
   color:black;
     font-family:$font-family-menu;}
 h2 {
@@ -516,7 +538,8 @@ h2 {
     background: -webkit-linear-gradient(-75deg, #d8852e, #905bfd 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size:2rem;
+    font-size:1.5rem;
+    
    }
    .middle_menu {
      color:#a56799;
@@ -526,9 +549,7 @@ h2 {
      color:#6e4ccc;
     
    }
-   .menu_part_trait{
-    width:8rem;
-  }
+   
 }
 
 

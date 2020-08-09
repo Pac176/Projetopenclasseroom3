@@ -71,6 +71,14 @@
 }
 
 /*variables ou map*/
+/*@mixin lg_main_page {
+  @media (min-width: 992px) {
+    width: 1200px;
+    height: 1600px;
+    margin: auto;
+  }
+}
+*/
 /*liserets ohmyfood  mentions contact*/
 html, body {
   height: 100%;
@@ -133,13 +141,6 @@ footer {
   height: 3rem;
 }
 
-@media (min-width: 992px) {
-  footer {
-    max-width: 1000px;
-    margin: auto;
-  }
-}
-
 footer a {
   color: #fdcb46;
   text-decoration: none;
@@ -150,18 +151,28 @@ footer h3 {
   padding: 1rem;
 }
 
-/*menus de la page index*/
 .bloc_page {
-  -webkit-box-shadow: 1px 5px 9px 1px rgba(36, 31, 31, 0.667);
-          box-shadow: 1px 5px 9px 1px rgba(36, 31, 31, 0.667);
+  /* @include lg_main_page*/
   margin: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
-@media (min-width: 992px) {
-  .bloc_page {
-    max-width: 1000px;
-    margin: auto;
-  }
+.bloc_page_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (min-width: 576px) {
@@ -185,7 +196,8 @@ footer h3 {
 }
 
 .menu {
-  height: 12rem;
+  height: 17vh;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,8 +211,8 @@ footer h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 1.2rem;
-  margin-left: 1.2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
   margin-bottom: 1rem;
   -webkit-box-shadow: 1px 5px 9px 1px rgba(36, 31, 31, 0.667);
           box-shadow: 1px 5px 9px 1px rgba(36, 31, 31, 0.667);
@@ -250,23 +262,24 @@ footer h3 {
 
 @media (min-width: 576px) {
   .menu {
-    min-width: 51%;
-    height: 25rem;
+    width: 37%;
+    height: 36vh;
+    margin: 1rem;
   }
 }
 
 @media (min-width: 768px) {
   .menu {
-    min-width: 33%;
-    height: 31rem;
-    margin: 2rem;
+    width: 32%;
+    height: 40vh;
+    margin: 1.5rem;
   }
 }
 
 @media (min-width: 992px) {
   .menu {
-    min-width: 33%;
-    height: 31rem;
+    width: 30%;
+    height: 52vh;
     margin: 2rem;
   }
 }
@@ -399,6 +412,14 @@ footer h3 {
   height: fit-content;
 }
 
+@media (min-width: 1200px) {
+  .main_page {
+    width: 1200px;
+    height: 1600px;
+    margin: auto;
+  }
+}
+
 .lanoen {
   color: #4e252a;
   background: #fcdfdb;
@@ -422,7 +443,6 @@ footer h3 {
 
 .lanoen h2 {
   margin-bottom: 3rem;
-  font-size: 1.5rem;
 }
 
 .lanoen .fas {
@@ -531,6 +551,14 @@ footer h3 {
   margin: auto;
 }
 
+.lanoen_section {
+  font-family: "Segoe Print";
+}
+
+.lanoen h2 {
+  font-size: 2.5rem;
+}
+
 .lapago {
   color: #72bf56;
   background: #fdfffd;
@@ -554,7 +582,6 @@ footer h3 {
 
 .lapago h2 {
   margin-bottom: 3rem;
-  font-size: 1.5rem;
 }
 
 .lapago .fas {
@@ -663,13 +690,13 @@ footer h3 {
   margin: auto;
 }
 
-.lapago .lapago_section {
+.lapago_section {
   color: black;
   font-family: "Segoe Print";
 }
 
 .lapago h2 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .ledepa {
@@ -695,7 +722,6 @@ footer h3 {
 
 .ledepa h2 {
   margin-bottom: 3rem;
-  font-size: 1.5rem;
 }
 
 .ledepa .fas {
@@ -804,7 +830,7 @@ footer h3 {
   margin: auto;
 }
 
-.ledepa .ledepa_section {
+.ledepa_section {
   color: black;
   font-family: "Segoe Print";
 }
@@ -836,7 +862,6 @@ footer h3 {
 
 .lechfr h2 {
   margin-bottom: 3rem;
-  font-size: 1.5rem;
 }
 
 .lechfr .fas {
@@ -953,7 +978,7 @@ footer h3 {
   background: -webkit-linear-gradient(-75deg, #d8852e, #905bfd 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .lechfr .middle_menu {
@@ -962,9 +987,5 @@ footer h3 {
 
 .lechfr .end_menu {
   color: #6e4ccc;
-}
-
-.lechfr .menu_part_trait {
-  width: 8rem;
 }
 /*# sourceMappingURL=smart.css.map */
