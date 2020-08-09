@@ -71,17 +71,16 @@
 }
 
 /*variables ou map*/
-/*@mixin lg_main_page {
-  @media (min-width: 992px) {
-    width: 1200px;
-    height: 1600px;
-    margin: auto;
-  }
-}
-*/
+/*index menu*/
+/*page menu*/
 /*liserets ohmyfood  mentions contact*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html, body {
-  height: 100%;
+  margin: 0;
 }
 
 #oh {
@@ -103,9 +102,8 @@ html, body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 3rem;
+  font-size: 3.5rem;
   height: 5.4rem;
-  margin-bottom: 2rem;
 }
 
 .text_index--titre a {
@@ -151,14 +149,6 @@ footer h3 {
   padding: 1rem;
 }
 
-.bloc_page {
-  /* @include lg_main_page*/
-  margin: auto;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
 .bloc_page_menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -195,6 +185,7 @@ footer h3 {
   }
 }
 
+/* page index*/
 .menu {
   height: 17vh;
   width: 80%;
@@ -412,11 +403,9 @@ footer h3 {
   height: fit-content;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 576px) {
   .main_page {
-    width: 1200px;
-    height: 1600px;
-    margin: auto;
+    margin-top: 2rem;
   }
 }
 
@@ -432,13 +421,18 @@ footer h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 1100px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   /*que lanoen*/
-  /*
-  .main_bas {
-    display: flex;
-    justify-content: center;
-    margin-top: 3rem;}*/
+}
+
+@media (min-width: 992px) {
+  .lanoen {
+    max-width: 650px;
+    height: 75vh;
+    margin: auto;
+  }
 }
 
 .lanoen h2 {
@@ -512,21 +506,14 @@ footer h3 {
   padding: 1rem 0 1rem 0;
 }
 
-.lanoen .menu_part_trait {
-  width: 2rem;
-  height: 0.5rem;
-  position: relative;
+.lanoen .main_bas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-@media (min-width: 576px) {
-  .lanoen .menu_part_trait {
-    width: 35%;
-    height: 0.6rem;
-    position: relative;
-  }
+  margin-top: 3rem;
 }
 
 .lanoen h3 {
@@ -551,6 +538,26 @@ footer h3 {
   margin: auto;
 }
 
+.lanoen_trait {
+  background-image: url("ressources/images/lanoen/lanoengauche1.png");
+  width: 32%;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.lanoen_trait_rev {
+  background-image: url("ressources/images/lanoen/lanoengauche1.png");
+  width: 32%;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  -webkit-transform: rotatey(180deg);
+          transform: rotatey(180deg);
+}
+
 .lanoen_section {
   font-family: "Segoe Print";
 }
@@ -571,13 +578,18 @@ footer h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 1100px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   /*que lanoen*/
-  /*
-  .main_bas {
-    display: flex;
-    justify-content: center;
-    margin-top: 3rem;}*/
+}
+
+@media (min-width: 992px) {
+  .lapago {
+    max-width: 650px;
+    height: 75vh;
+    margin: auto;
+  }
 }
 
 .lapago h2 {
@@ -651,21 +663,14 @@ footer h3 {
   padding: 1rem 0 1rem 0;
 }
 
-.lapago .menu_part_trait {
-  width: 2rem;
-  height: 0.5rem;
-  position: relative;
+.lapago .main_bas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-@media (min-width: 576px) {
-  .lapago .menu_part_trait {
-    width: 35%;
-    height: 0.6rem;
-    position: relative;
-  }
+  margin-top: 3rem;
 }
 
 .lapago h3 {
@@ -690,6 +695,26 @@ footer h3 {
   margin: auto;
 }
 
+.lapago_trait {
+  background-image: url("ressources/images/lapago/lapagogauche1.png");
+  width: 32%;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.lapago_trait_rev {
+  background-image: url("ressources/images/lapago/lapagogauche1.png");
+  width: 32%;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  -webkit-transform: rotatey(180deg);
+          transform: rotatey(180deg);
+}
+
 .lapago_section {
   color: black;
   font-family: "Segoe Print";
@@ -711,13 +736,18 @@ footer h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 1100px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   /*que lanoen*/
-  /*
-  .main_bas {
-    display: flex;
-    justify-content: center;
-    margin-top: 3rem;}*/
+}
+
+@media (min-width: 992px) {
+  .ledepa {
+    max-width: 650px;
+    height: 75vh;
+    margin: auto;
+  }
 }
 
 .ledepa h2 {
@@ -791,21 +821,14 @@ footer h3 {
   padding: 1rem 0 1rem 0;
 }
 
-.ledepa .menu_part_trait {
-  width: 2rem;
-  height: 0.5rem;
-  position: relative;
+.ledepa .main_bas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-@media (min-width: 576px) {
-  .ledepa .menu_part_trait {
-    width: 35%;
-    height: 0.6rem;
-    position: relative;
-  }
+  margin-top: 3rem;
 }
 
 .ledepa h3 {
@@ -830,6 +853,26 @@ footer h3 {
   margin: auto;
 }
 
+.ledepa_trait {
+  background-image: url("ressources/images/ledepa/ledepagauche1.png");
+  width: 32%;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.ledepa_trait_rev {
+  background-image: url("ressources/images/ledepa/ledepagauche1.png");
+  width: 32%;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  -webkit-transform: rotatey(180deg);
+          transform: rotatey(180deg);
+}
+
 .ledepa_section {
   color: black;
   font-family: "Segoe Print";
@@ -851,13 +894,18 @@ footer h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 1100px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   /*que lanoen*/
-  /*
-  .main_bas {
-    display: flex;
-    justify-content: center;
-    margin-top: 3rem;}*/
+}
+
+@media (min-width: 992px) {
+  .lechfr {
+    max-width: 650px;
+    height: 75vh;
+    margin: auto;
+  }
 }
 
 .lechfr h2 {
@@ -931,21 +979,14 @@ footer h3 {
   padding: 1rem 0 1rem 0;
 }
 
-.lechfr .menu_part_trait {
-  width: 2rem;
-  height: 0.5rem;
-  position: relative;
+.lechfr .main_bas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-@media (min-width: 576px) {
-  .lechfr .menu_part_trait {
-    width: 35%;
-    height: 0.6rem;
-    position: relative;
-  }
+  margin-top: 3rem;
 }
 
 .lechfr h3 {
@@ -968,6 +1009,26 @@ footer h3 {
 .lechfr h3:hover:before {
   width: 100%;
   margin: auto;
+}
+
+.lechfr_trait {
+  background-image: url("ressources/images/lechfr/lechfrgauche1.png");
+  width: 32%;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.lechfr_trait_rev {
+  background-image: url("ressources/images/lechfr/lechfrgauche1.png");
+  width: 32%;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  -webkit-transform: rotatey(180deg);
+          transform: rotatey(180deg);
 }
 
 .lechfr .lechfr_section {

@@ -102,6 +102,11 @@ $font-family-lanoen:"devonshireregular";
 $font-family-lechfr: "croissant_oneregular";
 $font-family-ledepa:"dancing_scriptregular";
 $font-family-menu:"Segoe Print";
+$bg-image-lapago:url("ressources/images/lapago/lapagogauche1.png");
+$bg-image-ledepa:url("ressources/images/ledepa/ledepagauche1.png");
+$bg-image-lechfr:url("ressources/images/lechfr/lechfrgauche1.png");
+$bg-image-lanoen:url("ressources/images/lanoen/lanoengauche1.png");
+
 
 // Small devices
 @mixin sm {
@@ -119,16 +124,13 @@ $font-family-menu:"Segoe Print";
   justify-content: center;
   align-items: center;
   flex-flow: wrap;
+  
 }
 }
-
-@mixin sm_lanoen {
+@mixin sm_main_page {
   @media (min-width: #{$screen-sm-min}){
-    margin: 5rem;
-    box-shadow: $shadow;
-    max-height: 200rem;
+  margin-top:2rem;
 }}
-
 
 @mixin sm_menu_trait{
   @media (min-width: #{$screen-sm-min}){
@@ -151,6 +153,8 @@ $font-family-menu:"Segoe Print";
 
  
 // Large devices
+
+/*index menu*/
 @mixin lg_menu {
   @media (min-width: #{$screen-lg-min}) {
     width: 30%;
@@ -159,17 +163,26 @@ $font-family-menu:"Segoe Print";
   }
 }
 
-/*@mixin lg_main_page {
+/*page menu*/
+@mixin lg_page_menu {
+  @media (min-width: #{$screen-lg-min}) {
+    max-width: 650px;
+    height: 75vh;
+    margin: auto;
+  }
+}
+
+@mixin lg_main_page {
   @media (min-width: #{$screen-lg-min}) {
     width: 1200px;
     height: 1600px;
     margin: auto;
   }
 }
-*/
+
 
 // Extra large devices
-@mixin xl_main_page {
+@mixin xl_menu {
   @media (min-width: #{$screen-xl-min}) {
     width: 1200px;
     height: 1600px;
@@ -178,11 +191,7 @@ $font-family-menu:"Segoe Print";
 }
 
 
-@mixin xl {
-  @media (min-width: #{$screen-xl-min}) {
-    color:yellow;
-  }
-}
+
 
 
 
@@ -237,10 +246,28 @@ $font-family-menu:"Segoe Print";
   }
   }
 
+  @mixin trait ($bg-image){
+    background-image:$bg-image;
+    width:32%;
+    height:1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  
+  
+  @mixin trait_rev ($bg-image){
+    &_trait_rev {
+     @include trait($bg-image)   
+    transform: rotatey(180deg);
+    }}
+  
 /*liserets ohmyfood  mentions contact*/
-
+* {
+  box-sizing: border-box;
+}
 html, body {
-  height:100%;
+  margin:0;
 }
 
 
@@ -251,9 +278,9 @@ html, body {
 .text_index {
   &--titre {
   @include text_index;   
-  font-size:3rem;
+  font-size:3.5rem;
   height: 5.4rem;
-  margin-bottom:2rem;
+  
  
   & a {
   @include a;
@@ -278,11 +305,7 @@ footer {
 }
 
 
-.bloc_page{
- /* @include lg_main_page*/
-  margin: auto;
-  height:fit-content;  
-  }
+
  
 .bloc_page_menu {
    @include sm_bloc_page_menu;
@@ -292,7 +315,7 @@ footer {
    justify-content: center;
    
  }
-
+/* page index*/
 .menu {
   @include menu
   @include sm
@@ -385,7 +408,7 @@ footer {
 /*menu page lanoen*/
 
 .main_page {
-  @include xl_main_page
+  @include sm_main_page
   display: flex;
   height: 100%;
   justify-content: center;
@@ -394,13 +417,14 @@ footer {
 
 
 @mixin menu_misenpage ($color:$primary-color,$bg-color:$primary-bg-color,$font-family:$primary-font-family){
+@include lg_page_menu
   color: $color;
   background: $bg-color;
   font-family:$font-family;
   padding: 1rem 1rem 1rem 1rem;
   display: flex;
   flex-direction: column;
-  height:1100px;
+  height: fit-content;
 
   h2{
     margin-bottom: 3rem;
@@ -453,19 +477,16 @@ footer {
     padding: 1rem 0 1rem 0;   
     
     }
+
+
+
+
   
-  .menu_part_trait {
-    @include sm_menu_trait
-      width:2rem;
-      height: 0.5rem;
-      position: relative;
-      justify-content: center;
-  }
-    /*que lanoen*/ /*
+    /*que lanoen*/ 
   .main_bas {
     display: flex;
     justify-content: center;
-    margin-top: 3rem;}*/
+    margin-top: 3rem;}
   
   
   h3
@@ -497,6 +518,9 @@ footer {
 
 .lanoen {
   @include menu_misenpage ($color-lanoen,$bg-color-lanoen,$font-family-lanoen)
+  &_trait {
+    @include trait ($bg-image-lanoen)}
+    @include trait_rev ($bg-image-lanoen)
   &_section {
     font-family:$font-family-menu;
   }
@@ -507,6 +531,9 @@ footer {
 
 .lapago {
   @include menu_misenpage($color-lapago,$bg-color-lapago,$font-family-lapago)
+  &_trait {
+  @include trait ($bg-image-lapago)}
+  @include trait_rev ($bg-image-lapago)
   &_section{
     color:black;
     font-family:$font-family-menu;
@@ -520,6 +547,9 @@ h2 {
 
 .ledepa {
   @include menu_misenpage($color-ledepa,$bg-color-ledepa,$font-family-ledepa)
+  &_trait {
+  @include trait ($bg-image-ledepa)}
+  @include trait_rev ($bg-image-ledepa)
   &_section {  
   color:black;
     font-family:$font-family-menu;}
@@ -530,6 +560,9 @@ h2 {
 
 .lechfr {
   @include menu_misenpage($color-lechfr,$bg-color-lechfr,$font-family-lechfr)
+  &_trait {
+    @include trait ($bg-image-lechfr)}
+    @include trait_rev ($bg-image-lechfr)
   .lechfr_section{
     font-family:serif;
   }
