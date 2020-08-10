@@ -1,3 +1,29 @@
+// Map des breakpoints
+/*
+$breakpoints: (
+  $sm: 576px,
+  $md: 768px,
+  $lg: 992px,
+);
+// Mixin pour appeler les breakpoint facilement
+@mixin bp($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        $value: map-get($breakpoints, $breakpoint);
+         
+        @media screen and (min-width: $value) {
+            @content;
+        }
+    }
+}
+// Dans le SASS
+.block {
+  display: none;
+  @include bp(lg) {
+    display: block;
+  }
+}
+
+*/
 
 
 
@@ -86,22 +112,22 @@ $screen-lg-min: 992px;
 $screen-xl-min: 1200px;
 
 $shadow: 1px 5px 9px 1px rgba(36, 31, 31, 0.667);
-$primary-bg-color:#579c87;
-$primary-color:#fdcb46;
-$color-lanoen:#4e252a;
-$color-lapago:#72bf56;
-$color-lechfr:#d8852e;
-$color-ledepa:#0887fb;
-$bg-color-lanoen:#fcdfdb;
-$bg-color-lapago:#fdfffd;
-$bg-color-lechfr: #fff5fe;
-$bg-color-ledepa: #edefef;
-$primary-size:1rem;
-$font-family-lapago:"kaushan_scriptregular";
-$font-family-lanoen:"devonshireregular";
-$font-family-lechfr: "croissant_oneregular";
-$font-family-ledepa:"dancing_scriptregular";
-$font-family-menu:"Segoe Print";
+
+
+
+$primary-color:#000000;
+
+
+
+
+
+$color: ( color-lanoen:#4e252a,color-lechfr:#d8852e,color-ledepa:#0887fb,color-lapago:#72bf56, color-link:#fdcb46,color-defaut:black);
+$bg-color: (bg-lanoen:#fcdfdb,bg-lechfr:#fff5fe,bg-ledepa:#edefef,bg-lapago:#fdfffd,bg-index:#579c87);
+$font-family: (famlanoen:"devonshireregular",famlechfr:"croissant_oneregular",famlechfr2:"cantata_oneregular",famledepa:"dancing_scriptregular",famlapago:"kaushan_scriptregular",famlibre:"Segoe Print",famliseretproch:"montserratbold");
+
+
+
+
 $bg-image-lapago:url("ressources/images/lapago/lapagogauche1.png");
 $bg-image-ledepa:url("ressources/images/ledepa/ledepagauche1.png");
 $bg-image-lechfr:url("ressources/images/lechfr/lechfrgauche1.png");
@@ -167,7 +193,7 @@ $bg-image-lanoen:url("ressources/images/lanoen/lanoengauche1.png");
 @mixin lg_page_menu {
   @media (min-width: #{$screen-lg-min}) {
     max-width: 650px;
-    height: 75vh;
+    height: 100%;
     margin: auto;
   }
 }
@@ -195,21 +221,30 @@ $bg-image-lanoen:url("ressources/images/lanoen/lanoengauche1.png");
 
 
 
-@mixin text_index ($color:$primary-color,$bg-color:$primary-bg-color,$size:primary-size) { 
+
+
+
+
+
+
+
+
+
+@mixin text_index  { 
   display: flex;
   align-items: center;
-  background-color: $bg-color;
-  font-family: 'montserratbold';
-  font-size: $size;
-  color:$color;
+  background-color: map-get($bg-color,bg-index);
+  color:map-get($color,color-link);
+  font-family: map-get($font-family, famliseretproch);
+  font-size: 1rem;
   width:100%;
   justify-content: center;
 }
 
-@mixin a ($color:$primary-color,$bg-color:$primary-bg-color){
-  color: $color;
+@mixin a {
+  color: map-get($color, color-link);
   text-decoration:none;
-  background-color:$bg-color ;
+  background-color:map-get($bg-color,bg-index);
 }
 
 @mixin menu  {
@@ -246,7 +281,7 @@ $bg-image-lanoen:url("ressources/images/lanoen/lanoengauche1.png");
   }
   }
 
-  @mixin trait ($bg-image){
+ @mixin trait ($bg-image){
     background-image:$bg-image;
     width:32%;
     height:1rem;
@@ -256,9 +291,9 @@ $bg-image-lanoen:url("ressources/images/lanoen/lanoengauche1.png");
   }
   
   
-  @mixin trait_rev ($bg-image){
+@mixin trait_rev ($bg-image){
     &_trait_rev {
-     @include trait($bg-image)   
+    @include trait($bg-image);  
     transform: rotatey(180deg);
     }}
   
@@ -317,14 +352,14 @@ footer {
  }
 /* page index*/
 .menu {
-  @include menu
-  @include sm
-  @include md_menu
-  @include lg_menu
+  @include menu;
+  @include sm;
+  @include md_menu;
+  @include lg_menu;
     /*la note enchantee*/
   &-lanoen {
-      background-color: #fcdfdb;
-      font-family: $font-family-lanoen;
+      background-color: map-get($bg-color,bg-lanoen);
+      font-family: map-get($font-family,famlanoen);
     .fas {
       font-size:1.6rem;
       background: -webkit-linear-gradient(left, #f15861, #f78f6a );
@@ -336,17 +371,17 @@ footer {
    
     h2 {
       
-      color:#4e252a;
+      color:map-get($color, color-lanoen );
    } 
     p{
-      font-family:$font-family-menu;
-      color:#4e252a;
+      font-family:map-get($font-family, famlibre);
+      color:map-get($color, color-lanoen );
    } 
   }  
     /*le chic a la francaise*/
   &-lechfr {
-      font-family: 'croissant_oneregular';
-      background-color: #fff5fe;
+      font-family: map-get($font-family, famlechfr);
+      background-color:map-get($bg-color,bg-lechfr);
     h2{
       background: -webkit-linear-gradient(-75deg, #d8852e, #905bfd 80%);
       -webkit-background-clip: text;
@@ -355,7 +390,7 @@ footer {
     p{
       font-family:'cantata_oneregular';
       font-weight: bold;
-      color:#c77412;
+      color:map-get($color, color-lechfr );
    } 
   }
       #lechfr_font {
@@ -363,29 +398,29 @@ footer {
   }
     /*le delice des papilles*/
   &-ledepa {
-      font-family: 'dancing_scriptregular';
-      background-color: #edefef;
+      font-family: map-get($font-family, famledepa);
+      background-color:map-get($bg-color,bg-ledepa);
     h2 {
       background: -webkit-linear-gradient(-75deg, #0431df, #0887fb 60%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     p{
-      font-family:$font-family-menu;
-      color:#0887fb;
+      font-family:map-get($font-family, famlibre);
+      color:map-get($color, color-ledepa);
     }
   }  
     /*la palette du gout*/
   &-lapago {
-    font-family: 'kaushan_scriptregular';
-    background-color: #fdfffd;
+    font-family: map-get($font-family, famlapago);
+    background-color: map-get($bg-color,bg-lapago);
     h2 {
       background: -webkit-linear-gradient(-75deg, #3d9339, #bfff7e 75%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
       }
-    p{font-family:$font-family-menu;
-      color:#72bf56;
+    p{font-family:map-get($font-family, famlibrel);
+      color:map-get($color, color-lapago );
       }
     }
   }
@@ -402,13 +437,15 @@ footer {
     height: 3rem;
     width: 15rem;
     border-radius: 0.3rem;
+    .fas-circle{
+      font-size:0.25rem;}
   }
 }
 
 /*menu page lanoen*/
 
 .main_page {
-  @include sm_main_page
+  @include sm_main_page;
   display: flex;
   height: 100%;
   justify-content: center;
@@ -416,11 +453,13 @@ footer {
 }
 
 
-@mixin menu_misenpage ($color:$primary-color,$bg-color:$primary-bg-color,$font-family:$primary-font-family){
-@include lg_page_menu
-  color: $color;
-  background: $bg-color;
-  font-family:$font-family;
+
+
+@mixin menu_misenpage ($col,$bg,$family){
+@include lg_page_menu;
+  color: map-get($color,$col);
+  background: map-get($bg-color, $bg);
+  font-family:map-get($font-family, $family);
   padding: 1rem 1rem 1rem 1rem;
   display: flex;
   flex-direction: column;
@@ -430,7 +469,6 @@ footer {
     margin-bottom: 3rem;
     
   }
-
       
   .fas{
     background: -webkit-linear-gradient(left, #f15861, #f78f6a );
@@ -441,8 +479,9 @@ footer {
     padding-right: 1rem;
     &_haut{
     padding-top:2.5rem;
-    font-size:3rem;
-    }
+    font-size:3rem;}
+   
+    
   }
   h3{
     font-size: 1.2rem;
@@ -477,10 +516,6 @@ footer {
     padding: 1rem 0 1rem 0;   
     
     }
-
-
-
-
   
     /*que lanoen*/ 
   .main_bas {
@@ -498,11 +533,11 @@ footer {
   h3:before {
       content: "";
       position: absolute;
+      background-color:map-get($color,$col);
       width: 0%;
       height: 0.3rem;
       bottom: 0;
       left: 0;
-      background-color: $color;
       border-radius: 50%;
       transition: all 0.3s ease-in-out;
      
@@ -517,12 +552,12 @@ footer {
 }
 
 .lanoen {
-  @include menu_misenpage ($color-lanoen,$bg-color-lanoen,$font-family-lanoen)
+  @include menu_misenpage (color-lanoen,bg-lanoen,famlanoen);
   &_trait {
     @include trait ($bg-image-lanoen)}
-    @include trait_rev ($bg-image-lanoen)
+    @include trait_rev ($bg-image-lanoen);
   &_section {
-    font-family:$font-family-menu;
+    font-family:map-get($font-family, famlibre);
   }
   h2 {
     font-size:2.5rem;
@@ -530,13 +565,13 @@ footer {
 }
 
 .lapago {
-  @include menu_misenpage($color-lapago,$bg-color-lapago,$font-family-lapago)
+  @include menu_misenpage(color-lapago,bg-lapago,famlapago);
   &_trait {
   @include trait ($bg-image-lapago)}
-  @include trait_rev ($bg-image-lapago)
+  @include trait_rev ($bg-image-lapago);
   &_section{
-    color:black;
-    font-family:$font-family-menu;
+    color:map-get($color,color-defaut);
+    font-family:map-get($font-family, famlibre);
   }
   
 h2 {
@@ -546,25 +581,25 @@ h2 {
 }
 
 .ledepa {
-  @include menu_misenpage($color-ledepa,$bg-color-ledepa,$font-family-ledepa)
+  @include menu_misenpage(color-ledepa,bg-ledepa, famledepa);
   &_trait {
   @include trait ($bg-image-ledepa)}
-  @include trait_rev ($bg-image-ledepa)
+  @include trait_rev ($bg-image-ledepa);
   &_section {  
-  color:black;
-    font-family:$font-family-menu;}
+    color:map-get($color,color-defaut);
+    font-family:map-get($font-family, famlibre);}
 h2 {
   font-size:2.5rem;
 }
 }
 
 .lechfr {
-  @include menu_misenpage($color-lechfr,$bg-color-lechfr,$font-family-lechfr)
+  @include menu_misenpage(color-lechfr,bg-lechfr, famlechfr);
   &_trait {
     @include trait ($bg-image-lechfr)}
-    @include trait_rev ($bg-image-lechfr)
+    @include trait_rev ($bg-image-lechfr);
   .lechfr_section{
-    font-family:serif;
+    font-family:map-get($font-family, famlechfr2 );
   }
   
    h2{
@@ -585,4 +620,5 @@ h2 {
    
 }
 
-
+.fas-circle{
+  font-size:0.25rem;}

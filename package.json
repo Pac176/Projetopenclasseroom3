@@ -1,0 +1,19 @@
+{
+  "name": "projetopenclasseroom3",
+  "version": "1.0.0",
+  "description": "Projetopenclasseroom3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./smart.scss:./smart.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pac176/Projetopenclasseroom3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pac176/Projetopenclasseroom3/issues"
+  },
+  "homepage": "https://github.com/Pac176/Projetopenclasseroom3#readme"
+}
