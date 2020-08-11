@@ -462,9 +462,16 @@ footer h3 {
 
 @media (min-width: 992px) {
   .lanoen {
-    max-width: 650px;
+    max-width: 750px;
     height: 100%;
     margin: auto;
+  }
+}
+
+@media (min-width: 576px) {
+  .lanoen li {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 
@@ -512,8 +519,6 @@ footer h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 3rem;
-  padding-right: 3rem;
 }
 
 .lanoen li .plat {
@@ -587,10 +592,17 @@ footer h3 {
           transform: rotatey(180deg);
 }
 
+@media (min-width: 576px) {
+  .lanoen .menu_part {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
 .lanoen_section {
   font-family: "Segoe Print";
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  /*padding-left:2.5rem;
+    padding-right:2.5rem;*/
 }
 
 .lanoen .h2 {
@@ -603,8 +615,6 @@ footer h3 {
 
 .lanoen li {
   font-size: 0.9rem;
-  padding-left: 0rem;
-  padding-right: 0rem;
 }
 
 .lanoen_titre {
@@ -657,9 +667,16 @@ footer h3 {
 
 @media (min-width: 992px) {
   .lapago {
-    max-width: 650px;
+    max-width: 750px;
     height: 100%;
     margin: auto;
+  }
+}
+
+@media (min-width: 576px) {
+  .lapago li {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 
@@ -707,8 +724,6 @@ footer h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 3rem;
-  padding-right: 3rem;
 }
 
 .lapago li .plat {
@@ -812,9 +827,16 @@ footer h3 {
 
 @media (min-width: 992px) {
   .ledepa {
-    max-width: 650px;
+    max-width: 750px;
     height: 100%;
     margin: auto;
+  }
+}
+
+@media (min-width: 576px) {
+  .ledepa li {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 
@@ -862,8 +884,6 @@ footer h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 3rem;
-  padding-right: 3rem;
 }
 
 .ledepa li .plat {
@@ -967,9 +987,16 @@ footer h3 {
 
 @media (min-width: 992px) {
   .lechfr {
-    max-width: 650px;
+    max-width: 750px;
     height: 100%;
     margin: auto;
+  }
+}
+
+@media (min-width: 576px) {
+  .lechfr li {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 
@@ -1017,8 +1044,6 @@ footer h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 3rem;
-  padding-right: 3rem;
 }
 
 .lechfr li .plat {

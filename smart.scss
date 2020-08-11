@@ -165,6 +165,22 @@ $img-note-lanoen:url("ressources/images/lanoen/note.svg");
     position: relative;
  }
 }
+@mixin sm_menu_margin{
+  @media (min-width: #{$screen-sm-min}){
+    li{
+      padding-left:3rem;
+      padding-right:3rem;
+    }
+ }
+}
+@mixin sm_menu_part {
+@media (min-width: #{$screen-sm-min}){
+  .menu_part {
+    padding-left: 3rem;
+    padding-right:3rem;
+  }
+}
+}
 
 
 // Medium devices
@@ -192,7 +208,7 @@ $img-note-lanoen:url("ressources/images/lanoen/note.svg");
 /*page menu*/
 @mixin lg_page_menu {
   @media (min-width: #{$screen-lg-min}) {
-    max-width: 650px;
+    max-width:750px;
     height: 100%;
     margin: auto;
   }
@@ -463,6 +479,7 @@ footer {
 
 @mixin menu_misenpage ($col,$bg,$family){
 @include lg_page_menu;
+@include sm_menu_margin;
   color: map-get($color,$col);
   background: map-get($bg-color, $bg);
   font-family:map-get($font-family, $family);
@@ -505,8 +522,7 @@ footer {
     font-size: 1rem;
     line-height: 2.5rem;
     justify-content: space-between;
-    padding-left:3rem;
-    padding-right:3rem;
+    
     
   .plat {
     
@@ -566,10 +582,13 @@ footer {
   &_trait {
     @include trait ($bg-image-lanoen)}
     @include trait_rev ($bg-image-lanoen);
+    @include sm_menu_part;
+      
+    
   &_section {
     font-family:map-get($font-family, famlibre);
-    padding-left:2.5rem;
-    padding-right:2.5rem;
+    /*padding-left:2.5rem;
+    padding-right:2.5rem;*/
   }
   .h2 {
     font-size:2.5rem;
@@ -579,8 +598,7 @@ footer {
   }
   li {
     font-size: 0.9rem;
-    padding-left:0rem;
-    padding-right:0rem;
+    
   }
 &_titre{
     display: flex;
@@ -607,7 +625,7 @@ footer {
   &_trait {
   @include trait ($bg-image-lapago)}
   @include trait_rev ($bg-image-lapago);
-  &_section{
+    &_section{
     color:map-get($color,color-defaut);
     font-family:map-get($font-family, famlibre);
   }
