@@ -415,10 +415,18 @@ footer h3 {
   height: 3rem;
   width: 15rem;
   border-radius: 0.3rem;
+  font-size: 1.2rem;
 }
 
-.footer_bloc_page--pro a .fas-circle {
-  font-size: 0.25rem;
+.footer_bloc_page--pro a .point {
+  background-image: url("ressources/images/point.svg");
+  width: 2vh;
+  height: 1vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  top: 6%;
 }
 
 /*menu page lanoen*/

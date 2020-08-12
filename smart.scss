@@ -133,7 +133,7 @@ $bg-image-ledepa:url("ressources/images/ledepa/ledepagauche1.png");
 $bg-image-lechfr:url("ressources/images/lechfr/lechfrgauche1.png");
 $bg-image-lanoen:url("ressources/images/lanoen/lanoengauche1.svg");
 $img-note-lanoen:url("ressources/images/lanoen/note.svg");
-
+$img-point:url("ressources/images/point.svg");
 // Small devices
 @mixin sm {
   @media (min-width: #{$screen-sm-min}) {
@@ -459,8 +459,18 @@ footer {
     height: 3rem;
     width: 15rem;
     border-radius: 0.3rem;
-    .fas-circle{
-      font-size:0.25rem;}
+    font-size: 1.2rem;
+    .point{
+      background-image:$img-point;
+      width:2vh;
+      height:1vh;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      position: relative;
+      top:6%;
+      }
+  
   }
 }
 
