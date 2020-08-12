@@ -449,6 +449,18 @@ footer {
 
   /*prochainement */
 
+@keyframes threepoint {
+
+from {
+  opacity:100%;
+}
+to {
+  opacity:0%;
+}
+}
+
+
+
 .footer_bloc_page {
   margin-bottom: 4rem;
   display: flex;
@@ -469,6 +481,13 @@ footer {
       background-position: center;
       position: relative;
       top:6%;
+      animation: threepoint 1400ms  infinite;
+      &_2{
+        animation-delay:300ms;
+      }
+      &_3{
+        animation-delay:600ms ;
+      }
       }
   
   }

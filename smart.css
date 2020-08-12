@@ -384,6 +384,23 @@ footer h3 {
 }
 
 /*prochainement */
+@-webkit-keyframes threepoint {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+@keyframes threepoint {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
 .footer_bloc_page {
   margin-bottom: 4rem;
   display: -webkit-box;
@@ -427,6 +444,18 @@ footer h3 {
   background-position: center;
   position: relative;
   top: 6%;
+  -webkit-animation: threepoint 1400ms  infinite;
+          animation: threepoint 1400ms  infinite;
+}
+
+.footer_bloc_page--pro a .point_2 {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.footer_bloc_page--pro a .point_3 {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
 }
 
 /*menu page lanoen*/
