@@ -293,14 +293,15 @@ $img-point:url("ressources/images/point.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    
+
+
+
+
   }
   
   
-@mixin trait_rev ($bg-image){
-    &_trait_rev {
-    @include trait($bg-image);  
-    transform: rotatey(180deg);
-    }}
+
   
 /*liserets ohmyfood  mentions contact*/
 * {
@@ -621,10 +622,14 @@ to {
 
 .lanoen {
   @include menu_misenpage (color-lanoen,bg-lanoen,famlanoen);
-  &_trait {
-    @include trait ($bg-image-lanoen)}
-    @include trait_rev ($bg-image-lanoen);
-    @include sm_menu_part;
+  &_trait{
+    @include trait ($bg-image-lanoen);
+    &_rev {
+    @include trait ($bg-image-lanoen);
+    transform: rotatey(180deg);
+    }
+    }
+  @include sm_menu_part;
       
     
   &_section {
@@ -664,9 +669,19 @@ to {
 .lapago {
   border: 1px #dae0da solid;
   @include menu_misenpage(color-lapago,bg-lapago,famlapago);
-  &_trait {
-  @include trait ($bg-image-lapago)}
-  @include trait_rev ($bg-image-lapago);
+  &_trait{
+  @include trait ($bg-image-lapago);
+  &_rev {
+  @include trait ($bg-image-lapago);
+  transform: rotatey(180deg);
+  }
+  }
+  
+
+
+
+
+
     &_section{
     color:map-get($color,color-defaut);
     font-family:map-get($font-family, famlibre);
@@ -680,9 +695,13 @@ h2 {
 
 .ledepa {
   @include menu_misenpage(color-ledepa,bg-ledepa, famledepa);
-  &_trait {
-  @include trait ($bg-image-ledepa)}
-  @include trait_rev ($bg-image-ledepa);
+  &_trait{
+    @include trait ($bg-image-ledepa);
+    &_rev {
+    @include trait ($bg-image-ledepa);
+    transform: rotatey(180deg);
+    }
+    }
   &_section {  
     color:map-get($color,color-defaut);
     font-family:map-get($font-family, famlibre);}
@@ -693,9 +712,14 @@ h2 {
 
 .lechfr {
   @include menu_misenpage(color-lechfr,bg-lechfr, famlechfr);
-  &_trait {
-    @include trait ($bg-image-lechfr)}
-    @include trait_rev ($bg-image-lechfr);
+  &_trait{
+    @include trait ($bg-image-lechfr);
+    &_rev {
+    @include trait ($bg-image-lechfr);
+    transform: rotatey(180deg);
+    }
+    }
+    
   .lechfr_section{
     font-family:map-get($font-family, famlechfr2 );
   }
