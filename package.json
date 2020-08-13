@@ -4,7 +4,8 @@
   "description": "Projetopenclasseroom3",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./smart.scss:./smart.css"
+    "sass": "sass --watch ./smart.scss:./smart.css",
+    "prefix": "postcss ./smart.css  --use autoprefixer  -d ./prefixed/"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Pac176/Projetopenclasseroom3/issues"
   },
-  "homepage": "https://github.com/Pac176/Projetopenclasseroom3#readme"
+  "homepage": "https://github.com/Pac176/Projetopenclasseroom3#readme",
+  "browserslist": "last 4 versions",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
 }
