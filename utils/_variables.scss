@@ -1,0 +1,27 @@
+ 
+/*variables ou map*/
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+// Tablets and small desktops
+$screen-lg-min: 992px;
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+$shadow: 1px 5px 9px 1px rgba(36, 31, 31, 0.667);
+
+
+
+$primary-color:#000000;
+$color: ( color-lanoen:#4e252a,color-lechfr:#d8852e,color-ledepa:#0887fb,color-lapago:#72bf56, color-link:#fdcb46,color-defaut:black);
+$bg-color: (bg-lanoen:#fcdfdb,bg-lechfr:#fff5fe,bg-ledepa:#edefef,bg-lapago:#fdfffd,bg-index:#579c87);
+$font-family: (famlanoen:"devonshireregular",famlechfr:"croissant_oneregular",famlechfr2:"cantata_oneregular",famledepa:"dancing_scriptregular",famlapago:"kaushan_scriptregular",famlibre:"Segoe Print",famliseretproch:"montserratbold");
+$bg-image-lapago:url("../ressources/images/lapago/lapagogauche1.svg");
+$bg-image-ledepa:url("../ressources/images/ledepa/ledepagauche1.png");
+$bg-image-lechfr:url("../ressources/images/lechfr/lechfrgauche1.svg");
+$bg-image-lechfr_mid:url("../ressources/images/lechfr/lechfrgauche1_mid.svg");
+$bg-image-lechfr_bot:url("../ressources/images/lechfr/lechfrgauche1_bot.svg");
+$bg-image-lanoen:url("../ressources/images/lanoen/lanoengauche1.svg");
+$img-note-lanoen:url("../ressources/images/lanoen/note.svg");
+$img-point:url("../ressources/images/point.svg");

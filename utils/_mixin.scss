@@ -1,0 +1,165 @@
+
+@mixin sm {
+    @media (min-width: $screen-sm-min) {
+      width: 34%;
+      height: 36vh;
+      margin:1rem;
+  
+      }
+  }
+  @mixin sm_bloc_page_menu {
+    @media (min-width: $screen-sm-min){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    
+  }
+  }
+  @mixin sm_main_page {
+    @media (min-width: $screen-sm-min){
+    margin-top:2rem;
+  }}
+  
+  @mixin sm_menu_trait{
+    @media (min-width: $screen-sm-min){
+      width: 35%;
+      height: 0.6rem;
+      position: relative;
+   }
+  }
+  @mixin sm_menu_margin{
+    @media (min-width: $screen-sm-min){
+      li{
+        padding-left:3rem;
+        padding-right:3rem;
+      }
+   }
+  }
+  @mixin sm_menu_part {
+  @media (min-width: $screen-sm-min){
+    .menu_part {
+      padding-left: 3rem;
+      padding-right:3rem;
+    }
+  }
+  }
+  
+  
+  // Medium devices
+  @mixin md_menu {
+    @media (min-width: $screen-md-min) {
+      width: 32%;
+      height: 44vh;
+      margin: 1.5rem;
+  
+      }
+    }
+  
+   
+  // Large devices
+  
+  /*index menu*/
+  @mixin lg_menu {
+    @media (min-width: $screen-lg-min) {
+      width: 30%;
+      height: 37vh;
+      margin: 2rem;
+    }
+  }
+  
+  /*page menu*/
+  @mixin lg_page_menu {
+    @media (min-width: $screen-lg-min) {
+      max-width:750px;
+      height: 100%;
+      margin: auto;
+    }
+  }
+  
+  @mixin lg_main_page {
+    @media (min-width: $screen-lg-min) {
+      width: 1200px;
+      height: 1600px;
+      margin: auto;
+    }
+  }
+  
+  
+  // Extra large devices
+  @mixin xl_menu {
+    @media (min-width: $screen-xl-min) {
+      width: 390px;
+      height: 650px;
+      margin: 2rem;
+  
+    }
+  }
+  
+  
+  @mixin text_index  { 
+    display: flex;
+    align-items: center;
+    background-color: map-get($bg-color,bg-index);
+    color:map-get($color,color-link);
+    font-family: map-get($font-family, famliseretproch);
+    font-size: 1rem;
+    width:100%;
+    justify-content: center;
+  }
+  
+  @mixin a {
+    color: map-get($color, color-link);
+    text-decoration:none;
+    background-color:map-get($bg-color,bg-index);
+  }
+  
+  @mixin menu  {
+    height: 17vh;
+    width:80%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: $shadow;
+    border-radius: 1rem 1rem;
+      p {padding-top: 1rem;
+        font-size:1.5rem;
+    }
+      h2 {font-size:1.7rem;
+    }
+      a {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+        justify-content: center;
+        transition: transform scale(1), opacity (1);
+        transition-duration: 1s;
+          &:hover {
+          transform:scale(1.2);
+          opacity:(0.3);
+        }
+    }
+    }
+  
+   @mixin trait ($bg-image){
+      background-image:$bg-image;
+      width:32%;
+      height:1rem;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      
+  
+  
+  
+  
+    }
+    
+    
