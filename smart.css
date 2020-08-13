@@ -858,7 +858,7 @@ footer h3:hover {
   margin: auto;
 }
 .lechfr_trait {
-  background-image: url("ressources/images/lechfr/lechfrgauche1.png");
+  background-image: url("ressources/images/lechfr/lechfrgauche1.svg");
   width: 32%;
   height: 1rem;
   background-repeat: no-repeat;
@@ -866,7 +866,7 @@ footer h3:hover {
   background-position: center;
 }
 .lechfr_trait_rev {
-  background-image: url("ressources/images/lechfr/lechfrgauche1.png");
+  background-image: url("ressources/images/lechfr/lechfrgauche1.svg");
   width: 32%;
   height: 1rem;
   background-repeat: no-repeat;
