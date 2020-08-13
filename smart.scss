@@ -130,9 +130,19 @@ $font-family: (famlanoen:"devonshireregular",famlechfr:"croissant_oneregular",fa
 
 $bg-image-lapago:url("ressources/images/lapago/lapagogauche1.svg");
 $bg-image-ledepa:url("ressources/images/ledepa/ledepagauche1.png");
+
+
+
+
+
+
+
+
 $bg-image-lechfr:url("ressources/images/lechfr/lechfrgauche1.svg");
 $bg-image-lechfr_mid:url("ressources/images/lechfr/lechfrgauche1_mid.svg");
 $bg-image-lechfr_bot:url("ressources/images/lechfr/lechfrgauche1_bot.svg");
+
+
 $bg-image-lanoen:url("ressources/images/lanoen/lanoengauche1.svg");
 $img-note-lanoen:url("ressources/images/lanoen/note.svg");
 $img-point:url("ressources/images/point.svg");
@@ -628,7 +638,19 @@ to {
     @include trait ($bg-image-lanoen);
     transform: rotatey(180deg);
     }
+    
+
+
+
     }
+
+
+
+
+
+
+
+
   @include sm_menu_part;
       
     
@@ -710,16 +732,48 @@ h2 {
 }
 }
 
+
+$bg_lechfr:     (bg-image-lechfr:url("ressources/images/lechfr/lechfrgauche1.svg"), 
+                bg-image-lechfr_mid:url("ressources/images/lechfr/lechfrgauche1_mid.svg"),
+                bg-image-lechfr_bot:url("ressources/images/lechfr/lechfrgauche1_bot.svg"));
+
+
+
+
+
 .lechfr {
   @include menu_misenpage(color-lechfr,bg-lechfr, famlechfr);
-  &_trait{
+    &_trait{
     @include trait ($bg-image-lechfr);
     &_rev {
     @include trait ($bg-image-lechfr);
     transform: rotatey(180deg);
-    }
-    }
+    }}
+
+    &_trait_mid{
+      @include trait ($bg-image-lechfr-mid);}
+      &_trait_rev_mid {
+      @include trait ($bg-image-lechfr-mid);
+      transform: rotatey(180deg);
+      }
     
+    &_trait_bot{
+    @include trait ($bg-image-lechfr-bot);}
+    &_trait_rev_bot {
+    @include trait ($bg-image-lechfr-bot);
+    transform: rotatey(180deg);
+    }
+
+    
+
+
+    
+
+
+
+
+
+
   .lechfr_section{
     font-family:map-get($font-family, famlechfr2 );
   }

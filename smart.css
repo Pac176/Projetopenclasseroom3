@@ -874,6 +874,40 @@ footer h3:hover {
   background-position: center;
   transform: rotatey(180deg);
 }
+.lechfr_trait_mid {
+  background-image: url("ressources/images/lechfr/lechfrgauche1_mid.svg");
+  width: 32%;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.lechfr_trait_rev_mid {
+  background-image: url("ressources/images/lechfr/lechfrgauche1_mid.svg");
+  width: 32%;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transform: rotatey(180deg);
+}
+.lechfr_trait_bot {
+  background-image: url("ressources/images/lechfr/lechfrgauche1_bot.svg");
+  width: 32%;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.lechfr_trait_rev_bot {
+  background-image: url("ressources/images/lechfr/lechfrgauche1_bot.svg");
+  width: 32%;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transform: rotatey(180deg);
+}
 .lechfr .lechfr_section {
   font-family: "cantata_oneregular";
 }
