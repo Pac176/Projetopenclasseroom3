@@ -4,8 +4,8 @@
   "description": "Projetopenclasseroom3",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./scss/smart.scss:./css/smart.css",
-    "prefix": "postcss ./css/smart.css  --use autoprefixer  -d ./prefixed/"
+    "sass": "sass --watch ./scss/smart.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css  --use autoprefixer  -d ./prefixed/"
   },
   "repository": {
     "type": "git",

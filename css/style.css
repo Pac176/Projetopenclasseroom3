@@ -483,6 +483,12 @@ footer h3:hover {
   width: 100%;
   margin: auto;
 }
+@media (min-width: 576px) {
+  .lanoen .menu_part {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
 .lanoen_trait {
   background-image: url("../ressources/images/lanoen/lanoengauche1.svg");
   width: 32%;
@@ -500,16 +506,8 @@ footer h3:hover {
   background-position: center;
   transform: rotatey(180deg);
 }
-@media (min-width: 576px) {
-  .lanoen .menu_part {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-}
 .lanoen_section {
   font-family: "Segoe Print";
-  /*padding-left:2.5rem;
-  padding-right:2.5rem;*/
 }
 .lanoen .h2 {
   font-size: 2.5rem;
@@ -904,7 +902,7 @@ footer h3:hover {
   background-position: center;
   transform: rotatey(180deg);
 }
-.lechfr .lechfr_section {
+.lechfr_section {
   font-family: "cantata_oneregular";
 }
 .lechfr h2 {
@@ -920,4 +918,4 @@ footer h3:hover {
   color: #6e4ccc;
 }
 
-/*# sourceMappingURL=smart.css.map */
+/*# sourceMappingURL=style.css.map */
