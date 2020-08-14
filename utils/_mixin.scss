@@ -155,11 +155,85 @@
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
-      
-  
-  
-  
-  
-    }
+     }
     
-    
+     @mixin menu_misenpage ($col,$bg,$family){
+      @include lg_page_menu;
+      @include sm_menu_margin;
+        color: map-get($color,$col);
+        background: map-get($bg-color, $bg);
+        font-family:map-get($font-family, $family);
+        padding: 1rem 1rem 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        padding-bottom:10rem;
+        &_titre{
+          padding-top: 4rem;
+          padding-bottom: 4rem;
+        }
+          .note{
+            background-image:$img-note-lanoen;
+            width:100%;
+            height:3rem;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+          &_haut{
+          margin-top:2rem;
+          width:20%;
+          height:6vh;
+          align-self:center;
+          }
+        }
+          h3{
+            font-size: 1.2rem;
+        }
+          ul{
+            padding-top: 0.8rem;
+        }
+        li {
+          display:flex;
+          flex-direction: row;
+          font-size: 1rem;
+          line-height: 2.5rem;
+          justify-content: space-between;
+        .plat {
+          text-align: justify;
+          margin-right: 2rem;
+        }
+        .prix {
+          align-self: center;
+          font-weight: bolder;
+            &_dessert{
+              margin-right: 0;
+            }
+          }
+        }
+        .menu_part {
+          display:flex;
+          justify-content: space-between;
+          align-items: center;   
+          padding: 1rem 0 1rem 0;   
+        }
+           //que lanoen//
+          h3{
+           position: relative;
+         
+        }
+          h3:before {
+            content: "";
+            position: absolute;
+            background-color:map-get($color,$col);
+            width: 0%;
+            height: 0.3rem;
+            bottom: 0;
+            left: 0;
+            border-radius: 50%;
+            transition: all 0.3s ease-in-out;
+            }
+          h3:hover:before {
+            width: 100%;
+            margin:auto;
+          }
+      }

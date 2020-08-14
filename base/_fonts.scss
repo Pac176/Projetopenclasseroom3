@@ -1,0 +1,87 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    /*border: 1px black solid;*/
+}
+
+
+  
+
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin:0;
+}
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url("../ressources/font/montbold/montserrat-bold-webfont.eot");
+    src: url("../ressources/font/montbold/montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../ressources/font/montbold/montserrat-bold-webfont.woff2") format("woff2"), url("../ressources/font/montbold/montserrat-bold-webfont.woff") format("woff"), url("../ressources/font/montbold/tmontserrat-bold-webfont.ttf") format("truetype"), url("../ressources/font/montbold/montserrat-bold-webfont.svg#montserratbold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'montserratmedium';
+    src: url("../../ressources/font/montmedium/montserrat-medium-webfont.eot");
+    src: url("../../ressources/font/montmedium/montserrat-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../../ressources/font/montmedium/montserrat-medium-webfont.woff2") format("woff2"), url("../../ressources/font/montmedium/montserrat-medium-webfont.woff") format("woff"), url("../../ressources/font/montmedium/montserrat-medium-webfont.ttf") format("truetype"), url("../../ressources/font/montmedium/montserrat-medium-webfont.svg#montserratmedium") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'cantata_oneregular';
+    src: url("../ressources/font/Cantata_One/cantataone-regular-webfont.eot");
+    src: url("../ressources/font/Cantata_One/cantataone-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../ressources/font/Cantata_One/cantataone-regular-webfont.woff2") format("woff2"), url("../ressources/font/Cantata_One/cantataone-regular-webfont.woff") format("woff"), url("../ressources/font/Cantata_One/cantataone-regular-webfont.ttf") format("truetype"), url("../ressources/font/Cantata_One/cantataone-regular-webfont.svg#cantata_oneregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'croissant_oneregular';
+    src: url("../ressources/font/Croissant_One/croissantone-regular-webfont.eot");
+    src: url("../ressources/font/Croissant_One/croissantone-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../ressources/font/Croissant_One/croissantone-regular-webfont.woff2") format("woff2"), url("../ressources/font/Croissant_One/croissantone-regular-webfont.woff") format("woff"), url("../ressources/font/Croissant_One/croissantone-regular-webfont.ttf") format("truetype"), url("../ressources/font/Croissant_One/croissantone-regular-webfont.svg#croissant_oneregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'dancing_scriptregular';
+    src: url("../ressources/font/Dancing_Script/dancingscript-variablefont_wght-webfont.eot");
+    src: url("../ressources/font/Dancing_Script/dancingscript-variablefont_wght-webfont.eot?#iefix") format("embedded-opentype"), url("../ressources/font/Dancing_Script/dancingscript-variablefont_wght-webfont.woff2") format("woff2"), url("../ressources/font/Dancing_Script/dancingscript-variablefont_wght-webfont.woff") format("woff"), url("../ressources/font/Dancing_Script/dancingscript-variablefont_wght-webfont.ttf") format("truetype"), url("../ressources/font/Dancing_Script/dancingscript-variablefont_wght-webfont.svg#dancing_scriptregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'devonshireregular';
+    src: url("../ressources/font/Devonshire/devonshire-regular-webfont.eot");
+    src: url("../ressources/font/Devonshire/devonshire-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../ressources/font/Devonshire/devonshire-regular-webfont.woff2") format("woff2"), url("../ressources/font/Devonshire/devonshire-regular-webfont.woff") format("woff"), url("../ressources/font/Devonshire/devonshire-regular-webfont.ttf") format("truetype"), url("../ressources/font/Devonshire/devonshire-regular-webfont.svg#devonshireregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'kaushan_scriptregular';
+    src: url("../ressources/font/Kaushan_Script/kaushanscript-regular-webfont.eot");
+    src: url("../ressources/font/Kaushan_Script/kaushanscript-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../ressources/font/Kaushan_Script/kaushanscript-regular-webfont.woff2") format("woff2"), url("../ressources/font/Kaushan_Script/kaushanscript-regular-webfont.woff") format("woff"), url("../ressources/font/Kaushan_Script/kaushanscript-regular-webfont.ttf") format("truetype"), url("../ressources/font/Kaushan_Script/kaushanscript-regular-webfont.svg#kaushan_scriptregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Segoe Print';
+    src: url("../ressources/font/segoe/SegoePrint.eot");
+    src: url("../ressources/font/segoe/SegoePrint.eot?#iefix") format("embedded-opentype"), url("../ressources/font/segoe/SegoePrint.woff2") format("woff2"), url("../ressources/font/segoe/SegoePrint.woff") format("woff"), url("../ressources/font/segoe/SegoePrint.ttf") format("truetype"), url("../ressources/font/segoe/SegoePrint.svg#SegoePrint") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }

@@ -25,3 +25,31 @@ $bg-image-lechfr_bot:url("../ressources/images/lechfr/lechfrgauche1_bot.svg");
 $bg-image-lanoen:url("../ressources/images/lanoen/lanoengauche1.svg");
 $img-note-lanoen:url("../ressources/images/lanoen/note.svg");
 $img-point:url("../ressources/images/point.svg");
+
+
+// Map des breakpoints
+/*
+$breakpoints: (
+  $sm: 576px,
+  $md: 768px,
+  $lg: 992px,
+);
+// Mixin pour appeler les breakpoint facilement
+@mixin bp($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        $value: map-get($breakpoints, $breakpoint);
+         
+        @media screen and (min-width: $value) {
+            @content;
+        }
+    }
+}
+// Dans le SASS
+.block {
+  display: none;
+  @include bp(lg) {
+    display: block;
+  }
+}
+
+*/

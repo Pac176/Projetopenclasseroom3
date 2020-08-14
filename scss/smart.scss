@@ -1,327 +1,15 @@
-// Map des breakpoints
-/*
-$breakpoints: (
-  $sm: 576px,
-  $md: 768px,
-  $lg: 992px,
-);
-// Mixin pour appeler les breakpoint facilement
-@mixin bp($breakpoint) {
-    @if map-has-key($breakpoints, $breakpoint) {
-        $value: map-get($breakpoints, $breakpoint);
-         
-        @media screen and (min-width: $value) {
-            @content;
-        }
-    }
-}
-// Dans le SASS
-.block {
-  display: none;
-  @include bp(lg) {
-    display: block;
-  }
-}
 
-*/
-
+@import "../base/_fonts.scss";
 @import "../utils/_variables.scss";
 @import "../utils/_mixin.scss";
-@import "../base/_fonts.scss";
+@import "../utils/_animations.scss";
 
 
-@font-face {
-    font-family: 'montserratbold';
-    src: url("../ressources/font/montbold/montserrat-bold-webfont.eot");
-    src: url("../ressources/font/montbold/montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../ressources/font/montbold/montserrat-bold-webfont.woff2") format("woff2"), url("../ressources/font/montbold/montserrat-bold-webfont.woff") format("woff"), url("../ressources/font/montbold/tmontserrat-bold-webfont.ttf") format("truetype"), url("../ressources/font/montbold/montserrat-bold-webfont.svg#montserratbold") format("svg");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'montserratmedium';
-    src: url("../../ressources/font/montmedium/montserrat-medium-webfont.eot");
-    src: url("../../ressources/font/montmedium/montserrat-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../../ressources/font/montmedium/montserrat-medium-webfont.woff2") format("woff2"), url("../../ressources/font/montmedium/montserrat-medium-webfont.woff") format("woff"), url("../../ressources/font/montmedium/montserrat-medium-webfont.ttf") format("truetype"), url("../../ressources/font/montmedium/montserrat-medium-webfont.svg#montserratmedium") format("svg");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'cantata_oneregular';
-    src: url("../ressources/font/Cantata_One/cantataone-regular-webfont.eot");
-    src: url("../ressources/font/Cantata_One/cantataone-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../ressources/font/Cantata_One/cantataone-regular-webfont.woff2") format("woff2"), url("../ressources/font/Cantata_One/cantataone-regular-webfont.woff") format("woff"), url("../ressources/font/Cantata_One/cantataone-regular-webfont.ttf") format("truetype"), url("../ressources/font/Cantata_One/cantataone-regular-webfont.svg#cantata_oneregular") format("svg");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'croissant_oneregular';
-    src: url("../ressources/font/Croissant_One/croissantone-regular-webfont.eot");
-    src: url("../ressources/font/Croissant_One/croissantone-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../ressources/font/Croissant_One/croissantone-regular-webfont.woff2") format("woff2"), url("../ressources/font/Croissant_One/croissantone-regular-webfont.woff") format("woff"), url("../ressources/font/Croissant_One/croissantone-regular-webfont.ttf") format("truetype"), url("../ressources/font/Croissant_One/croissantone-regular-webfont.svg#croissant_oneregular") format("svg");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'dancing_scriptregular';
-    src: url("../ressources/font/Dancing_Script/dancingscript-variablefont_wght-webfont.eot");
-    src: url("../ressources/font/Dancing_Script/dancingscript-variablefont_wght-webfont.eot?#iefix") format("embedded-opentype"), url("../ressources/font/Dancing_Script/dancingscript-variablefont_wght-webfont.woff2") format("woff2"), url("../ressources/font/Dancing_Script/dancingscript-variablefont_wght-webfont.woff") format("woff"), url("../ressources/font/Dancing_Script/dancingscript-variablefont_wght-webfont.ttf") format("truetype"), url("../ressources/font/Dancing_Script/dancingscript-variablefont_wght-webfont.svg#dancing_scriptregular") format("svg");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'devonshireregular';
-    src: url("../ressources/font/Devonshire/devonshire-regular-webfont.eot");
-    src: url("../ressources/font/Devonshire/devonshire-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../ressources/font/Devonshire/devonshire-regular-webfont.woff2") format("woff2"), url("../ressources/font/Devonshire/devonshire-regular-webfont.woff") format("woff"), url("../ressources/font/Devonshire/devonshire-regular-webfont.ttf") format("truetype"), url("../ressources/font/Devonshire/devonshire-regular-webfont.svg#devonshireregular") format("svg");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'kaushan_scriptregular';
-    src: url("../ressources/font/Kaushan_Script/kaushanscript-regular-webfont.eot");
-    src: url("../ressources/font/Kaushan_Script/kaushanscript-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../ressources/font/Kaushan_Script/kaushanscript-regular-webfont.woff2") format("woff2"), url("../ressources/font/Kaushan_Script/kaushanscript-regular-webfont.woff") format("woff"), url("../ressources/font/Kaushan_Script/kaushanscript-regular-webfont.ttf") format("truetype"), url("../ressources/font/Kaushan_Script/kaushanscript-regular-webfont.svg#kaushan_scriptregular") format("svg");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Segoe Print';
-    src: url("../ressources/font/segoe/SegoePrint.eot");
-    src: url("../ressources/font/segoe/SegoePrint.eot?#iefix") format("embedded-opentype"), url("../ressources/font/segoe/SegoePrint.woff2") format("woff2"), url("../ressources/font/segoe/SegoePrint.woff") format("woff"), url("../ressources/font/segoe/SegoePrint.ttf") format("truetype"), url("../ressources/font/segoe/SegoePrint.svg#SegoePrint") format("svg");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
+
+
   
 
-* {
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
-    /*border: 1px black solid;*/
-}
- 
-/*variables ou map*/
-// Small tablets and large smartphones (landscape view)
-$screen-sm-min: 576px;
-// Small tablets (portrait view)
-$screen-md-min: 768px;
-// Tablets and small desktops
-$screen-lg-min: 992px;
-// Large tablets and desktops
-$screen-xl-min: 1200px;
-
-$shadow: 1px 5px 9px 1px rgba(36, 31, 31, 0.667);
-
-
-
-$primary-color:#000000;
-
-
-
-
-
-$color: ( color-lanoen:#4e252a,color-lechfr:#d8852e,color-ledepa:#0887fb,color-lapago:#72bf56, color-link:#fdcb46,color-defaut:black);
-$bg-color: (bg-lanoen:#fcdfdb,bg-lechfr:#fff5fe,bg-ledepa:#edefef,bg-lapago:#fdfffd,bg-index:#579c87);
-$font-family: (famlanoen:"devonshireregular",famlechfr:"croissant_oneregular",famlechfr2:"cantata_oneregular",famledepa:"dancing_scriptregular",famlapago:"kaushan_scriptregular",famlibre:"Segoe Print",famliseretproch:"montserratbold");
-
-
-
-
-$bg-image-lapago:url("../ressources/images/lapago/lapagogauche1.svg");
-$bg-image-ledepa:url("../ressources/images/ledepa/ledepagauche1.png");
-
-
-
-
-
-
-
-
-$bg-image-lechfr:url("../ressources/images/lechfr/lechfrgauche1.svg");
-$bg-image-lechfr_mid:url("../ressources/images/lechfr/lechfrgauche1_mid.svg");
-$bg-image-lechfr_bot:url("../ressources/images/lechfr/lechfrgauche1_bot.svg");
-
-
-$bg-image-lanoen:url("../ressources/images/lanoen/lanoengauche1.svg");
-$img-note-lanoen:url("../ressources/images/lanoen/note.svg");
-$img-point:url("../ressources/images/point.svg");
-// Small devices
-@mixin sm {
-  @media (min-width: $screen-sm-min) {
-    width: 34%;
-    height: 36vh;
-    margin:1rem;
-
-    }
-}
-@mixin sm_bloc_page_menu {
-  @media (min-width: $screen-sm-min){
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-flow: wrap;
-  
-}
-}
-@mixin sm_main_page {
-  @media (min-width: $screen-sm-min){
-  margin-top:2rem;
-}}
-
-@mixin sm_menu_trait{
-  @media (min-width: $screen-sm-min){
-    width: 35%;
-    height: 0.6rem;
-    position: relative;
- }
-}
-@mixin sm_menu_margin{
-  @media (min-width: $screen-sm-min){
-    li{
-      padding-left:3rem;
-      padding-right:3rem;
-    }
- }
-}
-@mixin sm_menu_part {
-@media (min-width: $screen-sm-min){
-  .menu_part {
-    padding-left: 3rem;
-    padding-right:3rem;
-  }
-}
-}
-
-
-// Medium devices
-@mixin md_menu {
-  @media (min-width: $screen-md-min) {
-    width: 32%;
-    height: 44vh;
-    margin: 1.5rem;
-
-    }
-  }
-
- 
-// Large devices
-
-/*index menu*/
-@mixin lg_menu {
-  @media (min-width: $screen-lg-min) {
-    width: 30%;
-    height: 37vh;
-    margin: 2rem;
-  }
-}
-
-/*page menu*/
-@mixin lg_page_menu {
-  @media (min-width: $screen-lg-min) {
-    max-width:750px;
-    height: 100%;
-    margin: auto;
-  }
-}
-
-@mixin lg_main_page {
-  @media (min-width: $screen-lg-min) {
-    width: 1200px;
-    height: 1600px;
-    margin: auto;
-  }
-}
-
-
-// Extra large devices
-@mixin xl_menu {
-  @media (min-width: $screen-xl-min) {
-    width: 390px;
-    height: 650px;
-    margin: 2rem;
-
-  }
-}
-
-
-@mixin text_index  { 
-  display: flex;
-  align-items: center;
-  background-color: map-get($bg-color,bg-index);
-  color:map-get($color,color-link);
-  font-family: map-get($font-family, famliseretproch);
-  font-size: 1rem;
-  width:100%;
-  justify-content: center;
-}
-
-@mixin a {
-  color: map-get($color, color-link);
-  text-decoration:none;
-  background-color:map-get($bg-color,bg-index);
-}
-
-@mixin menu  {
-  height: 17vh;
-  width:80%;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-right: 1rem;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
-  box-shadow: $shadow;
-  border-radius: 1rem 1rem;
-    p {padding-top: 1rem;
-      font-size:1.5rem;
-  }
-    h2 {font-size:1.7rem;
-  }
-    a {
-      text-decoration: none;
-      display: flex;
-      flex-direction: column;
-      width: -webkit-fill-available;
-      height: -webkit-fill-available;
-      justify-content: center;
-      transition: transform scale(1), opacity (1);
-      transition-duration: 1s;
-        &:hover {
-        transform:scale(1.2);
-        opacity:(0.3);
-      }
-  }
-  }
-
- @mixin trait ($bg-image){
-    background-image:$bg-image;
-    width:32%;
-    height:1rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    
-
-
-
-
-  }
-  
-  
-
-  
 /*liserets ohmyfood  mentions contact*/
-* {
-  box-sizing: border-box;
-}
-html, body {
-  margin:0;
-}
 
 
 #oh {
@@ -344,21 +32,7 @@ html, body {
   margin-bottom: 1rem;}
 
 
-  @keyframes wriggle {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
-
-
+  
 footer {
   @include text_index;
   justify-content: space-between;
@@ -475,15 +149,7 @@ footer {
 
   /*prochainement */
 
-@keyframes threepoint {
 
-from {
-  opacity:100%;
-}
-to {
-  opacity:0%;
-}
-}
 
 
 
@@ -532,264 +198,115 @@ to {
 
 
 
-@mixin menu_misenpage ($col,$bg,$family){
-@include lg_page_menu;
-@include sm_menu_margin;
-  color: map-get($color,$col);
-  background: map-get($bg-color, $bg);
-  font-family:map-get($font-family, $family);
-  padding: 1rem 1rem 1rem 1rem;
-  display: flex;
-  flex-direction: column;
-  height: fit-content;
-  padding-bottom:10rem;
-  &_titre{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-    .note{
-      background-image:$img-note-lanoen;
-      width:100%;
-      height:3rem;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
-    &_haut{
-    margin-top:2rem;
-    width:20%;
-    height:6vh;
-    align-self:center;
-    }
-   
-    
-  }
- 
-  
-  h3{
-    font-size: 1.2rem;
-    }
-  ul{
-    padding-top: 0.8rem;
-  }
-  li {
-    display:flex;
-    flex-direction: row;
-    font-size: 1rem;
-    line-height: 2.5rem;
-    justify-content: space-between;
-    
-    
-  .plat {
-    
-    text-align: justify;
-    margin-right: 2rem;
-  }
-  .prix {
-    
-    align-self: center;
-    font-weight: bolder;
-    
-    &_dessert{
-      margin-right: 0;
-      }
-    }
-  }
-  .menu_part {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;   
-    padding: 1rem 0 1rem 0;   
-    
-    }
-  
-    /*que lanoen*/ 
-  
-    
-  h3
-  {
-      position: relative;
-      
-  }
-  
-  h3:before {
-      content: "";
-      position: absolute;
-      background-color:map-get($color,$col);
-      width: 0%;
-      height: 0.3rem;
-      bottom: 0;
-      left: 0;
-      border-radius: 50%;
-      transition: all 0.3s ease-in-out;
-     
-  }
-  
-  h3:hover:before {
-    width: 100%;
-    margin:auto;
-  }
-  
-
-}
 
 .lanoen {
   @include menu_misenpage (color-lanoen,bg-lanoen,famlanoen);
-  &_trait{
-    @include trait ($bg-image-lanoen);
-    &_rev {
-    @include trait ($bg-image-lanoen);
-    transform: rotatey(180deg);
-    }
-    
-
-
-
-    }
-
-
-
-
-
-
-
-
   @include sm_menu_part;
-      
-    
-  &_section {
-    font-family:map-get($font-family, famlibre);
-    /*padding-left:2.5rem;
-    padding-right:2.5rem;*/
-  }
-  .h2 {
-    font-size:2.5rem;
+    &_trait{
+      @include trait ($bg-image-lanoen);
+    &_rev {
+      @include trait ($bg-image-lanoen);
+      transform: rotatey(180deg);
+   }
+ }
+    &_section {
+      font-family:map-get($font-family, famlibre);
+    }
+    .h2 {
+      font-size:2.5rem;
     &_bas {
       font-size: 2rem;
     }
   }
-  li {
-    font-size: 0.9rem;
-    
+    li {
+      font-size: 0.9rem;
   }
-&_titre{
-    display: flex;
-    flex-direction: column;
-}
-.main_bas {
-  display: flex;
-  justify-content: center;
-  margin-top: 3rem;
-  align-items: center;}
-  .note_bas{
+    &_titre{
+      display: flex;
+      flex-direction: column;
+  }
+    .main_bas {
+      display: flex;
+      justify-content: center;
+      margin-top: 3rem;
+      align-items: center;}
+    .note_bas{
       width:10%;
       padding-left:05rem;
   }
 }
 
- 
-
-
-
 .lapago {
   border: 1px #dae0da solid;
   @include menu_misenpage(color-lapago,bg-lapago,famlapago);
-  &_trait{
-  @include trait ($bg-image-lapago);
-  &_rev {
-  @include trait ($bg-image-lapago);
-  transform: rotatey(180deg);
+    &_trait{
+      @include trait ($bg-image-lapago);
+    &_rev {
+      @include trait ($bg-image-lapago);
+      transform: rotatey(180deg);
+    }
   }
-  }
-  
-
-
-
-
-
     &_section{
-    color:map-get($color,color-defaut);
-    font-family:map-get($font-family, famlibre);
+      color:map-get($color,color-defaut);
+      font-family:map-get($font-family, famlibre);
+    }
+    h2 {
+      font-size:3rem;
+    }
   }
-  
-h2 {
-  font-size:3rem;
-}
-
-}
 
 .ledepa {
   @include menu_misenpage(color-ledepa,bg-ledepa, famledepa);
-  &_trait{
-    @include trait ($bg-image-ledepa);
+    &_trait{
+      @include trait ($bg-image-ledepa);
     &_rev {
-    @include trait ($bg-image-ledepa);
+      @include trait ($bg-image-ledepa);
     transform: rotatey(180deg);
     }
-    }
-  &_section {  
-    color:map-get($color,color-defaut);
-    font-family:map-get($font-family, famlibre);}
-h2 {
-  font-size:4rem;
+  }
+    &_section {  
+      color:map-get($color,color-defaut);
+      font-family:map-get($font-family, famlibre);}
+    h2 {
+      font-size:4rem;
+  }
 }
-}
-
-
 
 .lechfr {
   @include menu_misenpage(color-lechfr,bg-lechfr, famlechfr);
     &_trait{
-    @include trait ($bg-image-lechfr);
+      @include trait ($bg-image-lechfr);
     &_rev {
-    @include trait ($bg-image-lechfr);
-    transform: rotatey(180deg);
-    }}
-
+      @include trait ($bg-image-lechfr);
+      transform: rotatey(180deg);
+    }
+  }
     &_trait_mid{
       @include trait ($bg-image-lechfr-mid);}
-      &_trait_rev_mid {
+    &_trait_rev_mid {
       @include trait ($bg-image-lechfr-mid);
-      transform: rotatey(180deg);
-      }
-    
-    &_trait_bot{
-    @include trait ($bg-image-lechfr-bot);}
-    &_trait_rev_bot {
-    @include trait ($bg-image-lechfr-bot);
-    transform: rotatey(180deg);
+        transform: rotatey(180deg);
     }
-
-    
-
-
-    
-
-
-
-
-
-
-  .lechfr_section{
-    font-family:map-get($font-family, famlechfr2 );
-  }
-  
-   h2{
-    background: -webkit-linear-gradient(-75deg, #d8852e, #905bfd 80%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size:1.5rem;
-    
-   }
+    &_trait_bot{
+      @include trait ($bg-image-lechfr-bot);}
+    &_trait_rev_bot {
+      @include trait ($bg-image-lechfr-bot);
+        transform: rotatey(180deg);
+    }
+    &_section{
+        font-family:map-get($font-family, famlechfr2 );
+    }
+    h2{
+      background: -webkit-linear-gradient(-75deg, #d8852e, #905bfd 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size:1.5rem;
+    }
    .middle_menu {
      color:#a56799;
-    
-   }
+    }
    .end_menu {
      color:#6e4ccc;
-    
-   }
-   
+  }
 }
 
-.fas-circle{
-  font-size:0.25rem;}
