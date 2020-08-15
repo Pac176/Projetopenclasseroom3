@@ -1,0 +1,314 @@
+
+@import "../base/_fonts.scss";
+@import "../utils/_variables.scss";
+@import "../utils/_mixin.scss";
+@import "../utils/_animations.scss";
+
+
+
+
+  
+
+/*liserets ohmyfood  mentions contact*/
+
+
+#oh {
+  letter-spacing: -0.10em;
+}
+
+.text_index {
+  &--titre {
+  @include text_index;   
+  font-size:3.3rem;
+  height: 5.4rem;
+  
+ 
+  & a {
+  @include a;
+  }
+       
+  }}
+.index {
+  margin-bottom: 1rem;}
+
+
+  
+footer {
+  @include text_index;
+  justify-content: space-between;
+  bottom:0;
+  position: fixed;
+  height: 3rem;
+  & a {
+  @include a;
+  
+  }
+  & h3 {
+    padding:1rem;
+  &:hover {
+    animation: wriggle 200ms infinite ;
+    transform-origin: center;
+  }}
+}
+
+
+
+
+ 
+.bloc_page_menu {
+   @include sm_bloc_page_menu;
+   @include lg_bloc_page_menu;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   
+ }
+/* page index*/
+
+
+
+
+.menu {
+  @include menu;
+  @include sm;
+  @include md_menu;
+  @include lg_menu;
+  @include xl_menu;
+    /*la note enchantee*/
+  &-lanoen {
+      background-color: map-get($bg-color,bg-lanoen);
+      font-family: map-get($font-family,famlanoen);
+
+
+
+    .note {
+    background-image:$img-note-lanoen;
+    width:100%;
+    height:2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+   }  
+   
+    h2 {
+      
+      color:map-get($color, color-lanoen );
+   } 
+    p{
+      font-family:map-get($font-family, famlibre);
+      color:map-get($color, color-lanoen );
+   } 
+  }  
+    /*le chic a la francaise*/
+  &-lechfr {
+      font-family: map-get($font-family, famlechfr);
+      background-color:map-get($bg-color,bg-lechfr);
+    h2{
+      background: -webkit-linear-gradient(-75deg, #d8852e, #905bfd 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+   } 
+    p{
+      font-family:'cantata_oneregular';
+      font-weight: bold;
+      color:map-get($color, color-lechfr );
+   } 
+  }
+      #lechfr_font {
+      font-size:1.2rem;
+  }
+    /*le delice des papilles*/
+  &-ledepa {
+      font-family: map-get($font-family, famledepa);
+      background-color:map-get($bg-color,bg-ledepa);
+    h2 {
+      background: -webkit-linear-gradient(-75deg, #0431df, #0887fb 60%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p{
+      font-family:map-get($font-family, famlibre);
+      color:map-get($color, color-ledepa);
+    }
+  }  
+    /*la palette du gout*/
+  &-lapago {
+    
+    font-family: map-get($font-family, famlapago);
+    background-color: map-get($bg-color,bg-lapago);
+    h2 {
+      background: -webkit-linear-gradient(-75deg, #3d9339, #bfff7e 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+      }
+    p{font-family:map-get($font-family, famlibrel);
+      color:map-get($color, color-lapago );
+      }
+    }
+  }
+
+  /*prochainement */
+
+
+
+
+
+.footer_bloc_page {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  &--pro a {
+    @include text_index;
+    @include a;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+    .point{
+      background-image:$img-point;
+      width:2vh;
+      height:1vh;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      position: relative;
+      top:6%;
+      animation: threepoint 1400ms  infinite;
+      &_2{
+        animation-delay:300ms;
+      }
+      &_3{
+        animation-delay:600ms ;
+      }
+      }
+  
+  }
+}
+
+/*menu page lanoen*/
+
+.main_page {
+  @include sm_main_page;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  height: fit-content;
+}
+
+
+
+
+
+.lanoen {
+  @include menu_misenpage (color-lanoen,bg-lanoen,famlanoen);
+  @include sm_menu_part;
+    &_trait{
+      @include trait ($bg-image-lanoen);
+    &_rev {
+      @include trait ($bg-image-lanoen);
+      transform: rotatey(180deg);
+   }
+ }
+    &_section {
+      font-family:map-get($font-family, famlibre);
+    }
+    .h2 {
+      font-size:2.5rem;
+    &_bas {
+      font-size: 2rem;
+    }
+  }
+    li {
+      font-size: 0.9rem;
+  }
+    &_titre{
+      display: flex;
+      flex-direction: column;
+  }
+    .main_bas {
+      display: flex;
+      justify-content: center;
+      margin-top: 3rem;
+      align-items: center;}
+    .note_bas{
+      width:10%;
+      padding-left:05rem;
+  }
+}
+
+.lapago {
+  border: 1px #dae0da solid;
+  @include menu_misenpage(color-lapago,bg-lapago,famlapago);
+    &_trait{
+      @include trait ($bg-image-lapago);
+    &_rev {
+      @include trait ($bg-image-lapago);
+      transform: rotatey(180deg);
+    }
+  }
+    &_section{
+      color:map-get($color,color-defaut);
+      font-family:map-get($font-family, famlibre);
+    }
+    h2 {
+      font-size:3rem;
+    }
+  }
+
+.ledepa {
+  @include menu_misenpage(color-ledepa,bg-ledepa, famledepa);
+    &_trait{
+      @include trait ($bg-image-ledepa);
+    &_rev {
+      @include trait ($bg-image-ledepa);
+    transform: rotatey(180deg);
+    }
+  }
+    &_section {  
+      color:map-get($color,color-defaut);
+      font-family:map-get($font-family, famlibre);}
+    h2 {
+      font-size:4rem;
+  }
+}
+
+.lechfr {
+  @include menu_misenpage(color-lechfr,bg-lechfr, famlechfr);
+    &_trait{
+      @include trait ($bg-image-lechfr);
+    &_rev {
+      @include trait ($bg-image-lechfr);
+      transform: rotatey(180deg);
+    }
+  }
+    &_trait_mid{
+      @include trait ($bg-image-lechfr-mid);}
+    &_trait_rev_mid {
+      @include trait ($bg-image-lechfr-mid);
+        transform: rotatey(180deg);
+    }
+    &_trait_bot{
+      @include trait ($bg-image-lechfr-bot);}
+    &_trait_rev_bot {
+      @include trait ($bg-image-lechfr-bot);
+        transform: rotatey(180deg);
+    }
+    &_section{
+        font-family:map-get($font-family, famlechfr2 );
+    }
+    h2{
+      background: -webkit-linear-gradient(-75deg, #d8852e, #905bfd 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size:1.5rem;
+    }
+   .middle_menu {
+     color:#a56799;
+    }
+   .end_menu {
+     color:#6e4ccc;
+  }
+}
+

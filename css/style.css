@@ -6,7 +6,8 @@
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html, body {
@@ -14,62 +15,70 @@ html, body {
 }
 
 @font-face {
-  font-family: "montserratbold";
+  font-family: 'montserratbold';
   src: url("../ressources/font/montbold/montserrat-bold-webfont.eot");
   src: url("../ressources/font/montbold/montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../ressources/font/montbold/montserrat-bold-webfont.woff2") format("woff2"), url("../ressources/font/montbold/montserrat-bold-webfont.woff") format("woff"), url("../ressources/font/montbold/tmontserrat-bold-webfont.ttf") format("truetype"), url("../ressources/font/montbold/montserrat-bold-webfont.svg#montserratbold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "montserratmedium";
+  font-family: 'montserratmedium';
   src: url("../../ressources/font/montmedium/montserrat-medium-webfont.eot");
   src: url("../../ressources/font/montmedium/montserrat-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../../ressources/font/montmedium/montserrat-medium-webfont.woff2") format("woff2"), url("../../ressources/font/montmedium/montserrat-medium-webfont.woff") format("woff"), url("../../ressources/font/montmedium/montserrat-medium-webfont.ttf") format("truetype"), url("../../ressources/font/montmedium/montserrat-medium-webfont.svg#montserratmedium") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "cantata_oneregular";
+  font-family: 'cantata_oneregular';
   src: url("../ressources/font/Cantata_One/cantataone-regular-webfont.eot");
   src: url("../ressources/font/Cantata_One/cantataone-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../ressources/font/Cantata_One/cantataone-regular-webfont.woff2") format("woff2"), url("../ressources/font/Cantata_One/cantataone-regular-webfont.woff") format("woff"), url("../ressources/font/Cantata_One/cantataone-regular-webfont.ttf") format("truetype"), url("../ressources/font/Cantata_One/cantataone-regular-webfont.svg#cantata_oneregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "croissant_oneregular";
+  font-family: 'croissant_oneregular';
   src: url("../ressources/font/Croissant_One/croissantone-regular-webfont.eot");
   src: url("../ressources/font/Croissant_One/croissantone-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../ressources/font/Croissant_One/croissantone-regular-webfont.woff2") format("woff2"), url("../ressources/font/Croissant_One/croissantone-regular-webfont.woff") format("woff"), url("../ressources/font/Croissant_One/croissantone-regular-webfont.ttf") format("truetype"), url("../ressources/font/Croissant_One/croissantone-regular-webfont.svg#croissant_oneregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "dancing_scriptregular";
+  font-family: 'dancing_scriptregular';
   src: url("../ressources/font/Dancing_Script/dancingscript-variablefont_wght-webfont.eot");
   src: url("../ressources/font/Dancing_Script/dancingscript-variablefont_wght-webfont.eot?#iefix") format("embedded-opentype"), url("../ressources/font/Dancing_Script/dancingscript-variablefont_wght-webfont.woff2") format("woff2"), url("../ressources/font/Dancing_Script/dancingscript-variablefont_wght-webfont.woff") format("woff"), url("../ressources/font/Dancing_Script/dancingscript-variablefont_wght-webfont.ttf") format("truetype"), url("../ressources/font/Dancing_Script/dancingscript-variablefont_wght-webfont.svg#dancing_scriptregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "devonshireregular";
+  font-family: 'devonshireregular';
   src: url("../ressources/font/Devonshire/devonshire-regular-webfont.eot");
   src: url("../ressources/font/Devonshire/devonshire-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../ressources/font/Devonshire/devonshire-regular-webfont.woff2") format("woff2"), url("../ressources/font/Devonshire/devonshire-regular-webfont.woff") format("woff"), url("../ressources/font/Devonshire/devonshire-regular-webfont.ttf") format("truetype"), url("../ressources/font/Devonshire/devonshire-regular-webfont.svg#devonshireregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "kaushan_scriptregular";
+  font-family: 'kaushan_scriptregular';
   src: url("../ressources/font/Kaushan_Script/kaushanscript-regular-webfont.eot");
   src: url("../ressources/font/Kaushan_Script/kaushanscript-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../ressources/font/Kaushan_Script/kaushanscript-regular-webfont.woff2") format("woff2"), url("../ressources/font/Kaushan_Script/kaushanscript-regular-webfont.woff") format("woff"), url("../ressources/font/Kaushan_Script/kaushanscript-regular-webfont.ttf") format("truetype"), url("../ressources/font/Kaushan_Script/kaushanscript-regular-webfont.svg#kaushan_scriptregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Segoe Print";
+  font-family: 'Segoe Print';
   src: url("../ressources/font/segoe/SegoePrint.eot");
   src: url("../ressources/font/segoe/SegoePrint.eot?#iefix") format("embedded-opentype"), url("../ressources/font/segoe/SegoePrint.woff2") format("woff2"), url("../ressources/font/segoe/SegoePrint.woff") format("woff"), url("../ressources/font/segoe/SegoePrint.ttf") format("truetype"), url("../ressources/font/segoe/SegoePrint.svg#SegoePrint") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+
 /*variables ou map*/
 /*
 $breakpoints: (
@@ -81,7 +90,7 @@ $breakpoints: (
 @mixin bp($breakpoint) {
     @if map-has-key($breakpoints, $breakpoint) {
         $value: map-get($breakpoints, $breakpoint);
-
+         
         @media screen and (min-width: $value) {
             @content;
         }
@@ -98,41 +107,108 @@ $breakpoints: (
 */
 /*index menu*/
 /*page menu*/
-@keyframes wriggle {
+@-webkit-keyframes wriggle {
   0% {
-    transform: translate(1px, 1px) rotate(0deg);
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
   }
   10% {
-    transform: translate(-1px, -2px) rotate(-1deg);
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
   }
   20% {
-    transform: translate(-3px, 0px) rotate(1deg);
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
   }
   30% {
-    transform: translate(3px, 2px) rotate(0deg);
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
   }
   40% {
-    transform: translate(1px, -1px) rotate(1deg);
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
   }
   50% {
-    transform: translate(-1px, 2px) rotate(-1deg);
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
   }
   60% {
-    transform: translate(-3px, 1px) rotate(0deg);
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
   }
   70% {
-    transform: translate(3px, 1px) rotate(-1deg);
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
   }
   80% {
-    transform: translate(-1px, -1px) rotate(1deg);
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
   }
   90% {
-    transform: translate(1px, 2px) rotate(0deg);
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
   }
   100% {
-    transform: translate(1px, -2px) rotate(-1deg);
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
   }
 }
+@keyframes wriggle {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@-webkit-keyframes threepoint {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
 @keyframes threepoint {
   from {
     opacity: 100%;
@@ -141,23 +217,31 @@ $breakpoints: (
     opacity: 0%;
   }
 }
+
 /*liserets ohmyfood  mentions contact*/
 #oh {
-  letter-spacing: -0.1em;
+  letter-spacing: -0.10em;
 }
 
 .text_index--titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #579c87;
   color: #fdcb46;
   font-family: "montserratbold";
   font-size: 1rem;
   width: 100%;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 3.3rem;
   height: 5.4rem;
 }
+
 .text_index--titre a {
   color: #fdcb46;
   text-decoration: none;
@@ -169,45 +253,85 @@ $breakpoints: (
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #579c87;
   color: #fdcb46;
   font-family: "montserratbold";
   font-size: 1rem;
   width: 100%;
-  justify-content: center;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   bottom: 0;
   position: fixed;
   height: 3rem;
 }
+
 footer a {
   color: #fdcb46;
   text-decoration: none;
   background-color: #579c87;
 }
+
 footer h3 {
   padding: 1rem;
 }
+
 footer h3:hover {
-  animation: wriggle 200ms infinite;
-  transform-origin: center;
+  -webkit-animation: wriggle 200ms infinite;
+          animation: wriggle 200ms infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 .bloc_page_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 @media (min-width: 576px) {
   .bloc_page_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-flow: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+}
+
+@media (min-width: 1050px) {
+  .bloc_page_menu {
+    margin-left: 12vh;
+    margin-right: 12vh;
   }
 }
 
@@ -215,73 +339,106 @@ footer h3:hover {
 .menu {
   height: 17vh;
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 1rem;
   margin-left: 1rem;
   margin-bottom: 1rem;
-  box-shadow: 1px 5px 9px 1px rgba(36, 31, 31, 0.667);
+  -webkit-box-shadow: 1px 5px 9px 1px rgba(36, 31, 31, 0.667);
+          box-shadow: 1px 5px 9px 1px rgba(36, 31, 31, 0.667);
   border-radius: 1rem 1rem;
   /*la note enchantee*/
   /*le chic a la francaise*/
   /*le delice des papilles*/
   /*la palette du gout*/
 }
+
 .menu p {
-  padding-top: 1rem;
   font-size: 1.5rem;
 }
+
 .menu h2 {
   font-size: 1.4rem;
 }
+
 .menu a {
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: -webkit-fill-available;
   height: -webkit-fill-available;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: opacity 1, -webkit-transform scale(1);
+  transition: opacity 1, -webkit-transform scale(1);
   transition: transform scale(1), opacity 1;
-  transition-duration: 1s;
+  transition: transform scale(1), opacity 1, -webkit-transform scale(1);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
+
 .menu a:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   opacity: 0.3;
 }
+
 @media (min-width: 576px) {
   .menu {
     width: 34%;
-    height: 36vh;
-    margin: 1rem;
+    height: 44vh;
+    margin: 2.4%;
+    border-radius: 0;
+  }
+  .menu p {
+    padding-top: 1rem;
   }
 }
+
 @media (min-width: 768px) {
   .menu {
-    width: 32%;
-    height: 44vh;
-    margin: 1.5rem;
-  }
-}
-@media (min-width: 992px) {
-  .menu {
     width: 30%;
-    height: 37vh;
-    margin: 2rem;
+    height: 50vh;
   }
 }
+
+@media (min-width: 1050px) {
+  .menu {
+    width: 52vh;
+    height: 70vh;
+  }
+}
+
 @media (min-width: 1200px) {
   .menu {
-    width: 390px;
-    height: 650px;
+    width: 52vh;
+    height: 70vh;
     margin: 2rem;
   }
 }
+
 .menu-lanoen {
   background-color: #fcdfdb;
   font-family: "devonshireregular";
 }
+
 .menu-lanoen .note {
   background-image: url("../ressources/images/lanoen/note.svg");
   width: 100%;
@@ -290,52 +447,64 @@ footer h3:hover {
   background-size: contain;
   background-position: center;
 }
+
 .menu-lanoen h2 {
   color: #4e252a;
 }
+
 .menu-lanoen p {
   font-family: "Segoe Print";
   color: #4e252a;
 }
+
 .menu-lechfr {
   font-family: "croissant_oneregular";
   background-color: #fff5fe;
 }
+
 .menu-lechfr h2 {
   background: -webkit-linear-gradient(-75deg, #d8852e, #905bfd 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .menu-lechfr p {
-  font-family: "cantata_oneregular";
+  font-family: 'cantata_oneregular';
   font-weight: bold;
   color: #d8852e;
 }
+
 .menu #lechfr_font {
   font-size: 1.2rem;
 }
+
 .menu-ledepa {
   font-family: "dancing_scriptregular";
   background-color: #edefef;
 }
+
 .menu-ledepa h2 {
   background: -webkit-linear-gradient(-75deg, #0431df, #0887fb 60%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .menu-ledepa p {
   font-family: "Segoe Print";
   color: #0887fb;
 }
+
 .menu-lapago {
   font-family: "kaushan_scriptregular";
   background-color: #fdfffd;
 }
+
 .menu-lapago h2 {
   background: -webkit-linear-gradient(-75deg, #3d9339, #bfff7e 75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .menu-lapago p {
   color: #72bf56;
 }
@@ -343,18 +512,29 @@ footer h3:hover {
 /*prochainement */
 .footer_bloc_page {
   margin-bottom: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .footer_bloc_page--pro a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #579c87;
   color: #fdcb46;
   font-family: "montserratbold";
   font-size: 1rem;
   width: 100%;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #fdcb46;
   text-decoration: none;
   background-color: #579c87;
@@ -363,6 +543,7 @@ footer h3:hover {
   border-radius: 0.3rem;
   font-size: 1.2rem;
 }
+
 .footer_bloc_page--pro a .point {
   background-image: url("../ressources/images/point.svg");
   width: 2vh;
@@ -372,22 +553,34 @@ footer h3:hover {
   background-position: center;
   position: relative;
   top: 6%;
-  animation: threepoint 1400ms infinite;
+  -webkit-animation: threepoint 1400ms  infinite;
+          animation: threepoint 1400ms  infinite;
 }
+
 .footer_bloc_page--pro a .point_2 {
-  animation-delay: 300ms;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
 }
+
 .footer_bloc_page--pro a .point_3 {
-  animation-delay: 600ms;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
 }
 
 /*menu page lanoen*/
 .main_page {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100%;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
+
 @media (min-width: 576px) {
   .main_page {
     margin-top: 2rem;
@@ -399,75 +592,113 @@ footer h3:hover {
   background: #fcdfdb;
   font-family: "devonshireregular";
   padding: 1rem 1rem 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding-bottom: 10rem;
 }
-@media (min-width: 992px) {
+
+@media (min-width: 1050px) {
   .lanoen {
     max-width: 750px;
     height: 100%;
     margin: auto;
   }
 }
+
 @media (min-width: 576px) {
   .lanoen li {
     padding-left: 3rem;
     padding-right: 3rem;
   }
 }
+
 .lanoen_titre {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+
 .lanoen .note {
   background-image: url("../ressources/images/lanoen/note.svg");
   width: 100%;
-  height: 3rem;
+  height: 2rem;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
+
 .lanoen .note_haut {
   margin-top: 2rem;
   width: 20%;
   height: 6vh;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
+
 .lanoen h3 {
   font-size: 1.2rem;
 }
+
 .lanoen ul {
   padding-top: 0.8rem;
 }
+
 .lanoen li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-size: 1rem;
   line-height: 2.5rem;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .lanoen li .plat {
   text-align: justify;
   margin-right: 2rem;
 }
+
 .lanoen li .prix {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   font-weight: bolder;
 }
+
 .lanoen li .prix_dessert {
   margin-right: 0;
 }
+
 .lanoen .menu_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1rem 0 1rem 0;
 }
+
 .lanoen h3 {
   position: relative;
 }
+
 .lanoen h3:before {
   content: "";
   position: absolute;
@@ -477,18 +708,22 @@ footer h3:hover {
   bottom: 0;
   left: 0;
   border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
 .lanoen h3:hover:before {
   width: 100%;
   margin: auto;
 }
+
 @media (min-width: 576px) {
   .lanoen .menu_part {
     padding-left: 3rem;
     padding-right: 3rem;
   }
 }
+
 .lanoen_trait {
   background-image: url("../ressources/images/lanoen/lanoengauche1.svg");
   width: 32%;
@@ -497,6 +732,7 @@ footer h3:hover {
   background-size: contain;
   background-position: center;
 }
+
 .lanoen_trait_rev {
   background-image: url("../ressources/images/lanoen/lanoengauche1.svg");
   width: 32%;
@@ -504,33 +740,52 @@ footer h3:hover {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  transform: rotatey(180deg);
+  -webkit-transform: rotatey(180deg);
+          transform: rotatey(180deg);
 }
+
 .lanoen_section {
   font-family: "Segoe Print";
 }
+
 .lanoen .h2 {
   font-size: 2.5rem;
 }
+
 .lanoen .h2_bas {
   font-size: 2rem;
 }
+
 .lanoen li {
   font-size: 0.9rem;
 }
+
 .lanoen_titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .lanoen .main_bas {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 3rem;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .lanoen .note_bas {
   width: 10%;
-  padding-left: 5rem;
+  padding-left: 05rem;
 }
 
 .lapago {
@@ -539,75 +794,113 @@ footer h3:hover {
   background: #fdfffd;
   font-family: "kaushan_scriptregular";
   padding: 1rem 1rem 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding-bottom: 10rem;
 }
-@media (min-width: 992px) {
+
+@media (min-width: 1050px) {
   .lapago {
     max-width: 750px;
     height: 100%;
     margin: auto;
   }
 }
+
 @media (min-width: 576px) {
   .lapago li {
     padding-left: 3rem;
     padding-right: 3rem;
   }
 }
+
 .lapago_titre {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+
 .lapago .note {
   background-image: url("../ressources/images/lanoen/note.svg");
   width: 100%;
-  height: 3rem;
+  height: 2rem;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
+
 .lapago .note_haut {
   margin-top: 2rem;
   width: 20%;
   height: 6vh;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
+
 .lapago h3 {
   font-size: 1.2rem;
 }
+
 .lapago ul {
   padding-top: 0.8rem;
 }
+
 .lapago li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-size: 1rem;
   line-height: 2.5rem;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .lapago li .plat {
   text-align: justify;
   margin-right: 2rem;
 }
+
 .lapago li .prix {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   font-weight: bolder;
 }
+
 .lapago li .prix_dessert {
   margin-right: 0;
 }
+
 .lapago .menu_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1rem 0 1rem 0;
 }
+
 .lapago h3 {
   position: relative;
 }
+
 .lapago h3:before {
   content: "";
   position: absolute;
@@ -617,12 +910,15 @@ footer h3:hover {
   bottom: 0;
   left: 0;
   border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
 .lapago h3:hover:before {
   width: 100%;
   margin: auto;
 }
+
 .lapago_trait {
   background-image: url("../ressources/images/lapago/lapagogauche1.svg");
   width: 32%;
@@ -631,6 +927,7 @@ footer h3:hover {
   background-size: contain;
   background-position: center;
 }
+
 .lapago_trait_rev {
   background-image: url("../ressources/images/lapago/lapagogauche1.svg");
   width: 32%;
@@ -638,12 +935,15 @@ footer h3:hover {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  transform: rotatey(180deg);
+  -webkit-transform: rotatey(180deg);
+          transform: rotatey(180deg);
 }
+
 .lapago_section {
   color: black;
   font-family: "Segoe Print";
 }
+
 .lapago h2 {
   font-size: 3rem;
 }
@@ -653,75 +953,113 @@ footer h3:hover {
   background: #edefef;
   font-family: "dancing_scriptregular";
   padding: 1rem 1rem 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding-bottom: 10rem;
 }
-@media (min-width: 992px) {
+
+@media (min-width: 1050px) {
   .ledepa {
     max-width: 750px;
     height: 100%;
     margin: auto;
   }
 }
+
 @media (min-width: 576px) {
   .ledepa li {
     padding-left: 3rem;
     padding-right: 3rem;
   }
 }
+
 .ledepa_titre {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+
 .ledepa .note {
   background-image: url("../ressources/images/lanoen/note.svg");
   width: 100%;
-  height: 3rem;
+  height: 2rem;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
+
 .ledepa .note_haut {
   margin-top: 2rem;
   width: 20%;
   height: 6vh;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
+
 .ledepa h3 {
   font-size: 1.2rem;
 }
+
 .ledepa ul {
   padding-top: 0.8rem;
 }
+
 .ledepa li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-size: 1rem;
   line-height: 2.5rem;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .ledepa li .plat {
   text-align: justify;
   margin-right: 2rem;
 }
+
 .ledepa li .prix {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   font-weight: bolder;
 }
+
 .ledepa li .prix_dessert {
   margin-right: 0;
 }
+
 .ledepa .menu_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1rem 0 1rem 0;
 }
+
 .ledepa h3 {
   position: relative;
 }
+
 .ledepa h3:before {
   content: "";
   position: absolute;
@@ -731,12 +1069,15 @@ footer h3:hover {
   bottom: 0;
   left: 0;
   border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
 .ledepa h3:hover:before {
   width: 100%;
   margin: auto;
 }
+
 .ledepa_trait {
   background-image: url("../ressources/images/ledepa/ledepagauche1.png");
   width: 32%;
@@ -745,6 +1086,7 @@ footer h3:hover {
   background-size: contain;
   background-position: center;
 }
+
 .ledepa_trait_rev {
   background-image: url("../ressources/images/ledepa/ledepagauche1.png");
   width: 32%;
@@ -752,12 +1094,15 @@ footer h3:hover {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  transform: rotatey(180deg);
+  -webkit-transform: rotatey(180deg);
+          transform: rotatey(180deg);
 }
+
 .ledepa_section {
   color: black;
   font-family: "Segoe Print";
 }
+
 .ledepa h2 {
   font-size: 4rem;
 }
@@ -767,75 +1112,113 @@ footer h3:hover {
   background: #fff5fe;
   font-family: "croissant_oneregular";
   padding: 1rem 1rem 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding-bottom: 10rem;
 }
-@media (min-width: 992px) {
+
+@media (min-width: 1050px) {
   .lechfr {
     max-width: 750px;
     height: 100%;
     margin: auto;
   }
 }
+
 @media (min-width: 576px) {
   .lechfr li {
     padding-left: 3rem;
     padding-right: 3rem;
   }
 }
+
 .lechfr_titre {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+
 .lechfr .note {
   background-image: url("../ressources/images/lanoen/note.svg");
   width: 100%;
-  height: 3rem;
+  height: 2rem;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
+
 .lechfr .note_haut {
   margin-top: 2rem;
   width: 20%;
   height: 6vh;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
+
 .lechfr h3 {
   font-size: 1.2rem;
 }
+
 .lechfr ul {
   padding-top: 0.8rem;
 }
+
 .lechfr li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-size: 1rem;
   line-height: 2.5rem;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .lechfr li .plat {
   text-align: justify;
   margin-right: 2rem;
 }
+
 .lechfr li .prix {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   font-weight: bolder;
 }
+
 .lechfr li .prix_dessert {
   margin-right: 0;
 }
+
 .lechfr .menu_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1rem 0 1rem 0;
 }
+
 .lechfr h3 {
   position: relative;
 }
+
 .lechfr h3:before {
   content: "";
   position: absolute;
@@ -845,12 +1228,15 @@ footer h3:hover {
   bottom: 0;
   left: 0;
   border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
 .lechfr h3:hover:before {
   width: 100%;
   margin: auto;
 }
+
 .lechfr_trait {
   background-image: url("../ressources/images/lechfr/lechfrgauche1.svg");
   width: 32%;
@@ -859,6 +1245,7 @@ footer h3:hover {
   background-size: contain;
   background-position: center;
 }
+
 .lechfr_trait_rev {
   background-image: url("../ressources/images/lechfr/lechfrgauche1.svg");
   width: 32%;
@@ -866,8 +1253,10 @@ footer h3:hover {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  transform: rotatey(180deg);
+  -webkit-transform: rotatey(180deg);
+          transform: rotatey(180deg);
 }
+
 .lechfr_trait_mid {
   background-image: url("../ressources/images/lechfr/lechfrgauche1_mid.svg");
   width: 32%;
@@ -876,6 +1265,7 @@ footer h3:hover {
   background-size: contain;
   background-position: center;
 }
+
 .lechfr_trait_rev_mid {
   background-image: url("../ressources/images/lechfr/lechfrgauche1_mid.svg");
   width: 32%;
@@ -883,8 +1273,10 @@ footer h3:hover {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  transform: rotatey(180deg);
+  -webkit-transform: rotatey(180deg);
+          transform: rotatey(180deg);
 }
+
 .lechfr_trait_bot {
   background-image: url("../ressources/images/lechfr/lechfrgauche1_bot.svg");
   width: 32%;
@@ -893,6 +1285,7 @@ footer h3:hover {
   background-size: contain;
   background-position: center;
 }
+
 .lechfr_trait_rev_bot {
   background-image: url("../ressources/images/lechfr/lechfrgauche1_bot.svg");
   width: 32%;
@@ -900,22 +1293,26 @@ footer h3:hover {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  transform: rotatey(180deg);
+  -webkit-transform: rotatey(180deg);
+          transform: rotatey(180deg);
 }
+
 .lechfr_section {
   font-family: "cantata_oneregular";
 }
+
 .lechfr h2 {
   background: -webkit-linear-gradient(-75deg, #d8852e, #905bfd 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.5rem;
 }
+
 .lechfr .middle_menu {
   color: #a56799;
 }
+
 .lechfr .end_menu {
   color: #6e4ccc;
 }
-
 /*# sourceMappingURL=style.css.map */
