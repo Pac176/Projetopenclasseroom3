@@ -109,118 +109,96 @@ $breakpoints: (
 /*page menu*/
 @-webkit-keyframes wriggle {
   0% {
-    -webkit-transform: translate(1px, 1px) rotate(0deg);
-            transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
-            transform: translate(-1px, -2px) rotate(-1deg);
+    -webkit-transform: translate(-1px, 3px) rotate(0deg);
+            transform: translate(-1px, 3px) rotate(0deg);
   }
   20% {
-    -webkit-transform: translate(-3px, 0px) rotate(1deg);
-            transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    -webkit-transform: translate(3px, 2px) rotate(0deg);
-            transform: translate(3px, 2px) rotate(0deg);
+    -webkit-transform: translate(5px, 0px) rotate(1deg);
+            transform: translate(5px, 0px) rotate(1deg);
   }
   40% {
-    -webkit-transform: translate(1px, -1px) rotate(1deg);
-            transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
-            transform: translate(-1px, 2px) rotate(-1deg);
+    -webkit-transform: translate(0px, -5px) rotate(0deg);
+            transform: translate(0px, -5px) rotate(0deg);
   }
   60% {
-    -webkit-transform: translate(-3px, 1px) rotate(0deg);
-            transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    -webkit-transform: translate(3px, 1px) rotate(-1deg);
-            transform: translate(3px, 1px) rotate(-1deg);
+    -webkit-transform: translate(-5px, 0px) rotate(1deg);
+            transform: translate(-5px, 0px) rotate(1deg);
   }
   80% {
-    -webkit-transform: translate(-1px, -1px) rotate(1deg);
-            transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    -webkit-transform: translate(1px, 2px) rotate(0deg);
-            transform: translate(1px, 2px) rotate(0deg);
+    -webkit-transform: translate(0px, -5px) rotate(0deg);
+            transform: translate(0px, -5px) rotate(0deg);
   }
   100% {
-    -webkit-transform: translate(1px, -2px) rotate(-1deg);
-            transform: translate(1px, -2px) rotate(-1deg);
+    -webkit-transform: translate(-5px, 0px) rotate(1deg);
+            transform: translate(-5px, 0px) rotate(1deg);
   }
 }
 @keyframes wriggle {
   0% {
-    -webkit-transform: translate(1px, 1px) rotate(0deg);
-            transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
-            transform: translate(-1px, -2px) rotate(-1deg);
+    -webkit-transform: translate(-1px, 3px) rotate(0deg);
+            transform: translate(-1px, 3px) rotate(0deg);
   }
   20% {
-    -webkit-transform: translate(-3px, 0px) rotate(1deg);
-            transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    -webkit-transform: translate(3px, 2px) rotate(0deg);
-            transform: translate(3px, 2px) rotate(0deg);
+    -webkit-transform: translate(5px, 0px) rotate(1deg);
+            transform: translate(5px, 0px) rotate(1deg);
   }
   40% {
-    -webkit-transform: translate(1px, -1px) rotate(1deg);
-            transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
-            transform: translate(-1px, 2px) rotate(-1deg);
+    -webkit-transform: translate(0px, -5px) rotate(0deg);
+            transform: translate(0px, -5px) rotate(0deg);
   }
   60% {
-    -webkit-transform: translate(-3px, 1px) rotate(0deg);
-            transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    -webkit-transform: translate(3px, 1px) rotate(-1deg);
-            transform: translate(3px, 1px) rotate(-1deg);
+    -webkit-transform: translate(-5px, 0px) rotate(1deg);
+            transform: translate(-5px, 0px) rotate(1deg);
   }
   80% {
-    -webkit-transform: translate(-1px, -1px) rotate(1deg);
-            transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    -webkit-transform: translate(1px, 2px) rotate(0deg);
-            transform: translate(1px, 2px) rotate(0deg);
+    -webkit-transform: translate(0px, -5px) rotate(0deg);
+            transform: translate(0px, -5px) rotate(0deg);
   }
   100% {
-    -webkit-transform: translate(1px, -2px) rotate(-1deg);
-            transform: translate(1px, -2px) rotate(-1deg);
+    -webkit-transform: translate(-5px, 0px) rotate(1deg);
+            transform: translate(-5px, 0px) rotate(1deg);
   }
 }
 
 @-webkit-keyframes threepoint {
-  from {
-    opacity: 100%;
+  10% {
+    -webkit-transform: translatey(-8px) scale(1.4);
+            transform: translatey(-8px) scale(1.4);
   }
-  to {
-    opacity: 0%;
+  50% {
+    -webkit-transform: translatey(0px) scale(1);
+            transform: translatey(0px) scale(1);
+  }
+  100% {
+    -webkit-transform: translatey -8px scale(1.5);
+            transform: translatey -8px scale(1.5);
   }
 }
 
 @keyframes threepoint {
-  from {
-    opacity: 100%;
+  10% {
+    -webkit-transform: translatey(-8px) scale(1.4);
+            transform: translatey(-8px) scale(1.4);
   }
-  to {
-    opacity: 0%;
+  50% {
+    -webkit-transform: translatey(0px) scale(1);
+            transform: translatey(0px) scale(1);
+  }
+  100% {
+    -webkit-transform: translatey -8px scale(1.5);
+            transform: translatey -8px scale(1.5);
   }
 }
 
 /*liserets ohmyfood  mentions contact*/
 #oh {
   letter-spacing: -0.10em;
+}
+
+.text_index {
+  color: #fdcb46;
+  text-decoration: none;
+  background-color: #579c87;
 }
 
 .text_index--titre {
@@ -240,12 +218,6 @@ $breakpoints: (
           justify-content: center;
   font-size: 3.3rem;
   height: 5.4rem;
-}
-
-.text_index--titre a {
-  color: #fdcb46;
-  text-decoration: none;
-  background-color: #579c87;
 }
 
 .index {
@@ -279,22 +251,15 @@ footer a {
   color: #fdcb46;
   text-decoration: none;
   background-color: #579c87;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
-footer h3 {
-  padding: 1rem;
-}
-
-footer h3:hover {
-  -webkit-animation: wriggle 200ms infinite;
-          animation: wriggle 200ms infinite;
+footer a:hover {
+  -webkit-animation: wriggle 200ms 5;
+          animation: wriggle 200ms 5;
   -webkit-transform-origin: center;
           transform-origin: center;
-}
-
-footer h3:hover:active {
-  -webkit-animation: none;
-          animation: none;
 }
 
 .bloc_page_menu {
@@ -526,7 +491,7 @@ footer h3:hover:active {
           justify-content: center;
 }
 
-.footer_bloc_page--pro a {
+.footer_bloc_page--pro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -545,32 +510,34 @@ footer h3:hover:active {
   text-decoration: none;
   background-color: #579c87;
   height: 3rem;
-  width: 15rem;
+  width: 16rem;
   border-radius: 0.3rem;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
 }
 
-.footer_bloc_page--pro a .point {
+.footer_bloc_page--pro .point {
   background-image: url("../ressources/images/point.svg");
-  width: 2vh;
-  height: 1vh;
+  width: 1rem;
+  height: 0.5rem;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   position: relative;
-  top: 6%;
-  -webkit-animation: threepoint 1400ms  infinite;
-          animation: threepoint 1400ms  infinite;
+  margin-bottom: 1rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-animation: threepoint 1500ms ease-in-out infinite;
+          animation: threepoint 1500ms ease-in-out infinite;
 }
 
-.footer_bloc_page--pro a .point_2 {
-  -webkit-animation-delay: 300ms;
-          animation-delay: 300ms;
+.footer_bloc_page--pro .point_2 {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
 }
 
-.footer_bloc_page--pro a .point_3 {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
+.footer_bloc_page--pro .point_3 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
 }
 
 /*menu page lanoen*/
@@ -754,26 +721,17 @@ footer h3:hover:active {
   font-family: "Segoe Print";
 }
 
-.lanoen .h2 {
+.lanoen h2 {
   font-size: 2.5rem;
+  padding-top: 0;
 }
 
-.lanoen .h2_bas {
+.lanoen h2_bas {
   font-size: 2rem;
 }
 
 .lanoen li {
   font-size: 0.9rem;
-}
-
-.lanoen_titre {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .lanoen .main_bas {

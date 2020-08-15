@@ -17,17 +17,13 @@
 }
 
 .text_index {
+  @include a;
   &--titre {
   @include text_index;   
   font-size:3.3rem;
-  height: 5.4rem;
-  
- 
-  & a {
-  @include a;
-  }
-       
+  height: 5.4rem;       
   }}
+  
 .index {
   margin-bottom: 1rem;}
 
@@ -39,20 +35,21 @@ footer {
   bottom:0;
   position: fixed;
   height: 3rem;
+
   & a {
   @include a;
-  
-  }
-  & h3 {
-    padding:1rem;
+  padding-left:1.5rem;
+  padding-right:1.5rem;
   &:hover {
-    animation: wriggle 200ms infinite ;
+    animation: wriggle 200ms 5;
+    
     transform-origin: center;
-  &:active {
-    animation: none;
-  }
+      
   }}
-}
+  
+     
+  }
+
 
 
 
@@ -163,28 +160,36 @@ footer {
   margin-top:1rem;
   display: flex;
   justify-content: center;
-  &--pro a {
+  
+
+
+  &--pro {
     @include text_index;
     @include a;
     height: 3rem;
-    width: 15rem;
+    width: 16rem;
     border-radius: 0.3rem;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
+
+
     .point{
+      
       background-image:$img-point;
-      width:2vh;
-      height:1vh;
+      width:1rem;
+      height:0.5rem;
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
       position: relative;
-      top:6%;
-      animation: threepoint 1400ms  infinite;
+      margin-bottom: 1rem;
+      align-self: flex-end;
+      animation: threepoint 1500ms ease-in-out infinite;
+      
       &_2{
-        animation-delay:300ms;
+        animation-delay:100ms;
       }
       &_3{
-        animation-delay:600ms ;
+        animation-delay:200ms ;
       }
       }
   
@@ -218,8 +223,9 @@ footer {
     &_section {
       font-family:map-get($font-family, famlibre);
     }
-    .h2 {
+    h2 {
       font-size:2.5rem;
+      padding-top: 0;
     &_bas {
       font-size: 2rem;
     }
@@ -227,10 +233,7 @@ footer {
     li {
       font-size: 0.9rem;
   }
-    &_titre{
-      display: flex;
-      flex-direction: column;
-  }
+    
     .main_bas {
       display: flex;
       justify-content: center;
