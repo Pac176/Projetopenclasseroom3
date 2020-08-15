@@ -48,6 +48,9 @@ footer {
   &:hover {
     animation: wriggle 200ms infinite ;
     transform-origin: center;
+  &:active {
+    animation: none;
+  }
   }}
 }
 

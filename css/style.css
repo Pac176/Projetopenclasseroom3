@@ -292,6 +292,11 @@ footer h3:hover {
           transform-origin: center;
 }
 
+footer h3:hover:active {
+  -webkit-animation: none;
+          animation: none;
+}
+
 .bloc_page_menu {
   display: -webkit-box;
   display: -ms-flexbox;
