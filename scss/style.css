@@ -396,7 +396,7 @@ footer h3:hover {
 @media (min-width: 576px) {
   .menu {
     width: 34%;
-    height: 44vh;
+    height: 36vh;
     margin: 2.4%;
     border-radius: 0;
   }
@@ -408,21 +408,21 @@ footer h3:hover {
 @media (min-width: 768px) {
   .menu {
     width: 30%;
-    height: 50vh;
+    height: 17rem;
   }
 }
 
 @media (min-width: 1050px) {
   .menu {
-    width: 52vh;
-    height: 70vh;
+    width: 30%;
+    height: 25rem;
   }
 }
 
 @media (min-width: 1200px) {
   .menu {
-    width: 52vh;
-    height: 70vh;
+    width: 30%;
+    height: 40rem;
     margin: 2rem;
   }
 }
