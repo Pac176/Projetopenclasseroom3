@@ -18,13 +18,38 @@ $color: ( color-lanoen:#4e252a,color-lechfr:#d8852e,color-ledepa:#0887fb,color-l
 $bg-color: (bg-lanoen:#fcdfdb,bg-lechfr:#fff5fe,bg-ledepa:#edefef,bg-lapago:#fdfffd,bg-index:#579c87);
 $font-family: (famlanoen:"devonshireregular",famlechfr:"croissant_oneregular",famlechfr2:"cantata_oneregular",famledepa:"dancing_scriptregular",famlapago:"kaushan_scriptregular",famlibre:"Segoe Print",famliseretproch:"montserratbold");
 $bg-image-lapago:url("../ressources/images/lapago/lapagogauche1.svg");
-$bg-image-ledepa:url("../ressources/images/ledepa/ledepagauche1.png");
+$bg-image-ledepa:url("../ressources/images/ledepa/ledepagauche1.svg");
+$bg-image-ledepa-mid:url("../ressources/images/ledepa/ledepagauche1-mid.svg");
+$bg-image-ledepa-bot:url("../ressources/images/ledepa/ledepagauche1-bot.svg");
 $bg-image-lechfr:url("../ressources/images/lechfr/lechfrgauche1.svg");
 $bg-image-lechfr_mid:url("../ressources/images/lechfr/lechfrgauche1_mid.svg");
 $bg-image-lechfr_bot:url("../ressources/images/lechfr/lechfrgauche1_bot.svg");
 $bg-image-lanoen:url("../ressources/images/lanoen/lanoengauche1.svg");
 $img-note-lanoen:url("../ressources/images/lanoen/note.svg");
 $img-point:url("../ressources/images/point.svg");
+
+$maximaps:(
+    lanoen:(
+      bg:#fcdfdb,
+      ff:"devonshireregular",
+),
+    lechfr:(
+      bg:#fff5fe,
+      ff:"croissant_oneregular",
+),
+    ledepa:(
+      bg:#edefef,
+      ff:"dancing_scriptregular",
+),
+    lapago:(
+      bg:#fdfffd,
+      ff:"kaushan_scriptregular",
+      )
+);
+
+
+
+
 
 
 // Map des breakpoints

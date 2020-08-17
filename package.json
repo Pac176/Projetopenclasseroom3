@@ -1,20 +1,13 @@
 {
   "name": "projetopenclasseroom3",
   "version": "1.0.0",
-  "description": "Projetopenclasseroom3",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./scss/style.scss:./css/style.css",
+    "sass": "sass --watch ./css/style.scss:./css/style.css",
     "prefix": "postcss ./css/style.css  --use autoprefixer  -d ./prefixed/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Pac176/Projetopenclasseroom3.git"
+    
   },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Pac176/Projetopenclasseroom3/issues"
-  },
-  "homepage": "https://github.com/Pac176/Projetopenclasseroom3#readme"
+  "license": "ISC"
 }

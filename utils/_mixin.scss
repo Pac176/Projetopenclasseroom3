@@ -57,20 +57,19 @@
   
       }
     }
-  
-   
+     
   // Large devices
   
-  /*index menu*/
+
   @mixin lg_menu {
     @media (min-width: $screen-lg-min) {
       width: 30%;
-      height: 25rem;
+      height: 28rem;
       
     }
   }
   
-  /*page menu*/
+
   @mixin lg_page_menu {
     @media (min-width: $screen-lg-min) {
       max-width:750px;
@@ -95,7 +94,7 @@
   @mixin xl_menu {
     @media (min-width: $screen-xl-min) {
       width: 30%;
-      height: 40rem;
+      height: 30rem;
       margin: 2rem;
   
     }
@@ -119,7 +118,18 @@
     background-color:map-get($bg-color,bg-index);
   }
   
-  @mixin menu  {
+  //@mixin bgff ($menus) {
+   // $menu:map-get($maximaps,$menus);
+   // background-color: map-get($menu,bg);
+   // font-family: map-get($menu,ff);
+ // }
+
+  @mixin menu ($maximaps) {
+  @each $key,$value in $maximaps {
+    &-#{$key}{
+      background-color:map-get($value,bg);
+      font-family:map-get($value,ff);
+  }}
     height: 17vh;
     width:80%;
     display:flex;

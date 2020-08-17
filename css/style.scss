@@ -50,10 +50,6 @@ footer {
      
   }
 
-
-
-
-
  
 .bloc_page_menu {
    @include sm_bloc_page_menu;
@@ -71,18 +67,20 @@ footer {
 
 
 .menu {
-  @include menu;
+  @include menu ($maximaps); /*3 boucle*/
   @include sm;
   @include md_menu;
   @include lg_menu;
   @include xl_menu;
     /*la note enchantee*/
   &-lanoen {
-      background-color: map-get($bg-color,bg-lanoen);
-      font-family: map-get($font-family,famlanoen);
+    
+ //2mixin   
+       // @include bgff(lanoen);
 
-
-
+//1map
+      // background-color: map-get($bg-color,bg-lanoen); 
+     // font-family: map-get($font-family,famlanoen);
     .note {
     background-image:$img-note-lanoen;
     width:100%;
@@ -103,8 +101,9 @@ footer {
   }  
     /*le chic a la francaise*/
   &-lechfr {
-      font-family: map-get($font-family, famlechfr);
-      background-color:map-get($bg-color,bg-lechfr);
+   // @include bgff (lechfr); /*2 mixin*/
+      //font-family: map-get($font-family, famlechfr); /*1*/
+      //background-color:map-get($bg-color,bg-lechfr);
     h2{
       background: -webkit-linear-gradient(-75deg, #d8852e, #905bfd 80%);
       -webkit-background-clip: text;
@@ -121,8 +120,9 @@ footer {
   }
     /*le delice des papilles*/
   &-ledepa {
-      font-family: map-get($font-family, famledepa);
-      background-color:map-get($bg-color,bg-ledepa);
+    //@include bgff (ledepa);
+      //font-family: map-get($font-family, famledepa);
+      //background-color:map-get($bg-color,bg-ledepa);
     h2 {
       background: -webkit-linear-gradient(-75deg, #0431df, #0887fb 60%);
       -webkit-background-clip: text;
@@ -135,9 +135,11 @@ footer {
   }  
     /*la palette du gout*/
   &-lapago {
+    //@include bgff (lapago);
     
-    font-family: map-get($font-family, famlapago);
-    background-color: map-get($bg-color,bg-lapago);
+    
+    //font-family: map-get($font-family, famlapago);
+    //background-color: map-get($bg-color,bg-lapago);
     h2 {
       background: -webkit-linear-gradient(-75deg, #3d9339, #bfff7e 75%);
     -webkit-background-clip: text;
@@ -273,6 +275,19 @@ footer {
     transform: rotatey(180deg);
     }
   }
+
+  &_trait_mid{
+    @include trait ($bg-image-ledepa-mid);}
+  &_trait_rev_mid {
+    @include trait ($bg-image-ledepa-mid);
+      transform: rotatey(180deg);
+  }
+  &_trait_bot{
+    @include trait ($bg-image-ledepa-bot);}
+  &_trait_rev_bot {
+    @include trait ($bg-image-ledepa-bot);
+      transform: rotatey(180deg);}
+
     &_section {  
       color:map-get($color,color-defaut);
       font-family:map-get($font-family, famlibre);}
@@ -291,17 +306,17 @@ footer {
     }
   }
     &_trait_mid{
-      @include trait ($bg-image-lechfr-mid);}
-    &_trait_rev_mid {
+      @include trait ($bg-image-lechfr-mid);
+    &_rev {
       @include trait ($bg-image-lechfr-mid);
         transform: rotatey(180deg);
-    }
+    }}
     &_trait_bot{
-      @include trait ($bg-image-lechfr-bot);}
-    &_trait_rev_bot {
+      @include trait ($bg-image-lechfr-bot);
+    &_rev {
       @include trait ($bg-image-lechfr-bot);
         transform: rotatey(180deg);
-    }
+    }}
     &_section{
         font-family:map-get($font-family, famlechfr2 );
     }
