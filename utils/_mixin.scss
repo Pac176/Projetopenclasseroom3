@@ -1,253 +1,235 @@
 
 @mixin sm {
-    @media (min-width: $screen-sm-min) {
-      width: 34%;
-      height: 36vh;
-      margin:2.4%;
-      border-radius:0;
-      p{padding-top: 1rem;}
-      }
+  @media (min-width: $screen-sm-min) {
+    width: 34%;
+    height: 36vh;
+    margin:2.4%;
+    border-radius:0;
+    p{padding-top: 1rem;}
   }
-  @mixin sm_bloc_page_menu {
-    @media (min-width: $screen-sm-min){
+}
+@mixin sm_bloc_page_menu {
+  @media (min-width: $screen-sm-min){
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-flow: wrap;
-    
   }
-  }
-  @mixin sm_main_page {
-    @media (min-width: $screen-sm-min){
+}
+@mixin sm_main_page {
+  @media (min-width: $screen-sm-min){
     margin-top:2rem;
-  }}
-  
-  @mixin sm_menu_trait{
-    @media (min-width: $screen-sm-min){
-      width: 35%;
-      height: 0.6rem;
-      position: relative;
-   }
   }
-  @mixin sm_menu_margin{
-    @media (min-width: $screen-sm-min){
-      li{
-        padding-left:3rem;
-        padding-right:3rem;
-      }
-   }
+}
+@mixin sm_menu_trait{
+  @media (min-width: $screen-sm-min){
+    width: 35%;
+    height: 0.6rem;
+    position: relative;
   }
-  @mixin sm_menu_part {
+}
+@mixin sm_menu_margin{
+  @media (min-width: $screen-sm-min){
+    li{
+      padding-left:3rem;
+      padding-right:3rem;
+    }
+  }
+}
+@mixin sm_menu_part {
   @media (min-width: $screen-sm-min){
     .menu_part {
       padding-left: 3rem;
       padding-right:3rem;
     }
   }
+}
+ // Medium devices
+@mixin md_menu {
+  @media (min-width: $screen-md-min) {
+    width: 30%;
+    height: 22rem;
   }
-  
-  
-  // Medium devices
-  @mixin md_menu {
-    @media (min-width: $screen-md-min) {
-      width: 30%;
-      height: 17rem;
-      
-  
-      }
+}
+ // Large devices
+@mixin lg_menu {
+  @media (min-width: $screen-lg-min) {
+    width: 30%;
+    height: 28rem;
+  }
+}
+@mixin lg_page_menu {
+  @media (min-width: $screen-lg-min) {
+    max-width:750px;
+    height: 100%;
+    margin: auto;
+  }
+}
+@mixin lg_main_page {
+  @media (min-width: $screen-lg-min) {
+    width: 1200px;
+    height: 1600px;
+    margin: auto;
     }
-     
-  // Large devices
-  
-
-  @mixin lg_menu {
-    @media (min-width: $screen-lg-min) {
-      width: 30%;
-      height: 28rem;
-      
-    }
+}
+@mixin lg_bloc_page_menu {
+  @media (min-width: $screen-lg-min){
+    margin-left:9rem;
+    margin-right:9rem;
   }
-  
-
-  @mixin lg_page_menu {
-    @media (min-width: $screen-lg-min) {
-      max-width:750px;
-      height: 100%;
-      margin: auto;
-    }
+}
+// Extra large devices
+@mixin xl_menu {
+  @media (min-width: $screen-xl-min) {
+    width: 30%;
+    height: 30rem;
+    margin: 2rem;
   }
-  
-  @mixin lg_main_page {
-    @media (min-width: $screen-lg-min) {
-      width: 1200px;
-      height: 1600px;
-      margin: auto;
-    }
-  }
-  @mixin lg_bloc_page_menu {
-    @media (min-width: $screen-lg-min){
-        margin-left:9rem;
-      margin-right:9rem}}
-
-  // Extra large devices
-  @mixin xl_menu {
-    @media (min-width: $screen-xl-min) {
-      width: 30%;
-      height: 30rem;
-      margin: 2rem;
-  
-    }
-  }
-  
-  
-  @mixin text_index  { 
-    display: flex;
-    align-items: center;
-    background-color: map-get($bg-color,bg-index);
-    color:map-get($color,color-link);
-    font-family: map-get($font-family, famliseretproch);
-    font-size: 1rem;
-    width:100%;
-    justify-content: center;
-  }
-  
-  @mixin a {
-    color: map-get($color, color-link);
-    text-decoration:none;
-    background-color:map-get($bg-color,bg-index);
-  }
-  
-  //@mixin bgff ($menus) {
-   // $menu:map-get($maximaps,$menus);
-   // background-color: map-get($menu,bg);
-   // font-family: map-get($menu,ff);
- // }
-
-  @mixin menu ($maximaps) {
+}
+@mixin text_index  { 
+  display: flex;
+  align-items: center;
+  background-color: map-get($bg-color,bg-index);
+  color:map-get($color,color-link);
+  font-family: map-get($font-family, famliseretproch);
+  font-size: 1rem;
+  width:100%;
+  justify-content: center;
+}
+@mixin a {
+  color: map-get($color, color-link);
+  text-decoration:none;
+  background-color:map-get($bg-color,bg-index);
+}
+@mixin menu ($maximaps) {
   @each $key,$value in $maximaps {
     &-#{$key}{
       background-color:map-get($value,bg);
       font-family:map-get($value,ff);
-  }}
-    height: 17vh;
-    width:80%;
-    display:flex;
+  }
+}
+      height: 17vh;
+      width:80%;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 1rem;
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: $shadow;
+      border-radius: 1rem 1rem;
+  p {
+    font-size:1.5rem;
+    }
+  h2 {font-size:1.4rem;
+    }
+  a {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      width: -webkit-fill-available;
+      height: -webkit-fill-available;
+      justify-content: center;
+      transition: transform scale(1), opacity (1);
+      transition-duration: 1s;
+      &:hover {
+        transform:scale(1.2);
+        opacity:(0.3);
+    }
+  }
+}
+@mixin trait ($bg-image){
+  background-image:$bg-image;
+  width:32%;
+  height:1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+@mixin menu_misenpage ($col,$bg,$family){
+  @include lg_page_menu;
+  @include sm_menu_margin;
+    color: map-get($color,$col);
+    background: map-get($bg-color, $bg);
+    font-family:map-get($font-family, $family);
+    padding: 1rem 1rem 1rem 1rem;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-    box-shadow: $shadow;
-    border-radius: 1rem 1rem;
-      p {
-        font-size:1.5rem;
+    height: fit-content;
+    padding-bottom:10rem;
+  &_titre{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .note{
+    background-image:$img-note-lanoen;
+    width:100%;
+    height:2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    &_haut{
+      margin-top:2rem;
+      width:20%;
+      height:6vh;
+      align-self:center;
     }
-      h2 {font-size:1.4rem;
+  }
+  h3{
+    font-size: 1.2rem;
     }
-      a {
-        text-decoration: none;
-        display: flex;
-        flex-direction: column;
-        width: -webkit-fill-available;
-        height: -webkit-fill-available;
-        justify-content: center;
-        transition: transform scale(1), opacity (1);
-        transition-duration: 1s;
-          &:hover {
-          transform:scale(1.2);
-          opacity:(0.3);
-        }
+  ul{
+    padding-top: 0.8rem;
+  }
+  li {
+    display:flex;
+    flex-direction: row;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    justify-content: space-between;
+  .plat {
+    text-align: justify;
+    margin-right: 2rem;
     }
-    }
-  
-   @mixin trait ($bg-image){
-      background-image:$bg-image;
-      width:32%;
-      height:1rem;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
-     }
-    
-     @mixin menu_misenpage ($col,$bg,$family){
-      @include lg_page_menu;
-      @include sm_menu_margin;
-        color: map-get($color,$col);
-        background: map-get($bg-color, $bg);
-        font-family:map-get($font-family, $family);
-        padding: 1rem 1rem 1rem 1rem;
-        display: flex;
-        flex-direction: column;
-        height: fit-content;
-        padding-bottom:10rem;
-        &_titre{
-          padding-top: 4rem;
-          padding-bottom: 4rem;
-        }
-          .note{
-            background-image:$img-note-lanoen;
-            width:100%;
-            height:2rem;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
-          &_haut{
-          margin-top:2rem;
-          width:20%;
-          height:6vh;
-          align-self:center;
-          }
-        }
-          h3{
-            font-size: 1.2rem;
-        }
-          ul{
-            padding-top: 0.8rem;
-        }
-        li {
-          display:flex;
-          flex-direction: row;
-          font-size: 1rem;
-          line-height: 2.5rem;
-          justify-content: space-between;
-        .plat {
-          text-align: justify;
-          margin-right: 2rem;
-        }
-        .prix {
-          align-self: center;
-          font-weight: bolder;
-            &_dessert{
-              margin-right: 0;
-            }
-          }
-        }
-        .menu_part {
-          display:flex;
-          justify-content: space-between;
-          align-items: center;   
-          padding: 1rem 0 1rem 0;   
-        }
-           //que lanoen//
-          h3{
-           position: relative;
-         
-        }
-          h3:before {
-            content: "";
-            position: absolute;
-            background-color:map-get($color,$col);
-            width: 0%;
-            height: 0.3rem;
-            bottom: 0;
-            left: 0;
-            border-radius: 50%;
-            transition: all 0.3s ease-in-out;
-            }
-          h3:hover:before {
-            width: 100%;
-            margin:auto;
-          }
+  .prix {
+    align-self: center;
+    font-weight: bolder;
+      &_dessert{
+          margin-right: 0;
       }
+    }
+  }
+  .menu_part {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;   
+    padding: 1rem 0 1rem 0;   
+  }
+           //que lanoen//
+  h3{
+    position: relative;
+    }
+  h3:before {
+    content: "";
+    position: absolute;
+    background-color:map-get($color,$col);
+    width: 0%;
+    height: 0.3rem;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+  }
+  h3:hover:before {
+    width: 100%;
+    margin:auto;
+  }
+}
+
+ //@mixin bgff ($menus) {
+   // $menu:map-get($maximaps,$menus);
+   // background-color: map-get($menu,bg);
+   // font-family: map-get($menu,ff);
+ // }

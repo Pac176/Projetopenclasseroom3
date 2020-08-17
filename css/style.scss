@@ -4,13 +4,7 @@
 @import "../utils/_mixin.scss";
 @import "../utils/_animations.scss";
 
-
-
-
-  
-
 /*liserets ohmyfood  mentions contact*/
-
 
 #oh {
   letter-spacing: -0.10em;
@@ -18,17 +12,14 @@
 
 .text_index {
   @include a;
-  &--titre {
+    &--titre {
   @include text_index;   
-  font-size:3.3rem;
-  height: 5.4rem;       
-  }}
-  
+    font-size:3.3rem;
+    height: 5.4rem;       
+  }
+}
 .index {
   margin-bottom: 1rem;}
-
-
-  
 footer {
   @include text_index;
   justify-content: space-between;
@@ -37,35 +28,24 @@ footer {
   height: 3rem;
 
   & a {
-  @include a;
-  padding-left:1.5rem;
-  padding-right:1.5rem;
-  &:hover {
-    animation: wriggle 200ms 5;
-    
-    transform-origin: center;
-      
-  }}
-  
-     
+    @include a;
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+      &:hover {
+        animation: wriggle 200ms 5;
+        transform-origin: center;
+    }
   }
-
- 
+}
 .bloc_page_menu {
    @include sm_bloc_page_menu;
    @include lg_bloc_page_menu;
-
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   
- }
+}
 /* page index*/
-
-
-
-
 .menu {
   @include menu ($maximaps); /*3 boucle*/
   @include sm;
@@ -73,56 +53,49 @@ footer {
   @include lg_menu;
   @include xl_menu;
     /*la note enchantee*/
-  &-lanoen {
-    
- //2mixin   
+//2mixin   
        // @include bgff(lanoen);
 
 //1map
       // background-color: map-get($bg-color,bg-lanoen); 
      // font-family: map-get($font-family,famlanoen);
-    .note {
-    background-image:$img-note-lanoen;
-    width:100%;
-    height:2rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-   }  
-   
-    h2 {
-      
-      color:map-get($color, color-lanoen );
-   } 
-    p{
-      font-family:map-get($font-family, famlibre);
-      color:map-get($color, color-lanoen );
-   } 
-  }  
+
+  &-lanoen {
+      .note {
+        background-image:$img-note-lanoen;
+        width:100%;
+        height:2rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        }  
+      h2 {
+        color:map-get($color, color-lanoen );
+      } 
+      p{
+        font-family:map-get($font-family, famlibre);
+        color:map-get($color, color-lanoen );
+      } 
+    }
     /*le chic a la francaise*/
   &-lechfr {
-   // @include bgff (lechfr); /*2 mixin*/
-      //font-family: map-get($font-family, famlechfr); /*1*/
-      //background-color:map-get($bg-color,bg-lechfr);
-    h2{
+     h2{
       background: -webkit-linear-gradient(-75deg, #d8852e, #905bfd 80%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-   } 
+      } 
     p{
       font-family:'cantata_oneregular';
       font-weight: bold;
       color:map-get($color, color-lechfr );
-   } 
-  }
-      #lechfr_font {
+      } 
+ 
+    #lechfr_font {
       font-size:1.2rem;
+    }
   }
     /*le delice des papilles*/
   &-ledepa {
-    //@include bgff (ledepa);
-      //font-family: map-get($font-family, famledepa);
-      //background-color:map-get($bg-color,bg-ledepa);
     h2 {
       background: -webkit-linear-gradient(-75deg, #0431df, #0887fb 60%);
       -webkit-background-clip: text;
@@ -135,35 +108,23 @@ footer {
   }  
     /*la palette du gout*/
   &-lapago {
-    //@include bgff (lapago);
-    
-    
-    //font-family: map-get($font-family, famlapago);
-    //background-color: map-get($bg-color,bg-lapago);
     h2 {
       background: -webkit-linear-gradient(-75deg, #3d9339, #bfff7e 75%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-      }
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
     p{font-family:map-get($font-family, famlibrel);
       color:map-get($color, color-lapago );
-      }
     }
   }
+}
 
   /*prochainement */
-
-
-
-
-
 .footer_bloc_page {
   margin-bottom: 5rem;
   margin-top:1rem;
   display: flex;
   justify-content: center;
-  
-
 
   &--pro {
     @include text_index;
@@ -208,10 +169,6 @@ footer {
   height: fit-content;
 }
 
-
-
-
-
 .lanoen {
   @include menu_misenpage (color-lanoen,bg-lanoen,famlanoen);
   @include sm_menu_part;
@@ -235,8 +192,7 @@ footer {
     li {
       font-size: 0.9rem;
   }
-    
-    .main_bas {
+   .main_bas {
       display: flex;
       justify-content: center;
       margin-top: 3rem;
@@ -310,13 +266,15 @@ footer {
     &_rev {
       @include trait ($bg-image-lechfr-mid);
         transform: rotatey(180deg);
-    }}
+    }
+  }
     &_trait_bot{
       @include trait ($bg-image-lechfr-bot);
     &_rev {
       @include trait ($bg-image-lechfr-bot);
         transform: rotatey(180deg);
-    }}
+    }
+  }
     &_section{
         font-family:map-get($font-family, famlechfr2 );
     }
