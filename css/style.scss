@@ -172,6 +172,12 @@ footer {
 .lanoen {
   @include menu_misenpage (color-lanoen,bg-lanoen,famlanoen);
   @include sm_menu_part;
+  .enplde{
+    @include soulignement (color-lanoen);
+     
+    }
+  
+ 
     &_trait{
       @include trait ($bg-image-lanoen);
     &_rev {
@@ -205,7 +211,11 @@ footer {
 
 .lapago {
   border: 1px #dae0da solid;
+  .enplde{
+    @include soulignement (color-lapago);
+    }
   @include menu_misenpage(color-lapago,bg-lapago,famlapago);
+ 
     &_trait{
       @include trait ($bg-image-lapago);
     &_rev {
@@ -220,10 +230,19 @@ footer {
     h2 {
       font-size:3rem;
     }
-  }
+ }
 
 .ledepa {
   @include menu_misenpage(color-ledepa,bg-ledepa, famledepa);
+  .enplde{
+  @include soulignement (color-ledepa);
+    &_mid {
+      @include soulignement (color-ledepa);
+    }
+    &_bot {
+      @include soulignement (color-ledepa)
+    }
+  }
     &_trait{
       @include trait ($bg-image-ledepa);
     &_rev {
@@ -254,6 +273,15 @@ footer {
 
 .lechfr {
   @include menu_misenpage(color-lechfr,bg-lechfr, famlechfr);
+  .enplde{
+    @include soulignement (color-lechfr);
+      &_mid {
+        @include soulignement (color-lechfr);
+      }
+      &_bot {
+        @include soulignement (color-lechfr)
+      }
+    }
     &_trait{
       @include trait ($bg-image-lechfr);
     &_rev {

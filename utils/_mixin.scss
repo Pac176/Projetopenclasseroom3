@@ -207,29 +207,23 @@
     align-items: center;   
     padding: 1rem 0 1rem 0;   
   }
-           //que lanoen//
-  h3{
-    position: relative;
-    }
-  h3:before {
-    content: "";
-    position: absolute;
-    background-color:map-get($color,$col);
-    width: 0%;
-    height: 0.3rem;
-    bottom: 0;
-    left: 0;
-    border-radius: 50%;
-    transition: all 0.3s ease-in-out;
-  }
-  h3:hover:before {
-    width: 100%;
-    margin:auto;
-  }
+       //que lanoen//
+ }
+ 
+ @mixin soulignement ($col){
+   position: relative;
+ &:before {
+  content: "";
+  position: absolute;
+  background-color:map-get($color,$col);
+  width: 0%;
+  height: 0.3rem;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
 }
-
- //@mixin bgff ($menus) {
-   // $menu:map-get($maximaps,$menus);
-   // background-color: map-get($menu,bg);
-   // font-family: map-get($menu,ff);
- // }
+&:hover:before {
+  width: 100%;
+  margin:auto;
+}} 
