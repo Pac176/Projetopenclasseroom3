@@ -32,16 +32,16 @@
 @mixin sm_menu_margin{
   @media (min-width: $screen-sm-min){
     li{
-      padding-left:3rem;
-      padding-right:3rem;
+      padding-left:0rem;
+      padding-right:0rem;
     }
   }
 }
 @mixin sm_menu_part {
   @media (min-width: $screen-sm-min){
     .menu_part {
-      padding-left: 3rem;
-      padding-right:3rem;
+      padding-left: 0rem;
+      padding-right:0rem;
     }
   }
 }
@@ -61,7 +61,7 @@
 }
 @mixin lg_page_menu {
   @media (min-width: $screen-lg-min) {
-    max-width:750px;
+    width:750px;
     height: 100%;
     margin: auto;
   }
@@ -154,14 +154,14 @@
     color: map-get($color,$col);
     background: map-get($bg-color, $bg);
     font-family:map-get($font-family, $family);
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 2rem 1rem 2rem 1rem;
     display: flex;
     flex-direction: column;
     height: fit-content;
-    padding-bottom:10rem;
+    padding-bottom:5rem;
   &_titre{
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 1.5rem;
   }
   .note{
     background-image:$img-note-lanoen;
@@ -181,7 +181,8 @@
     font-size: 1.2rem;
     }
   ul{
-    padding-top: 0.8rem;
+    padding-top: 1rem;
+    padding-bottom:2rem;
   }
   li {
     display:flex;
@@ -191,7 +192,7 @@
     justify-content: space-between;
   .plat {
     text-align: justify;
-    margin-right: 2rem;
+    margin-right: 0.5rem;
     }
   .prix {
     align-self: center;
@@ -205,7 +206,7 @@
     display:flex;
     justify-content: space-between;
     align-items: center;   
-    padding: 1rem 0 1rem 0;   
+    padding-top: 1rem;   
   }
        //que lanoen//
  }
@@ -218,7 +219,7 @@
   background-color:map-get($color,$col);
   width: 0%;
   height: 0.3rem;
-  bottom: 0;
+  bottom: -0.3rem;
   left: 0;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;

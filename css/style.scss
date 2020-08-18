@@ -187,6 +187,8 @@ footer {
  }
     &_section {
       font-family:map-get($font-family, famlibre);
+      padding-left:3rem;
+      padding-right:3rem;
     }
     h2 {
       font-size:2.5rem;
@@ -205,7 +207,7 @@ footer {
       align-items: center;}
     .note_bas{
       width:10%;
-      padding-left:05rem;
+     
   }
 }
 
@@ -223,12 +225,20 @@ footer {
       transform: rotatey(180deg);
     }
   }
+  ul {
+    padding-right:3rem;
+    padding-left:3rem;
+  }
     &_section{
       color:map-get($color,color-defaut);
       font-family:map-get($font-family, famlibre);
+      margin-top:2rem;
     }
     h2 {
-      font-size:3rem;
+      background: -webkit-linear-gradient(-4deg, #3d923a 20%, #beff80 75%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size:3.5rem;
     }
  }
 
@@ -237,10 +247,10 @@ footer {
   .enplde{
   @include soulignement (color-ledepa);
     &_mid {
-      @include soulignement (color-ledepa);
+      @include soulignement (color-ledepa_mid);
     }
     &_bot {
-      @include soulignement (color-ledepa)
+      @include soulignement (color-ledepa_bot);
     }
   }
     &_trait{
@@ -262,12 +272,23 @@ footer {
   &_trait_rev_bot {
     @include trait ($bg-image-ledepa-bot);
       transform: rotatey(180deg);}
+    ul {
+      padding-right:2rem;
+      padding-left:2rem;
+    }
 
     &_section {  
       color:map-get($color,color-defaut);
-      font-family:map-get($font-family, famlibre);}
+      font-family:map-get($font-family, famlibre);
+      margin-left:2rem;
+      margin-right:2rem;
+      margin-top:2rem;
+    }
     h2 {
-      font-size:4rem;
+      font-size:3.5rem;
+      background: -webkit-linear-gradient(-4deg, #0431df 20%, #0887fb 60%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
   }
 }
 
@@ -276,10 +297,10 @@ footer {
   .enplde{
     @include soulignement (color-lechfr);
       &_mid {
-        @include soulignement (color-lechfr);
+        @include soulignement (color-lechfr_mid);
       }
       &_bot {
-        @include soulignement (color-lechfr)
+        @include soulignement (color-lechfr_bot);
       }
     }
     &_trait{
@@ -303,14 +324,19 @@ footer {
         transform: rotatey(180deg);
     }
   }
+  ul {
+    padding-right:3rem;
+    padding-left:3rem;
+  }
     &_section{
         font-family:map-get($font-family, famlechfr2 );
+        padding-top:2rem;
     }
     h2{
-      background: -webkit-linear-gradient(-75deg, #d8852e, #905bfd 80%);
+      background: -webkit-linear-gradient(-4deg, #d8852e 20%, #905bfd 80%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-size:1.5rem;
+      font-size:2rem;
     }
    .middle_menu {
      color:#a56799;

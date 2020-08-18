@@ -393,28 +393,28 @@ footer a:hover {
   color: #4e252a;
   background: #fcdfdb;
   font-family: "devonshireregular";
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 2rem 1rem 2rem 1rem;
   display: flex;
   flex-direction: column;
   height: fit-content;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
 }
 @media (min-width: 1050px) {
   .lanoen {
-    max-width: 750px;
+    width: 750px;
     height: 100%;
     margin: auto;
   }
 }
 @media (min-width: 576px) {
   .lanoen li {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 }
 .lanoen_titre {
   padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-bottom: 1.5rem;
 }
 .lanoen .note {
   background-image: url("../ressources/images/lanoen/note.svg");
@@ -434,7 +434,8 @@ footer a:hover {
   font-size: 1.2rem;
 }
 .lanoen ul {
-  padding-top: 0.8rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 .lanoen li {
   display: flex;
@@ -445,7 +446,7 @@ footer a:hover {
 }
 .lanoen li .plat {
   text-align: justify;
-  margin-right: 2rem;
+  margin-right: 0.5rem;
 }
 .lanoen li .prix {
   align-self: center;
@@ -458,12 +459,12 @@ footer a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0 1rem 0;
+  padding-top: 1rem;
 }
 @media (min-width: 576px) {
   .lanoen .menu_part {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 }
 .lanoen .enplde {
@@ -475,7 +476,7 @@ footer a:hover {
   background-color: #4e252a;
   width: 0%;
   height: 0.3rem;
-  bottom: 0;
+  bottom: -1rem;
   left: 0;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
@@ -503,6 +504,8 @@ footer a:hover {
 }
 .lanoen_section {
   font-family: "Segoe Print";
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .lanoen h2 {
   font-size: 2.5rem;
@@ -522,7 +525,6 @@ footer a:hover {
 }
 .lanoen .note_bas {
   width: 10%;
-  padding-left: 5rem;
 }
 
 .lapago {
@@ -530,11 +532,11 @@ footer a:hover {
   color: #72bf56;
   background: #fdfffd;
   font-family: "kaushan_scriptregular";
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 2rem 1rem 2rem 1rem;
   display: flex;
   flex-direction: column;
   height: fit-content;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
 }
 .lapago .enplde {
   position: relative;
@@ -545,7 +547,7 @@ footer a:hover {
   background-color: #72bf56;
   width: 0%;
   height: 0.3rem;
-  bottom: 0;
+  bottom: -1rem;
   left: 0;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
@@ -556,20 +558,20 @@ footer a:hover {
 }
 @media (min-width: 1050px) {
   .lapago {
-    max-width: 750px;
+    width: 750px;
     height: 100%;
     margin: auto;
   }
 }
 @media (min-width: 576px) {
   .lapago li {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 }
 .lapago_titre {
   padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-bottom: 1.5rem;
 }
 .lapago .note {
   background-image: url("../ressources/images/lanoen/note.svg");
@@ -589,7 +591,8 @@ footer a:hover {
   font-size: 1.2rem;
 }
 .lapago ul {
-  padding-top: 0.8rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 .lapago li {
   display: flex;
@@ -600,7 +603,7 @@ footer a:hover {
 }
 .lapago li .plat {
   text-align: justify;
-  margin-right: 2rem;
+  margin-right: 0.5rem;
 }
 .lapago li .prix {
   align-self: center;
@@ -613,7 +616,7 @@ footer a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0 1rem 0;
+  padding-top: 1rem;
 }
 .lapago_trait {
   background-image: url("../ressources/images/lapago/lapagogauche1.svg");
@@ -632,40 +635,48 @@ footer a:hover {
   background-position: center;
   transform: rotatey(180deg);
 }
+.lapago ul {
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
 .lapago_section {
   color: black;
   font-family: "Segoe Print";
+  margin-top: 2rem;
 }
 .lapago h2 {
-  font-size: 3rem;
+  background: -webkit-linear-gradient(-4deg, #3d923a 20%, #beff80 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3.5rem;
 }
 
 .ledepa {
   color: #0e32de;
   background: #edefef;
   font-family: "dancing_scriptregular";
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 2rem 1rem 2rem 1rem;
   display: flex;
   flex-direction: column;
   height: fit-content;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
 }
 @media (min-width: 1050px) {
   .ledepa {
-    max-width: 750px;
+    width: 750px;
     height: 100%;
     margin: auto;
   }
 }
 @media (min-width: 576px) {
   .ledepa li {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 }
 .ledepa_titre {
   padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-bottom: 1.5rem;
 }
 .ledepa .note {
   background-image: url("../ressources/images/lanoen/note.svg");
@@ -685,7 +696,8 @@ footer a:hover {
   font-size: 1.2rem;
 }
 .ledepa ul {
-  padding-top: 0.8rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 .ledepa li {
   display: flex;
@@ -696,7 +708,7 @@ footer a:hover {
 }
 .ledepa li .plat {
   text-align: justify;
-  margin-right: 2rem;
+  margin-right: 0.5rem;
 }
 .ledepa li .prix {
   align-self: center;
@@ -709,7 +721,7 @@ footer a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0 1rem 0;
+  padding-top: 1rem;
 }
 .ledepa .enplde {
   position: relative;
@@ -720,7 +732,7 @@ footer a:hover {
   background-color: #0e32de;
   width: 0%;
   height: 0.3rem;
-  bottom: 0;
+  bottom: -1rem;
   left: 0;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
@@ -735,10 +747,10 @@ footer a:hover {
 .ledepa .enplde_mid:before {
   content: "";
   position: absolute;
-  background-color: #0e32de;
+  background-color: #3c8ef2;
   width: 0%;
   height: 0.3rem;
-  bottom: 0;
+  bottom: -1rem;
   left: 0;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
@@ -753,10 +765,10 @@ footer a:hover {
 .ledepa .enplde_bot:before {
   content: "";
   position: absolute;
-  background-color: #0e32de;
+  background-color: #4eaff7;
   width: 0%;
   height: 0.3rem;
-  bottom: 0;
+  bottom: -1rem;
   left: 0;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
@@ -816,40 +828,50 @@ footer a:hover {
   background-position: center;
   transform: rotatey(180deg);
 }
+.ledepa ul {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
 .ledepa_section {
   color: black;
   font-family: "Segoe Print";
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
 }
 .ledepa h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
+  background: -webkit-linear-gradient(-4deg, #0431df 20%, #0887fb 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .lechfr {
   color: #d8852e;
   background: #fff5fe;
   font-family: "croissant_oneregular";
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 2rem 1rem 2rem 1rem;
   display: flex;
   flex-direction: column;
   height: fit-content;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
 }
 @media (min-width: 1050px) {
   .lechfr {
-    max-width: 750px;
+    width: 750px;
     height: 100%;
     margin: auto;
   }
 }
 @media (min-width: 576px) {
   .lechfr li {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 }
 .lechfr_titre {
   padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-bottom: 1.5rem;
 }
 .lechfr .note {
   background-image: url("../ressources/images/lanoen/note.svg");
@@ -869,7 +891,8 @@ footer a:hover {
   font-size: 1.2rem;
 }
 .lechfr ul {
-  padding-top: 0.8rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 .lechfr li {
   display: flex;
@@ -880,7 +903,7 @@ footer a:hover {
 }
 .lechfr li .plat {
   text-align: justify;
-  margin-right: 2rem;
+  margin-right: 0.5rem;
 }
 .lechfr li .prix {
   align-self: center;
@@ -893,7 +916,7 @@ footer a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0 1rem 0;
+  padding-top: 1rem;
 }
 .lechfr .enplde {
   position: relative;
@@ -904,7 +927,7 @@ footer a:hover {
   background-color: #d8852e;
   width: 0%;
   height: 0.3rem;
-  bottom: 0;
+  bottom: -1rem;
   left: 0;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
@@ -919,10 +942,10 @@ footer a:hover {
 .lechfr .enplde_mid:before {
   content: "";
   position: absolute;
-  background-color: #d8852e;
+  background-color: #a56799;
   width: 0%;
   height: 0.3rem;
-  bottom: 0;
+  bottom: -1rem;
   left: 0;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
@@ -937,10 +960,10 @@ footer a:hover {
 .lechfr .enplde_bot:before {
   content: "";
   position: absolute;
-  background-color: #d8852e;
+  background-color: #6e4ccc;
   width: 0%;
   height: 0.3rem;
-  bottom: 0;
+  bottom: -1rem;
   left: 0;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
@@ -1000,14 +1023,19 @@ footer a:hover {
   background-position: center;
   transform: rotatey(180deg);
 }
+.lechfr ul {
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
 .lechfr_section {
   font-family: "cantata_oneregular";
+  padding-top: 2rem;
 }
 .lechfr h2 {
-  background: -webkit-linear-gradient(-75deg, #d8852e, #905bfd 80%);
+  background: -webkit-linear-gradient(-4deg, #d8852e 20%, #905bfd 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .lechfr .middle_menu {
   color: #a56799;
